@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_xE_S4SUVEe2sE4qLAy6zxA" name="db.LDP_read" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_xE_S4iUVEe2sE4qLAy6zxA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_xE_S4yUVEe2sE4qLAy6zxA">
+    <substitutionBindings xmi:id="_3y25ECUVEe2sE4qLAy6zxA" template="username" propName="/Resources/db/LDP/Username"/>
+    <substitutionBindings xmi:id="_3_JooCUVEe2sE4qLAy6zxA" template="password" propName="/Resources/db/LDP/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_xE_S5CUVEe2sE4qLAy6zxA">
+      <substitutionBindings xmi:id="_yddhsCUVEe2sE4qLAy6zxA" template="jdbcDriver" propName="/Resources/db/LDP/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_zndPoCUVEe2sE4qLAy6zxA" template="dbURL" propName="/Resources/db/LDP/DatabaseUrl_read"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

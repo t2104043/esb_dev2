@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmlns:tp="http://xsd.tns.tibco.com/bw/models/sharedresource/threadpool" xmi:id="_I7PM0fhUEeys5_smGVfG1w" name="http.UMS" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_QUakYPhVEeynlK7tzoFEJA" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_QUakYfhVEeynlK7tzoFEJA" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_QUakYvhVEeynlK7tzoFEJA" name="transport">
+        <id:IdentityReference xmi:id="_QUakY_hVEeynlK7tzoFEJA" URI="http.UMSssl" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:reference xmi:id="_KsWvsPhVEeynlK7tzoFEJA" key="threadPoolConfigurationName" type="tp:ThreadPoolConfiguration" value="http.UMS_tpr"/>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_I7PM0vhUEeys5_smGVfG1w" useSSL="true" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_I7PM0_hUEeys5_smGVfG1w">
+      <substitutionBindings xmi:id="_CjvTQPjYEeynlK7tzoFEJA" template="host" propName="/Resources/http/UMS_Host"/>
+      <substitutionBindings xmi:id="_EUhUYPjYEeynlK7tzoFEJA" template="port" propName="/Resources/http/UMS_Port"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

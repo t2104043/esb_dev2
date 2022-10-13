@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="KISASEED128"
+         name="KISASEED128"
+         point="com.tibco.xml.cxf.common.customXPathFunction">
+      <customXPathFunctionGroup
+            class="kisaseed128_kt.KISASEED128"
+            id="kisaseed128_kt">
+      </customXPathFunctionGroup>
+   </extension>
+
+</plugin>

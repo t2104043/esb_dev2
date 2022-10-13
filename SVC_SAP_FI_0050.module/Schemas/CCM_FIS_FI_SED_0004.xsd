@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CCM_FIS_FI_SED_0004" xmlns:tns="http://www.example.org/CCM_FIS_FI_SED_0004" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="CCM_FIS_FI_SED_0004_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="REQUEST_YM" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="CCM_FIS_FI_SED_0004_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+					<element name="ET_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+<element name="FACI_NO" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="ACT_YYYYMM" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MODEL_NAME" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="DEPT_CODE" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="USER_ID" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="DISTANCE" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="AMT" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="APPLY_START_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="APPLY_END_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+						         						         
+								</sequence>
+							</complexType>
+						</element>
+						
+						<element name="E_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

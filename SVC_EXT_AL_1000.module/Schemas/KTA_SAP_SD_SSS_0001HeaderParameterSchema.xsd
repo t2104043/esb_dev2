@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:Q1="http://tns.tibco.com/bw/REST" xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/KTA_SAP_SD_SSS_0001/headerParameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://xmlns.example.com/KTA_SAP_SD_SSS_0001/headerParameters">
+  <xs:import namespace="http://tns.tibco.com/bw/REST"/>
+  <xs:complexType name="kta_sap_sd_sss_0001PostHeaderType">
+    <xs:complexContent>
+      <xs:extension base="Q1:httpTransportHeaders">
+        <xs:sequence>
+                    <xs:element maxOccurs="1" minOccurs="0" name="chnlType" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="0" name="userId" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="0" name="orgId" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="0" name="srcId" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="0" name="apikey" type="xs:string"/>
+                </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="kta_sap_sd_sss_0001PostHeader" type="tns:kta_sap_sd_sss_0001PostHeaderType"/>
+</xs:schema>
