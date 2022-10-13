@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPROCUREMENT_NETPR_GW" xmlns:tns="http://www.example.org/ZMM_EPROCUREMENT_NETPR_GW" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPROCUREMENT_NETPR_GW_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="IT_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+         <element name="EBELN" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="ZSTAT" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="WEMPF" type="string" maxOccurs="1" minOccurs="0"/>
+        
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZMM_EPROCUREMENT_NETPR_GW_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ES_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

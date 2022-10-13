@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPROCUREMENT_EKGRP" xmlns:tns="http://www.example.org/ZMM_EPROCUREMENT_EKGRP" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+	<import namespace="http://www.example.org/HEADER"></import>
+	<element name="ZMM_EPROCUREMENT_EKGRP_req">
+    	<complexType>
+    		<sequence>
+    			<element maxOccurs="1" minOccurs="1" ref="Q1:HEADER"/>
+				<element maxOccurs="1" minOccurs="0" name="DATA">
+					<complexType>
+						<sequence>
+							<element maxOccurs="unbounded" minOccurs="0" name="ET_TAB"  nillable="true">
+                                <complexType>
+                                    <sequence>
+							            <element maxOccurs="1" minOccurs="0" name="PURC_GRP_CD" nillable="true" type="string"/>
+							            <element maxOccurs="1" minOccurs="0" name="PURC_GRP_NM" nillable="true" type="string"/>
+				       				</sequence>
+				       			</complexType>
+				       		</element>
+				       	</sequence>
+				      </complexType>
+                </element>
+    		</sequence>
+    	</complexType>
+    </element>
+	<element name="ZMM_EPROCUREMENT_EKGRP_rsp">
+    	<complexType>
+    		<sequence>
+    			<element maxOccurs="1" minOccurs="1" ref="Q1:HEADER"/>
+    			<element maxOccurs="1" minOccurs="0" name="DATA">
+					<complexType>
+						<sequence>
+							<element maxOccurs="unbounded" minOccurs="0" name="ES_RETURN"  nillable="true">
+                                <complexType>
+                                    <sequence>
+							            <element maxOccurs="1" minOccurs="0" name="TYPE" nillable="true" type="string"/>
+							            <element maxOccurs="1" minOccurs="0" name="MESSAGE" nillable="true" type="string"/>
+				       				</sequence>
+				       			</complexType>
+				       		</element>
+				       	</sequence>
+				      </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EHR_SAP_HR_SES_0006" xmlns:tns="http://www.example.org/EHR_SAP_HR_SES_0006" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="EHR_SAP_HR_SES_0006_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="RfcRequest" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="I_DATA1" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA2" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA3" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA4" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA5" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA6" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA7" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA8" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA9" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_DATA10" type="string" maxOccurs="1" minOccurs="0"/>			
+								</sequence>
+							</complexType>
+						</element>	 
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="EHR_SAP_HR_SES_0006_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="RfcResponse" maxOccurs="1" minOccurs="1">
+							<complexType>
+								<sequence>
+									 <element name="E_RET_CD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="E_RET_MSG" type="string" maxOccurs="1" minOccurs="0"/>
+										<sequence>
+											<element name="ET_RETURN" maxOccurs="unbounded" minOccurs="0">
+												<complexType>
+													<sequence>
+														 <element name="O_DATA1" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA2" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA3" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA4" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA5" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA6" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA7" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA8" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA9" type="string" maxOccurs="1" minOccurs="0"/>
+														 <element name="O_DATA10" type="string" maxOccurs="1" minOccurs="0"/>
+													</sequence>
+												</complexType>
+											</element>
+										</sequence>
+
+
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

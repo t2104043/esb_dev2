@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NC6_EHR_HR_SHD_0001" xmlns:tns="http://www.example.org/NC6_EHR_HR_SHD_0001" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="NC6_EHR_HR_SHD_0001_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="WORKDATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="EMPNO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="WORKSTARTDATETIME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="REASON" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="NC6_EHR_HR_SHD_0001_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						 <element name="STATUS" type="string" maxOccurs="1" minOccurs="0"/>
+						 <element name="REASON_CODE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

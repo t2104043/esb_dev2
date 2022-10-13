@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZSD_CWMALL_MOBILE_IFX_V3" xmlns:tns="http://www.example.org/ZSD_CWMALL_MOBILE_IFX_V3" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_CWMALL_MOBILE_IFX_V3_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+		<element name="SAFEKEY" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZSD_CWMALL_MOBILE_IFX_V3_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ET_LIST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="SERNR" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="SERNR_OLD" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="TELF1" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="TELF2" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="SMTP_ADDR" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="INBDT" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CONTRACT_ID" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CONTRACT_ID_TX" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="PRDHA" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="PRDHA_TX" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MAKTX" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ERDAT" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="IS_GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="STCD2" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="STCD1" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MEMBER_SHIP_YN" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ZOWNERSHIP_DT" type="string" maxOccurs="1" minOccurs="0"/>							         
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

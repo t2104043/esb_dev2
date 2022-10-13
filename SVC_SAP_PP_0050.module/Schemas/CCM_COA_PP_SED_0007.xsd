@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CCM_COA_PP_SED_0007" xmlns:tns="http://www.example.org/CCM_COA_PP_SED_0007" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="CCM_COA_PP_SED_0007_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="REQUEST_YM" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="CCM_COA_PP_SED_0007_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+					<element name="ET_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+<element name="BUILDING_NO" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="BUILDING_NAME" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="RENT_STATUS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="RENT_START_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="RENT_END_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="CUSTOMER_NO1" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="CUSTOMER_NO2" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="CUSTOMER_NO3" type="string" maxOccurs="1" minOccurs="0"/>
+						         						         
+								</sequence>
+							</complexType>
+						</element>
+						
+						<element name="E_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:keystore="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/cred/keystore" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmi:id="__9lJwQcDEe2JOsel5yg_zg" name="http.PPLssl" type="sslclient:SSLClientConfiguration">
+  <jndi:description>ppl</jndi:description>
+  <jndi:reference xmi:id="__9lJwgcDEe2JOsel5yg_zg" key="trustStoreServiceProvider" type="keystore:KeystoreConfiguration" value="http.PPLkey"/>
+  <jndi:configuration xsi:type="sslclient:SSLClientConfiguration" xmi:id="__9lJwwcDEe2JOsel5yg_zg"/>
+</jndi:namedResource>

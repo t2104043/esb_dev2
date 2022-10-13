@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EHR_SAP_HR_SES_0008" xmlns:tns="http://www.example.org/EHR_SAP_HR_SES_0008" elementFormDefault="qualified"   xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="EHR_SAP_HR_SES_0008_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="RfcRequest" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="I_BUKRS" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_PERNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_CARDNUM" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_APVNO" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_TRDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_TRSTAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_CARDCLS" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="I_BSTAT" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>	 
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="EHR_SAP_HR_SES_0008_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="RfcResponse" maxOccurs="1" minOccurs="1">
+							<complexType>
+								<sequence>
+									 <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>										
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

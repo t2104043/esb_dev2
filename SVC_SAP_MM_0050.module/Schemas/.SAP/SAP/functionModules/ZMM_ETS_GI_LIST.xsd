@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:r3="http://www.tibco.com/xmlns/sapscalar/2015/05" xmlns:tns="http://www.tibco.com/xmlns/sap/SAP/ZMM_ETS_GI_LIST" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/sap/SAP/ZMM_ETS_GI_LIST" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.tibco.com/xmlns/sapscalar/2015/05" schemaLocation="/Schemas/.SAP/SAPSchema.xsd"/>
+    <xsd:element name="RequestInputType" type="tns:RequestInputTypeParam"/>
+    <xsd:complexType name="RequestInputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="timeout" type="xsd:long"/>
+            <xsd:element name="RfcRequest" type="tns:ZMM_ETS_GI_LIST_RequestParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcRequest" type="tns:ZMM_ETS_GI_LIST_RequestParam"/>
+    <xsd:complexType name="ZMM_ETS_GI_LIST_RequestParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="IT_TAB" type="tns:sequence_lsqb_ZMMS0620_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RequestOutputType" type="tns:RequestOutputTypeParam"/>
+    <xsd:complexType name="RequestOutputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CPIC_ID" type="xsd:string"/>
+            <xsd:element name="RfcResponse" type="tns:ZMM_ETS_GI_LIST_ResponseParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcResponse" type="tns:ZMM_ETS_GI_LIST_ResponseParam"/>
+    <xsd:complexType name="ZMM_ETS_GI_LIST_ResponseParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="O_MESSAGE" r3:abapType="C" r3:document="결과 메세지 리턴" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="100"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="O_RESULT" r3:abapType="C" r3:document="실행결과 (S:성공, F:실패)" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="IT_TAB" type="tns:sequence_lsqb_ZMMS0620_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SAPSystemException" type="tns:ZMM_ETS_GI_LIST_FaultParam"/>
+    <xsd:complexType name="ZMM_ETS_GI_LIST_FaultParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OTHERS" type="tns:RFCException"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZMMS0620_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZMMS0620"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZMMS0620">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="COMPANY_CODE" nillable="true" r3:abapType="C" r3:document="법인 Company Code" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MATNR" nillable="true" r3:abapType="C" r3:document="자재 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="8">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="18"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZYEAR" nillable="true" r3:abapType="N" r3:document="기준년도" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="44">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZWEEK" nillable="true" r3:abapType="N" r3:document="수립주차" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="52">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="LOC_TYPE" nillable="true" r3:abapType="C" r3:document="Location Type" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="56">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK07" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="64">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK06" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="98">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK05" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="132">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK04" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="166">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK03" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="200">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK02" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="234">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BWEEK01" nillable="true" r3:abapType="C" r3:document="과거 WEEK 실적" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="268">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="17"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WEEK00" nillable="true" r3:abapType="P" r3:document="금주 실적" r3:javaType="java.math.BigDecimal" r3:jcoType="2" r3:offset="302">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:decimal">
+                        <xsd:totalDigits value="13"/>
+                        <xsd:fractionDigits value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MEINS" nillable="true" r3:abapType="C" r3:document="기본 단위" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="310">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RFCException">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="msg" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="msgCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
