@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_hcNKwWFbEe2Yl52nRXoaeA" name="db.CICS" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_hcNKwmFbEe2Yl52nRXoaeA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_hcNKw2FbEe2Yl52nRXoaeA">
+    <substitutionBindings xmi:id="_EwXUkGFfEe2Yl52nRXoaeA" template="username" propName="/Resources/db/cics/User"/>
+    <substitutionBindings xmi:id="_E7xTUGFfEe2Yl52nRXoaeA" template="password" propName="/Resources/db/cics/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_hcNKxGFbEe2Yl52nRXoaeA">
+      <substitutionBindings xmi:id="_FKBxwGFfEe2Yl52nRXoaeA" template="jdbcDriver" propName="/Resources/db/cics/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_FV0LAGFfEe2Yl52nRXoaeA" template="dbURL" propName="/Resources/db/cics/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

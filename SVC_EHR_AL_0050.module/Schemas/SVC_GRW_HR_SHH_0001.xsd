@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SVC_GRW_HR_SHH_0001" xmlns:tns="http://www.example.org/SVC_GRW_HR_SHH_0001" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="EHR_GRW_HR_SEH_0001_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="GRW_REQUEST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="RET_TABALTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABDOCNM" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABDTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABGUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABAPPER" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABREPER" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABCRDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABALDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABWRULE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABSPERD" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABSPTYP" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABOTPER" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABRPERD" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABRPTYP" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABTITLE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="RET_TABZNOTEF" type="string" maxOccurs="1" minOccurs="0"/>
+									
+									<element name="TBL_1" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_2" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_3" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_4" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_5" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_6" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_7" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_8" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_9" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_10" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_11" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_12" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_13" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_14" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_15" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_16" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_17" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_18" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_19" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_20" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TBL_21" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="AttachName" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="AttachURL" type="string" maxOccurs="1" minOccurs="0"/>
+									
+									<element name="DBTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="JCOAlias" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="jdbcAlias" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BODY" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>	 
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="EHR_GRW_HR_SEH_0001_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="GRW_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									 <element name="STATUS" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

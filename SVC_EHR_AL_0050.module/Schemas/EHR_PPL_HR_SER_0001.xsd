@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EHR_PPL_HR_SER_0001" xmlns:tns="http://www.example.org/EHR_PPL_HR_SER_0001" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="PPL_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="PPL_REQ" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<any minOccurs="0" maxOccurs="unbounded"></any>
+         						</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="PPL_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<any minOccurs="0" maxOccurs="unbounded"></any>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

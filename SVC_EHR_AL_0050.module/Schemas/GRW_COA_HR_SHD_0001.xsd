@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:Q1="http://www.example.org/HEADER"  targetNamespace="http://www.example.org/GRW_COA_HR_SHD_0001" xmlns:tns="http://www.example.org/GRW_COA_HR_SHD_0001" elementFormDefault="qualified">
+<import namespace="http://www.example.org/HEADER"/>
+<element name="GRW_COA_HR_SHD_0001_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"/>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element maxOccurs="1" minOccurs="0" name="I_USR_ID" type="string"/>
+						<element maxOccurs="1" minOccurs="0" name="I_APPR_DOCNR" type="string"/>
+						<element maxOccurs="1" minOccurs="0" name="I_STATE" type="string"/>
+						<element maxOccurs="1" minOccurs="0" name="I_GW_DOCCNR" type="string"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="GRW_COA_HR_SHD_0001_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"/>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						 <element maxOccurs="1" minOccurs="0" name="TYPE" type="string"/>
+						 <element maxOccurs="1" minOccurs="0" name="MESSAGE" type="string"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

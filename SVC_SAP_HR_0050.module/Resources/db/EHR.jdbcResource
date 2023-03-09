@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_eZ0GYWI3Eeyo76TJ_gs2Cg" name="db.EHR" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_eZ_FgGI3Eeyo76TJ_gs2Cg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_eZ_FgWI3Eeyo76TJ_gs2Cg">
+    <substitutionBindings xmi:id="_Pt7EQGI4Eeyo76TJ_gs2Cg" template="password" propName="/Resources/db/ehr/Password"/>
+    <substitutionBindings xmi:id="_hWLn8PHhEeyuCurLtKHXcA" template="username" propName="/Resources/db/ehr/User"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_eZ_FgmI3Eeyo76TJ_gs2Cg">
+      <substitutionBindings xmi:id="_Q0Mv0GI4Eeyo76TJ_gs2Cg" template="jdbcDriver" propName="/Resources/db/ehr/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_6ZnQMPHhEeyuCurLtKHXcA" template="dbURL" propName="/Resources/db/ehr/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

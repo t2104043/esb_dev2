@@ -1,0 +1,17 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/SVC_EHR_AL_0050.module/Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/EHR_SMA_HR_SDH_1001"
+    },
+    {
+        "jsonSchemaLocation": "/SVC_EHR_AL_0050.module/Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/GRW_EHR_HR_SHE_0001"
+    },
+    {
+        "jsonSchemaLocation": "/SVC_EHR_AL_0050.module/Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/GRW_COA_HR_SHD_0001"
+    }
+]}

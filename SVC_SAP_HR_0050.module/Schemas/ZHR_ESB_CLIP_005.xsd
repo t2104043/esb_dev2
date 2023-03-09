@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZHR_ESB_CLIP_005" xmlns:tns="http://www.example.org/ZHR_ESB_CLIP_005" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZHR_ESB_CLIP_005_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="IT_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+								
+									<element name="PERNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="PASSDT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZCYTY" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>						
+								</sequence>
+							</complexType>
+						</element>	 
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZHR_ESB_CLIP_005_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									 <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

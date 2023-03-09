@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_j4P-AWVOEe2Yl52nRXoaeA" name="db.HKG" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_j4P-AmVOEe2Yl52nRXoaeA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_j4P-A2VOEe2Yl52nRXoaeA">
+    <substitutionBindings xmi:id="_OZBm4GVPEe2Yl52nRXoaeA" template="username" propName="/Resources/db/hkg/User"/>
+    <substitutionBindings xmi:id="_OmSm0GVPEe2Yl52nRXoaeA" template="password" propName="/Resources/db/hkg/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_j4P-BGVOEe2Yl52nRXoaeA">
+      <substitutionBindings xmi:id="_O0L44GVPEe2Yl52nRXoaeA" template="jdbcDriver" propName="/Resources/db/hkg/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_PACjkGVPEe2Yl52nRXoaeA" template="dbURL" propName="/Resources/db/hkg/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

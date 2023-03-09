@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_2eUTkPHGEeyI6_leuiDJEA" targetNamespace="http://tns.tibco.com/bw/composite/SVC_EHR_AL_0050.module" name="SVC_EHR_AL_0050.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_jnGzUSQWEe2KWofoi2mvcQ" name="svc_ehr_al_sra_rcv.grw_ehr_hr_she_0001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv.grw_ehr_hr_she_0001">
+    <sca:interface.wsdl xmi:id="_jnGzVSQWEe2KWofoi2mvcQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_jnPWMCQWEe2KWofoi2mvcQ" name="RestService" path="/svc_ehr_al_sra_rcv.grw_ehr_hr_she_0001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_jno-0CQWEe2KWofoi2mvcQ" operationName="post" nickname="post-svc_ehr_al_sra_rcv" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_jnPWMSQWEe2KWofoi2mvcQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_jno-0SQWEe2KWofoi2mvcQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_fIuyEC2vEe2r34FqUbjKoA" name="svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001">
+    <sca:interface.wsdl xmi:id="_fI80gC2vEe2r34FqUbjKoA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_fJXrQC2vEe2r34FqUbjKoA" name="RestService1" path="/svc_ehr_al_sra_rcv.nc6_ehr_hr_shd_0001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_fJhcQC2vEe2r34FqUbjKoA" operationName="post" nickname="post-svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_fJx68C2vEe2r34FqUbjKoA"/>
+      <advancedConfig xmi:id="_fJXrQS2vEe2r34FqUbjKoA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_fJiDUC2vEe2r34FqUbjKoA" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_x10RYEOqEe21brs5leBebw" name="svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001">
+    <sca:interface.wsdl xmi:id="_x2C64EOqEe21brs5leBebw" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_x2aHQEOqEe21brs5leBebw" name="RestService2" path="/svc_ehr_al_sra_rcv.nc6_ehr_hr_shd_1001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_x2hcAEOqEe21brs5leBebw" operationName="post" nickname="post-svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_x2ltcEOqEe21brs5leBebw"/>
+      <advancedConfig xmi:id="_x2aHQUOqEe21brs5leBebw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_x2hcAUOqEe21brs5leBebw" bindingName="RestService2"/>
+  </sca:service>
+  <sca:service xmi:id="_UNMAsFjUEe2Qt5Q5EKabgA" name="svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001">
+    <sca:interface.wsdl xmi:id="_UNaqMFjUEe2Qt5Q5EKabgA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_UNp6wFjUEe2Qt5Q5EKabgA" name="RestService3" path="/svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_UNtlIFjUEe2Qt5Q5EKabgA" operationName="post" nickname="post-svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_UNwocFjUEe2Qt5Q5EKabgA"/>
+      <advancedConfig xmi:id="_UNp6wVjUEe2Qt5Q5EKabgA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_UNuMMFjUEe2Qt5Q5EKabgA" bindingName="RestService3"/>
+  </sca:service>
+  <sca:service xmi:id="_6FXOQGrREe2cltYY6jh8vA" name="svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001">
+    <sca:interface.wsdl xmi:id="_6Fw24GrREe2cltYY6jh8vA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_6GU3kGrREe2cltYY6jh8vA" name="RestService4" path="/svc_ehr_al_sra_rcv.svc_ehr_hr_shd_0001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_6GZwEGrREe2cltYY6jh8vA" operationName="post" nickname="post-svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_6GsD8GrREe2cltYY6jh8vA"/>
+      <advancedConfig xmi:id="_6GU3kWrREe2cltYY6jh8vA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_6GZwEWrREe2cltYY6jh8vA" bindingName="RestService4"/>
+  </sca:service>
+  <sca:service xmi:id="_K0loQJFsEe2nA9PfeeKLQQ" name="svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001">
+    <sca:interface.wsdl xmi:id="_K1BGEJFsEe2nA9PfeeKLQQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_K1bVwJFsEe2nA9PfeeKLQQ" name="RestService5" path="/svc_ehr_al_sra_rcv.svc_grw_hr_shh_0001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_K1gOQJFsEe2nA9PfeeKLQQ" operationName="post" nickname="post-svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_K1j4oJFsEe2nA9PfeeKLQQ"/>
+      <advancedConfig xmi:id="_K1bVwZFsEe2nA9PfeeKLQQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_K1gOQZFsEe2nA9PfeeKLQQ" bindingName="RestService5"/>
+  </sca:service>
+  <sca:service xmi:id="_FCzI4KIMEe2nA9PfeeKLQQ" name="svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001" promote="ComponentSVC_EHR_AL_SRA_RCV/svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001">
+    <sca:interface.wsdl xmi:id="_FCzv8KIMEe2nA9PfeeKLQQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_FDLjYKIMEe2nA9PfeeKLQQ" name="RestService6" path="/svc_ehr_al_sra_rcv.grw_coa_hr_shd_0001" docBasePath="http://localhost:7777/SVC_EHR_AL_0050.module" docResourcePath="SVC_EHR_AL_SRA_RCV" basePath="/" connector="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/common.SVC_EHR_AL_SRA_RCV-SVC_EHR_AL_SRA_RCV.json">
+      <operation xmi:id="_FDPNwKIMEe2nA9PfeeKLQQ" operationName="post" nickname="post-svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001" httpMethod="POST" notes="postSVC_EHR_AL_SRA_RCV" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_FFsE0KIMEe2nA9PfeeKLQQ"/>
+      <advancedConfig xmi:id="_FDLjYaIMEe2nA9PfeeKLQQ" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_FDPNwaIMEe2nA9PfeeKLQQ" bindingName="RestService6"/>
+  </sca:service>
+  <sca:property xmi:id="_2snOQPHGEeyI6_leuiDJEA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2sq4oPHGEeyI6_leuiDJEA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2ssGwPHGEeyI6_leuiDJEA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2st78PHGEeyI6_leuiDJEA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2svKEPHGEeyI6_leuiDJEA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2sw_QPHGEeyI6_leuiDJEA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2syNYPHGEeyI6_leuiDJEA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2s0CkPHGEeyI6_leuiDJEA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2s13wPHGEeyI6_leuiDJEA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_6pYl0PHGEeyI6_leuiDJEA" name="SAPMaxconnectionCounts" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pabAPHGEeyI6_leuiDJEA" name="SAPSncLib" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pcQMPHGEeyI6_leuiDJEA" name="SAPMsgServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pdeUPHGEeyI6_leuiDJEA" name="Encoding" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pfTgPHGEeyI6_leuiDJEA" name="SAPTimeout" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pghoPHGEeyI6_leuiDJEA" name="SAPGatewayHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6phvwPHGEeyI6_leuiDJEA" name="SAPClient" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pi94PHGEeyI6_leuiDJEA" name="SAPPassword" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6plaIPHGEeyI6_leuiDJEA" name="SAPAppServer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6podcPHGEeyI6_leuiDJEA" name="SAPProgramID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pq5sPHGEeyI6_leuiDJEA" name="SAPSncMode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pvyMPHGEeyI6_leuiDJEA" name="SAPLogonGroup" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pxnYPHGEeyI6_leuiDJEA" name="SAPSncMyname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6py1gPHGEeyI6_leuiDJEA" name="SAPSystemNumber" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p0DoPHGEeyI6_leuiDJEA" name="SAPSncPartnername" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p2f4PHGEeyI6_leuiDJEA" name="SAPGatewayService" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p7YYPHGEeyI6_leuiDJEA" name="SAPSystemName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6qCtIPHGEeyI6_leuiDJEA" name="SAPSncQop" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6qD7QPHGEeyI6_leuiDJEA" name="SAPUserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pWwoPHGEeyI6_leuiDJEA" name="/Resources/db/ehr/InsertTimeout" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pbCEPHGEeyI6_leuiDJEA" name="/Resources/db/ehr/SelectTimeout" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pprkPHGEeyI6_leuiDJEA" name="/Resources/db/ehr/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6ptV8PHGEeyI6_leuiDJEA" name="/Resources/db/ehr/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p48IPHGEeyI6_leuiDJEA" name="/Resources/db/ehr/Password" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p5jMPHGEeyI6_leuiDJEA" name="/Resources/db/ehr/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DDnngAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FxFTUAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_FyqnsAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_F0IAQAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_F1f5QAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/Password" type="property:password" scaext:simpleValue="#!LN+KnFi+eN1OUYuq1OOkfA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_F3W6cAF7Ee20F_hS60uFQw" name="/Resources/db/ccm/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LjfaEAMsEe2vz7yClZgieg" name="/Resources/db/iam/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L5-ncAMsEe2vz7yClZgieg" name="/Resources/db/iam/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L7SPAAMsEe2vz7yClZgieg" name="/Resources/db/iam/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L8izQAMsEe2vz7yClZgieg" name="/Resources/db/iam/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L92a0AMsEe2vz7yClZgieg" name="/Resources/db/iam/Password" type="property:password" scaext:simpleValue="#!Hs44mCSM5L9Za0Z+Ei6Mlg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L_ZS8AMsEe2vz7yClZgieg" name="/Resources/db/iam/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_phNUwBR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_p61VsBR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_p8SHMBR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_p9wt4BR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_p_M4UBR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/Password" type="property:password" scaext:simpleValue="#!mgCYulZAtZfZ16DCTMPcjw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_qAZLIBR0Ee2PaIN2wOg4ug" name="/Resources/db/gware/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_cjE6kCdxEe2TrdrWWpIASg" name="/Resources/db/nc6/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_duSwgCdxEe2TrdrWWpIASg" name="/Resources/db/nc6/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dvuT4CdxEe2TrdrWWpIASg" name="/Resources/db/nc6/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dxU2YCdxEe2TrdrWWpIASg" name="/Resources/db/nc6/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dyukkCdxEe2TrdrWWpIASg" name="/Resources/db/nc6/Password" type="property:password" scaext:simpleValue="#!lun3zYs++p1unxyv+fdZ0g==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dz30ECdxEe2TrdrWWpIASg" name="/Resources/db/nc6/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vcIxoCd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_w7_a0Cd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_w9f2sCd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_w_A5oCd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_xAT6ICd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/Password" type="property:password" scaext:simpleValue="#!bTTvbe3izJTxbSS7NfubuA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1fPjkCd5Ee2TrdrWWpIASg" name="/Resources/db/ehr_asis/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WBIH0EO9Ee21brs5leBebw" name="/Resources/db/edu/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z3tX0EO9Ee21brs5leBebw" name="/Resources/db/edu/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z31ToEO9Ee21brs5leBebw" name="/Resources/db/edu/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z38oYEO9Ee21brs5leBebw" name="/Resources/db/edu/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z4CvAEO9Ee21brs5leBebw" name="/Resources/db/edu/Password" type="property:password" scaext:simpleValue="#!0XLVgT/rhZCqKpYJrqzYQQ==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Z4MgAEO9Ee21brs5leBebw" name="/Resources/db/edu/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_yqkd8F8bEe2CnOgk_RbTUA" name="/Resources/db/plm/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zK3uoF8bEe2CnOgk_RbTUA" name="/Resources/db/plm/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zMYxkF8bEe2CnOgk_RbTUA" name="/Resources/db/plm/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zN2KIF8bEe2CnOgk_RbTUA" name="/Resources/db/plm/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zP4KcF8bEe2CnOgk_RbTUA" name="/Resources/db/plm/Password" type="property:password" scaext:simpleValue="#!/eyr0Z6U2Ho00Hz0tW2nUg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zRsIUF8bEe2CnOgk_RbTUA" name="/Resources/db/plm/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__EJLMF_2Ee2CnOgk_RbTUA" name="/Resources/db/mid68/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__rZ_gF_2Ee2CnOgk_RbTUA" name="/Resources/db/mid68/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__s7CcF_2Ee2CnOgk_RbTUA" name="/Resources/db/mid68/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__uM00F_2Ee2CnOgk_RbTUA" name="/Resources/db/mid68/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="__v1zkF_2Ee2CnOgk_RbTUA" name="/Resources/db/mid68/Password" type="property:password" scaext:simpleValue="#!vp8c3kxqW3r2pPk+6cNq5g==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Et_IkF_3Ee2CnOgk_RbTUA" name="/Resources/db/mid68/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_GEm20GCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HitzkGCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HkQrsGCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HltdMGCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/User" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HnuPYGCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/Password" type="property:password" scaext:simpleValue="#!lN2O+jCQ47X46ehkckvN8A==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_IBNtcGCzEe2Yl52nRXoaeA" name="/Resources/db/cwcommon/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kOJG4GFbEe2Yl52nRXoaeA" name="/Resources/db/cics/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kmkN8GFbEe2Yl52nRXoaeA" name="/Resources/db/cics/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_koJiUGFbEe2Yl52nRXoaeA" name="/Resources/db/cics/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kppXIGFbEe2Yl52nRXoaeA" name="/Resources/db/cics/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_krB3MGFbEe2Yl52nRXoaeA" name="/Resources/db/cics/Password" type="property:password" scaext:simpleValue="#!og4Wo/fnEKEP+SjRhB0EuQ==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kspAwGFbEe2Yl52nRXoaeA" name="/Resources/db/cics/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_J4eFwGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KK-LAGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KMa8gGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KN-bsGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KPL8oGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/Password" type="property:password" scaext:simpleValue="#!Ou4EEOVT9g10PeFzCv0hHg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_T96rwGF-Ee2Yl52nRXoaeA" name="/Resources/db/chorus/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_APA_QGVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ApWK0GVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Aq300GVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AsiBsGVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AuBPcGVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/Password" type="property:password" scaext:simpleValue="#!r0hdcuTM7VXrvbSbTnM5rw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AvgdMGVPEe2Yl52nRXoaeA" name="/Resources/db/ohp/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4nxTgGVuEe2cltYY6jh8vA" name="/Resources/db/ocms/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5CHGIGVuEe2cltYY6jh8vA" name="/Resources/db/ocms/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5DpXMGVuEe2cltYY6jh8vA" name="/Resources/db/ocms/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5FB3QGVuEe2cltYY6jh8vA" name="/Resources/db/ocms/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5GfP0GVuEe2cltYY6jh8vA" name="/Resources/db/ocms/Password" type="property:password" scaext:simpleValue="#!PpRVPeEDMZZLJCMjyAQDZw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5HxCMGVuEe2cltYY6jh8vA" name="/Resources/db/ocms/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BgzKgGewEe2cltYY6jh8vA" name="/Resources/db/csms/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C9ZEUGewEe2cltYY6jh8vA" name="/Resources/db/csms/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C-0nsGewEe2cltYY6jh8vA" name="/Resources/db/csms/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DAKrgGewEe2cltYY6jh8vA" name="/Resources/db/csms/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DBjyoGewEe2cltYY6jh8vA" name="/Resources/db/csms/Password" type="property:password" scaext:simpleValue="#!nuxeYSaMoBzYgBJ8LzvUOw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DCx6oGewEe2cltYY6jh8vA" name="/Resources/db/csms/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_f9ynkGlUEe2cltYY6jh8vA" name="/Resources/db/hkg/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hUswIGlUEe2cltYY6jh8vA" name="/Resources/db/hkg/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hWNMAGlUEe2cltYY6jh8vA" name="/Resources/db/hkg/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hXx5UGlUEe2cltYY6jh8vA" name="/Resources/db/hkg/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hZa4EGlUEe2cltYY6jh8vA" name="/Resources/db/hkg/Password" type="property:password" scaext:simpleValue="#!Mr3MWIgoHld4BEvL+Uvp8g==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_haxi8GlUEe2cltYY6jh8vA" name="/Resources/db/hkg/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7qCNsGlrEe2cltYY6jh8vA" name="/Resources/db/mbs/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8BrRoGlrEe2cltYY6jh8vA" name="/Resources/db/mbs/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8EtXgGlrEe2cltYY6jh8vA" name="/Resources/db/mbs/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8GKJAGlrEe2cltYY6jh8vA" name="/Resources/db/mbs/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8HrL8GlrEe2cltYY6jh8vA" name="/Resources/db/mbs/Password" type="property:password" scaext:simpleValue="#!sBHtDw4UY83agITfvCU4Kg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BUSlUGltEe2cltYY6jh8vA" name="/Resources/db/mbs/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kedKsGrmEe2cltYY6jh8vA" name="/Resources/db/law/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kwTvsGrmEe2cltYY6jh8vA" name="/Resources/db/law/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kxsPwGrmEe2cltYY6jh8vA" name="/Resources/db/law/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kzQ9EGrmEe2cltYY6jh8vA" name="/Resources/db/law/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_k07J8GrmEe2cltYY6jh8vA" name="/Resources/db/law/Password" type="property:password" scaext:simpleValue="#!80u3iUC3WCJxpKgbjFzbwg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_k2OKcGrmEe2cltYY6jh8vA" name="/Resources/db/law/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_sTjEIGuVEe2cltYY6jh8vA" name="/Resources/db/pop/InsertTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_sq1iwGuVEe2cltYY6jh8vA" name="/Resources/db/pop/SelectTimeout" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ssRGIGuVEe2cltYY6jh8vA" name="/Resources/db/pop/DatabaseDriver" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_strbYGuVEe2cltYY6jh8vA" name="/Resources/db/pop/User" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_svO6kGuVEe2cltYY6jh8vA" name="/Resources/db/pop/Password" type="property:password" scaext:simpleValue="#!MrvUV9tPEX9hgUnaEBKrAw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_swrsEGuVEe2cltYY6jh8vA" name="/Resources/db/pop/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pmoQPHGEeyI6_leuiDJEA" name="/Resources/ems/Timeout" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pukEPHGEeyI6_leuiDJEA" name="/Resources/ems/UserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p140PHGEeyI6_leuiDJEA" name="/Resources/ems/Password" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6p3uAPHGEeyI6_leuiDJEA" name="/Resources/ems/ProviderURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_2Jid0Ab4Ee2OuMnpep7IBQ" name="/Resources/http/grw/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7nmpAAb4Ee2OuMnpep7IBQ" name="/Resources/http/grw/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_2PGTQAb4Ee2OuMnpep7IBQ" name="/Resources/http/ppl/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8AMvMAb4Ee2OuMnpep7IBQ" name="/Resources/http/ppl/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dEVskBayEe2PaIN2wOg4ug" name="/Resources/http/coala/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dmNqkBayEe2PaIN2wOg4ug" name="/Resources/http/coala/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wlvqsCNrEe2hruxTKW8WCQ" name="/Resources/http/heartcone/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_xGkf0CNrEe2hruxTKW8WCQ" name="/Resources/http/heartcone/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_2kCsgCQYEe2wh_I1FApyLg" name="/Resources/http/svc_ehr_al_rcv/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6pjk8PHGEeyI6_leuiDJEA" name="/Destination/QueueName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6psH0PHGEeyI6_leuiDJEA" name="/Destination/QueueName_Reload" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6qBfAPHGEeyI6_leuiDJEA" name="/Destination/QueueName_ReloadAll" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NQCJACkLEe2r34FqUbjKoA" name="/Destination/QueueName_SVC.EHR.HR" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_2jfugPHGEeyI6_leuiDJEA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_2jfugfHGEeyI6_leuiDJEA" processName="svc_ehr_al_0050.module.SAP_EHR_HR_BSD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_4MepEPHHEeyI6_leuiDJEA" name="ComponentM_SetBaseInfo_OnStartUp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4MepEfHHEeyI6_leuiDJEA" processName="common.M_SetBaseInfo_OnStartUp"/>
+  </sca:component>
+  <sca:component xmi:id="_9PkIcPHHEeyI6_leuiDJEA" name="ComponentM_SetBaseInfo_Reload_All" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9PkIcfHHEeyI6_leuiDJEA" processName="common.M_SetBaseInfo_Reload_All"/>
+  </sca:component>
+  <sca:component xmi:id="_9hlskPHHEeyI6_leuiDJEA" name="ComponentM_SetBaseInfo_Reload" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9hlskfHHEeyI6_leuiDJEA" processName="common.M_SetBaseInfo_Reload"/>
+  </sca:component>
+  <sca:component xmi:id="_Mx5R8PW6Eeys5_smGVfG1w" name="ComponentEHR_GRW_HR_SEH_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Mx5R8fW6Eeys5_smGVfG1w" processName="svc_ehr_al_0050.module.EHR_GRW_HR_SEH_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_G3p1MPXHEeys5_smGVfG1w" name="ComponentETC_SAP_HR_SES_RCV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_G3p1MfXHEeys5_smGVfG1w" processName="common.SVC_EHR_AL_SEA_RCV"/>
+  </sca:component>
+  <sca:component xmi:id="_2zwAIACwEe2i3IwsnIGZdg" name="Component1Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_2zwAIQCwEe2i3IwsnIGZdg" processName="ehr_ccm_hr_bdd_0050.EHR_CCM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_rkyJQAGgEe20F_hS60uFQw" name="ComponentEHR_CCM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_rkyJQQGgEe20F_hS60uFQw" processName="ehr_ccm_hr_bdd_0050.EHR_CCM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_mzmdoAMeEe2vz7yClZgieg" name="ComponentEHR_CCM_HR_BDD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mznEsAMeEe2vz7yClZgieg" processName="ehr_ccm_hr_bdd_0050.EHR_CCM_HR_BDD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_H18mwAMrEe2vz7yClZgieg" name="ComponentEHR_IAM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_H18mwQMrEe2vz7yClZgieg" processName="ehr_iam_hr_0050.EHR_IAM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_TVzYcAMvEe2vz7yClZgieg" name="ComponentEHR_IAM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TVz_gAMvEe2vz7yClZgieg" processName="ehr_iam_hr_0050.EHR_IAM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_2Dri4Ab3Ee2OuMnpep7IBQ" name="ComponentEHR_PPL_HR_SER_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_2Dri4Qb3Ee2OuMnpep7IBQ" processName="svc_ehr_al_0050.module.EHR_PPL_HR_SER_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_derU0BRlEe2PaIN2wOg4ug" name="ComponentSAP_EHR_CS_BSD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_derU0RRlEe2PaIN2wOg4ug" processName="svc_ehr_al_0050.module.SAP_EHR_CS_BSD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_nW0wwBSIEe2PaIN2wOg4ug" name="Component2Process" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_nW0wwRSIEe2PaIN2wOg4ug" processName="svc_ehr_al_0050.module.EHR_SVC_HR_SEH_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_cTVW4CNqEe2hruxTKW8WCQ" name="ComponentGRW_EHR_HR_BHD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_cTV98CNqEe2hruxTKW8WCQ" processName="svc_ehr_al_0050.module.GRW_EHR_HR_BHD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_jnFlMCQWEe2KWofoi2mvcQ" name="ComponentSVC_EHR_AL_SRA_RCV" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_jnFlMSQWEe2KWofoi2mvcQ" processName="common.SVC_EHR_AL_SRA_RCV"/>
+    <sca:service xmi:id="_jnGMQCQWEe2KWofoi2mvcQ" name="svc_ehr_al_sra_rcv.grw_ehr_hr_she_0001">
+      <sca:interface.wsdl xmi:id="_jnGzUCQWEe2KWofoi2mvcQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_fIeTYC2vEe2r34FqUbjKoA" name="svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001">
+      <sca:interface.wsdl xmi:id="_fIsV0C2vEe2r34FqUbjKoA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_0001)"/>
+    </sca:service>
+    <sca:service xmi:id="_x1kZwEOqEe21brs5leBebw" name="svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001">
+      <sca:interface.wsdl xmi:id="_x1ycMEOqEe21brs5leBebw" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-nc6_ehr_hr_shd_1001)"/>
+    </sca:service>
+    <sca:service xmi:id="_UNHvQFjUEe2Qt5Q5EKabgA" name="svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001">
+      <sca:interface.wsdl xmi:id="_UNI9YFjUEe2Qt5Q5EKabgA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-ehr_sma_hr_sdh_1001)"/>
+    </sca:service>
+    <sca:service xmi:id="_6FE6YGrREe2cltYY6jh8vA" name="svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001">
+      <sca:interface.wsdl xmi:id="_6FUyAGrREe2cltYY6jh8vA" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0001)"/>
+    </sca:service>
+    <sca:service xmi:id="_K0TUYJFsEe2nA9PfeeKLQQ" name="svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001">
+      <sca:interface.wsdl xmi:id="_K0ik8JFsEe2nA9PfeeKLQQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-svc_grw_hr_shh_0001)"/>
+    </sca:service>
+    <sca:service xmi:id="_FCu3cKIMEe2nA9PfeeKLQQ" name="svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001">
+      <sca:interface.wsdl xmi:id="_FCu3caIMEe2nA9PfeeKLQQ" interface="http://xmlns.example.com/20220825103801PLT#wsdl.interface(svc_ehr_al_sra_rcv-grw_coa_hr_shd_0001)" scaext:wsdlLocation="../Processes/common/SVC_EHR_AL_SRA_RCV.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_QdmWgCdxEe2TrdrWWpIASg" name="ComponentIAM_NC6_HR_BDD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_QdmWgSdxEe2TrdrWWpIASg" processName="svc_ehr_al_0050.module.EHR_NC6_HR_BDD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_vA480Cg5Ee25u9N5EeLTkQ" name="Component1SAP_EHR_CS_BSD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_vA480Sg5Ee25u9N5EeLTkQ" processName="svc_ehr_al_0050.module.SAP_EHR_CS_BSD_1001"/>
+  </sca:component>
+  <sca:component xmi:id="_bMsYkChEEe2jdqHY7ZpOpQ" name="ComponentEHR_NC6_HR_BDD_0004_1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bMsYkShEEe2jdqHY7ZpOpQ" processName="svc_ehr_al_0050.module.EHR_NC6_HR_BDD_0004"/>
+  </sca:component>
+  <sca:component xmi:id="_pueH0DM4Ee2RlpkL-rZAZQ" name="ComponentSAP_NC6_HR_BSD_0005" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_pueH0TM4Ee2RlpkL-rZAZQ" processName="svc_ehr_al_0050.module.SAP_NC6_HR_BSD_0005"/>
+  </sca:component>
+  <sca:component xmi:id="_oisckDfrEe2kEafebpqIkQ" name="ComponentEHR_NC6_HR_SED_1004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oisckTfrEe2kEafebpqIkQ" processName="svc_ehr_al_0050.module.EHR_NC6_HR_SED_1004"/>
+  </sca:component>
+  <sca:component xmi:id="_upGLYDfxEe2kEafebpqIkQ" name="ComponentEHR_NC6_HR_SED_1006" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_upGLYTfxEe2kEafebpqIkQ" processName="svc_ehr_al_0050.module.EHR_NC6_HR_SED_1006"/>
+  </sca:component>
+  <sca:component xmi:id="__DXFsDiyEe2kEafebpqIkQ" name="ComponentEHR_IAM_HR_BDD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__DXFsTiyEe2kEafebpqIkQ" processName="ehr_iam_hr_0050.EHR_IAM_HR_BDD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_S3NEgDowEe25f4p2HAjm7g" name="ComponentSAP_EHR_HR_SSD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_S3NEgTowEe25f4p2HAjm7g" processName="svc_ehr_al_0050.module.SAP_EHR_HR_SSD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_6HVpwDo1Ee2zE4kEHHmZvA" name="ComponentSAP_EHR_HR_SSD_0002_1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_6HVpwTo1Ee2zE4kEHHmZvA" processName="svc_ehr_al_0050.module.SAP_EHR_HR_SSD_0002_1"/>
+  </sca:component>
+  <sca:component xmi:id="_zfZGED3-Ee2zE4kEHHmZvA" name="ComponentSAP_EHR_HR_BSD_0004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_zfZGET3-Ee2zE4kEHHmZvA" processName="svc_ehr_al_0050.module.SAP_EHR_HR_BSD_0004"/>
+  </sca:component>
+  <sca:component xmi:id="_am3ZcD_DEe24lZo7jnGmDQ" name="ComponentSAP_EHR_HR_BSD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_am3ZcT_DEe24lZo7jnGmDQ" processName="svc_ehr_al_0050.module.SAP_EHR_HR_BSD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_7t2WYEO-Ee21brs5leBebw" name="ComponentEDU_EHR_HR_DD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7t2WYUO-Ee21brs5leBebw" processName="svc_ehr_al_0050.module.EDU_EHR_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_gPKPkERhEe21brs5leBebw" name="ComponentEHR_NC6_HR_BDD_1003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_gPKPkURhEe21brs5leBebw" processName="svc_ehr_al_0050.module.EHR_NC6_HR_BDD_1003"/>
+  </sca:component>
+  <sca:component xmi:id="_ShERMEUMEe21brs5leBebw" name="ComponentEHR_IAM_HR_BDD_0004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ShERMUUMEe21brs5leBebw" processName="ehr_iam_hr_0050.EHR_IAM_HR_BDD_0004"/>
+  </sca:component>
+  <sca:component xmi:id="_aPxP4F8DEe2SgtWkDZZJcQ" name="ComponentSAP_IAM_HR_BSD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_aPxP4V8DEe2SgtWkDZZJcQ" processName="ehr_iam_hr_0050.SAP_IAM_HR_BSD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_Go8GUF8bEe2CnOgk_RbTUA" name="ComponentIAM_PLM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Go8GUV8bEe2CnOgk_RbTUA" processName="ehr_iam_hr_0050.IAM_PLM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_T3zy8F_tEe2CnOgk_RbTUA" name="ComponentIAM_PLM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_T3zy8V_tEe2CnOgk_RbTUA" processName="ehr_iam_hr_0050.IAM_PLM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_0qasYF_4Ee2CnOgk_RbTUA" name="ComponentIAM_M68_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_0qasYV_4Ee2CnOgk_RbTUA" processName="ehr_iam_hr_0050.IAM_M68_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_tVX0oF_8Ee2CnOgk_RbTUA" name="ComponentIAM_M68_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tVYbsF_8Ee2CnOgk_RbTUA" processName="ehr_iam_hr_0050.IAM_M68_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_Go0sQGC1Ee2Yl52nRXoaeA" name="ComponentIAM_CWC_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Go0sQWC1Ee2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_CWC_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_RpXyIGDBEe2Yl52nRXoaeA" name="ComponentIAM_CWC_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_RpXyIWDBEe2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_CWC_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_t2o44GFgEe2Yl52nRXoaeA" name="ComponentIAM_CIC_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_t2o44WFgEe2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_CIC_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_RNn48GF_Ee2Yl52nRXoaeA" name="ComponentIAM_CRS_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_RNn48WF_Ee2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_CRS_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_HPSgMGGCEe2Yl52nRXoaeA" name="ComponentIAM_CRS_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_HPSgMWGCEe2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_CRS_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_HdIWUGVQEe2Yl52nRXoaeA" name="ComponentIAM_OHP_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_HdIWUWVQEe2Yl52nRXoaeA" processName="ehr_iam_hr_0050.IAM_OHP_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_ql1Y4GVlEe2Ivtz56mHU3g" name="ComponentIAM_OHP_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ql1Y4WVlEe2Ivtz56mHU3g" processName="ehr_iam_hr_0050.IAM_OHP_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_NnBxIGVuEe2cltYY6jh8vA" name="ComponentIAM_OCM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_NnBxIWVuEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_OCM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_n5NHoGVyEe2cltYY6jh8vA" name="ComponentIAM_OCM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_n5NHoWVyEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_OCM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_Nr3XgGZjEe2cltYY6jh8vA" name="ComponentSVC_EHR_HR_SED_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Nr3XgWZjEe2cltYY6jh8vA" processName="svc_ehr_al_0050.module.SVC_EHR_HR_SED_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_bXL5sGewEe2cltYY6jh8vA" name="ComponentIAM_CSM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bXL5sWewEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_CSM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_V9vzAGe0Ee2cltYY6jh8vA" name="ComponentIAM_CSM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_V9vzAWe0Ee2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_CSM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_ABfFAGk-Ee2cltYY6jh8vA" name="ComponentIAM_HKG_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ABfFAWk-Ee2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_HKG_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_V5KdwGlQEe2cltYY6jh8vA" name="ComponentIAM_HKG_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_V5KdwWlQEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_HKG_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_UHmocGlvEe2cltYY6jh8vA" name="ComponentIAM_MBS_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UHmocWlvEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_MBS_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_oau4gGlxEe2cltYY6jh8vA" name="ComponentIAM_MBS_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oau4gWlxEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_MBS_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_RCYzkGrmEe2cltYY6jh8vA" name="ComponentIAM_LAW_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_RCYzkWrmEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_LAW_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_G7kCoGroEe2cltYY6jh8vA" name="ComponentIAM_LAW_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_G7kCoWroEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_LAW_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_J2yfkGuWEe2cltYY6jh8vA" name="ComponentIAM_POP_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_J2yfkWuWEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_POP_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_AEVxQGuaEe2cltYY6jh8vA" name="ComponentIAM_POP_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_AEVxQWuaEe2cltYY6jh8vA" processName="ehr_iam_hr_0050.IAM_POP_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_l-XE4G4gEe2MHcXoaf3oRw" name="ComponentEHR_PLM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_l-XE4W4gEe2MHcXoaf3oRw" processName="svc_ehr_al_0050.module.EHR_PLM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_ucqKEG4kEe2MHcXoaf3oRw" name="ComponentEHR_PLM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ucqKEW4kEe2MHcXoaf3oRw" processName="svc_ehr_al_0050.module.EHR_PLM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_uNCu0G4mEe2MHcXoaf3oRw" name="ComponentEHR_PLM_HR_BDD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_uNCu0W4mEe2MHcXoaf3oRw" processName="svc_ehr_al_0050.module.EHR_PLM_HR_BDD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_S6-oUG-FEe2MHcXoaf3oRw" name="ComponentSAP_IAM_HR_BSD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_S6_PYG-FEe2MHcXoaf3oRw" processName="ehr_iam_hr_0050.SAP_IAM_HR_BSD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_Fm21AHE0Ee2MHcXoaf3oRw" name="ComponentIAM_CCM_HR_BDD_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Fm21AXE0Ee2MHcXoaf3oRw" processName="ehr_iam_hr_0050.IAM_CCM_HR_BDD_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_UNUyUHE4Ee2MHcXoaf3oRw" name="ComponentIAM_CCM_HR_BDD_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UNUyUXE4Ee2MHcXoaf3oRw" processName="ehr_iam_hr_0050.IAM_CCM_HR_BDD_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_K2MksHFVEe2MHcXoaf3oRw" name="ComponentSAP_EHR_HR_BSD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_K2MksXFVEe2MHcXoaf3oRw" processName="svc_ehr_al_0050.module.SAP_EHR_HR_BSD_0003"/>
+  </sca:component>
+  <sca:component xmi:id="_DsZtsHHoEe2MHcXoaf3oRw" name="ComponentEHR_IAM_HR_BDD_0005" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_DsZtsXHoEe2MHcXoaf3oRw" processName="ehr_iam_hr_0050.EHR_IAM_HR_BDD_0005"/>
+  </sca:component>
+  <sca:component xmi:id="_Sj_EwHLfEe2MHcXoaf3oRw" name="ComponentSAP_IAM_HR_BDD_0004" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Sj_EwXLfEe2MHcXoaf3oRw" processName="ehr_iam_hr_0050.SAP_IAM_HR_BSD_0005"/>
+  </sca:component>
+  <sca:component xmi:id="_sGvCAHYbEe2MHcXoaf3oRw" name="ComponentSAP_IAM_HR_BSD_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_sGvCAXYbEe2MHcXoaf3oRw" processName="ehr_iam_hr_0050.SAP_IAM_HR_BSD_0003"/>
+  </sca:component>
+</sca:composite>

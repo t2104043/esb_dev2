@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_vKcmIV8bEe2CnOgk_RbTUA" name="db.PLM" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_vKpacF8bEe2CnOgk_RbTUA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_vKpacV8bEe2CnOgk_RbTUA">
+    <substitutionBindings xmi:id="_HpbdgF8cEe2CnOgk_RbTUA" template="username" propName="/Resources/db/plm/User"/>
+    <substitutionBindings xmi:id="_H0feAF8cEe2CnOgk_RbTUA" template="password" propName="/Resources/db/plm/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_vKpacl8bEe2CnOgk_RbTUA">
+      <substitutionBindings xmi:id="_IAU6kF8cEe2CnOgk_RbTUA" template="jdbcDriver" propName="/Resources/db/plm/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_ILwHcF8cEe2CnOgk_RbTUA" template="dbURL" propName="/Resources/db/plm/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

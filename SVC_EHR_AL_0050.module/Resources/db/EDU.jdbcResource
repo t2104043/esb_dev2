@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_QV64gUO9Ee21brs5leBebw" name="db.EDU" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_QWPooEO9Ee21brs5leBebw" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_QWPooUO9Ee21brs5leBebw">
+    <substitutionBindings xmi:id="_NAYDkEO-Ee21brs5leBebw" template="username" propName="/Resources/db/edu/User"/>
+    <substitutionBindings xmi:id="_NMZGUEO-Ee21brs5leBebw" template="password" propName="/Resources/db/edu/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_QWPookO9Ee21brs5leBebw">
+      <substitutionBindings xmi:id="_OBrvkEO-Ee21brs5leBebw" template="jdbcDriver" propName="/Resources/db/edu/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_OOT2UEO-Ee21brs5leBebw" template="dbURL" propName="/Resources/db/edu/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

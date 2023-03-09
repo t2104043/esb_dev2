@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_qid24V_2Ee2CnOgk_RbTUA" name="db.MID68" type="jdbc:JdbcDataSource">
+  <jndi:description>운영만 있음. 개발 배포시 주의</jndi:description>
+  <jndi:reference xmi:id="_qid24l_2Ee2CnOgk_RbTUA" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_qid241_2Ee2CnOgk_RbTUA">
+    <substitutionBindings xmi:id="_vaU9sF_2Ee2CnOgk_RbTUA" template="username" propName="/Resources/db/mid68/User"/>
+    <substitutionBindings xmi:id="_vlu8cF_2Ee2CnOgk_RbTUA" template="password" propName="/Resources/db/mid68/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_qid25F_2Ee2CnOgk_RbTUA">
+      <substitutionBindings xmi:id="_vyDhMF_2Ee2CnOgk_RbTUA" template="jdbcDriver" propName="/Resources/db/mid68/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_wAIZcF_2Ee2CnOgk_RbTUA" template="dbURL" propName="/Resources/db/mid68/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

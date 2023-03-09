@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EHR_SMA_HR_SDH_1001" xmlns:tns="http://www.example.org/EHR_SMA_HR_SDH_1001" elementFormDefault="qualified"   xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="EHR_SMA_HR_SDH_1001_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="EMPNO" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="EHR_SMA_HR_SDH_1001_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ITEM" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									 <element name="EMPNO" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="EMPNM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="TYPECD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="TYPENM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="CLASSCD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="CLASSNM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="WORKYMD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="WORKSTATM" type="string" maxOccurs="1" minOccurs="0"/>
+			
+									 <element name="WORKENDTM" type="string" maxOccurs="1" minOccurs="0"/>
+			
+									 <element name="APPLID" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

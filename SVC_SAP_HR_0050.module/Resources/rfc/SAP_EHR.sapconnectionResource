@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sapconnection="http://ns.tibco.com/bw/sharedresource/sapconnection" xmi:id="_JNLOoV4HEeyBEJxJCeCMng" name="rfc.SAP_EHR" type="sapconnection:SAPConnection">
+  <jndi:description>해당rfc - sap내부 암호관련 권한 적용문제&#xD;
+EHR_SAP_HR_BDS_0100	IF_OM_003	[HR] 조직 오브젝트 관리(eHR->SAP)				ZHR_HCG_HRP1000&#xD;
+EHR_SAP_HR_BDS_0200	IF_PA_008	[HR] 사원 발령 관리(eHR->SAP)				ZHR_HCG_PA0000&#xD;
+EHR_SAP_HR_BDS_0203	IF_OM_004	[HR] 사원 조직지정 관리(eHR->SAP)				ZHR_HCG_PA0001&#xD;
+EHR_SAP_HR_BDS_0201	IF_PA_009	[HR] 사원 개인정보 관리(eHR->SAP)				ZHR_HCG_PA0002&#xD;
+EHR_SAP_HR_BDS_0202	IF_PA_010	[HR] 사원 주소정보 관리(eHR->SAP)				ZHR_HCG_PA0006&#xD;
+EHR_SAP_HR_BDS_0204	IF_PY_011	[HR] 사원 계좌정보 관리(eHR->SAP)				ZHR_HCG_PA0027&#xD;
+EHR_SAP_HR_BDS_0110	IF_OM_003	[HR] 조직 오브젝트 관리_조직폐쇄(eHR->SAP)				ZHR_HCG_HRP1000_D&#xD;
+</jndi:description>
+  <jndi:configuration xsi:type="sapconnection:SAPConnection" xmi:id="_JNafMF4HEeyBEJxJCeCMng" clientConnName="rfc.SAP.ClientConnection" connType="Dedicated Application Server" language="Korean" snc_Bsso="0" snc_SSOrecv="" snc_x509="" s_serverConnName="rfc.SAP.ServerConnection" s_connType="Default" sapConnAlias="2c2cb2a0-537e-4977-a3ff-b6736d8f600d" languageCode="3">
+    <substitutionBindings xmi:id="_JNafMV4HEeyBEJxJCeCMng" template="appServer" propName="SAPAppServer"/>
+    <substitutionBindings xmi:id="_JNafMl4HEeyBEJxJCeCMng" template="systemNumber" propName="SAPSystemNumber"/>
+    <substitutionBindings xmi:id="_JNafM14HEeyBEJxJCeCMng" template="client" propName="SAPClient"/>
+    <substitutionBindings xmi:id="_JNafNF4HEeyBEJxJCeCMng" template="userName" propName="/Resources/sap_ehr/SAPUserName"/>
+    <substitutionBindings xmi:id="_JNafNV4HEeyBEJxJCeCMng" template="password" propName="/Resources/sap_ehr/SAPPassword"/>
+    <substitutionBindings xmi:id="_JNafNl4HEeyBEJxJCeCMng" template="systemName" propName="SAPSystemName"/>
+    <substitutionBindings xmi:id="_JNafN14HEeyBEJxJCeCMng" template="msgServer" propName="SAPMsgServer"/>
+    <substitutionBindings xmi:id="_JNafOF4HEeyBEJxJCeCMng" template="groupName" propName="SAPLogonGroup"/>
+    <substitutionBindings xmi:id="_JNafOV4HEeyBEJxJCeCMng" template="snc_mode" propName="SAPSncMode"/>
+    <substitutionBindings xmi:id="_JNafOl4HEeyBEJxJCeCMng" template="snc_partnername" propName="SAPSncPartnername"/>
+    <substitutionBindings xmi:id="_JNafO14HEeyBEJxJCeCMng" template="snc_qop" propName="SAPSncQop"/>
+    <substitutionBindings xmi:id="_JNafPF4HEeyBEJxJCeCMng" template="snc_lib" propName="SAPSncLib"/>
+    <substitutionBindings xmi:id="_JNafPV4HEeyBEJxJCeCMng" template="s_programID" propName="SAPProgramID"/>
+    <substitutionBindings xmi:id="_JNafPl4HEeyBEJxJCeCMng" template="s_gatewayService" propName="SAPGatewayService"/>
+    <substitutionBindings xmi:id="_JNafP14HEeyBEJxJCeCMng" template="s_gatewayHost" propName="SAPGatewayHost"/>
+    <substitutionBindings xmi:id="_JNafQF4HEeyBEJxJCeCMng" template="s_snc_mode" propName="SAPSncMode"/>
+    <substitutionBindings xmi:id="_JNafQV4HEeyBEJxJCeCMng" template="s_snc_qop" propName="SAPSncQop"/>
+    <substitutionBindings xmi:id="_JNafQl4HEeyBEJxJCeCMng" template="s_snc_myname" propName="SAPSncMyname"/>
+    <substitutionBindings xmi:id="_JNafQ14HEeyBEJxJCeCMng" template="s_snc_lib" propName="SAPSncLib"/>
+    <substitutionBindings xmi:id="_wXeCoH5uEeyuftdikPb2fA" template="maxConnections" propName="SAPMaxconnectionCounts"/>
+  </jndi:configuration>
+</jndi:namedResource>

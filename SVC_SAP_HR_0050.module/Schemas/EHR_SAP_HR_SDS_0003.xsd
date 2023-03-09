@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EHR_SAP_HR_SDS_0003" xmlns:tns="http://www.example.org/EHR_SAP_HR_SDS_0003" elementFormDefault="qualified"    xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="EHR_SAP_HR_SDS_0003_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="RfcRequest" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="BUKRS" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BLART" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BLDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BUDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BKTXT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="XREF2_HD" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="XBLNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="HR_BILL_ID" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ACC_PAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>	 
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="EHR_SAP_HR_SDS_0003_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="RfcResponse" maxOccurs="1" minOccurs="1">
+							<complexType>
+								<sequence>
+									 <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="E_BELNR" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_mi04ERR0Ee2PaIN2wOg4ug" name="db.GWARE" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_mi04EhR0Ee2PaIN2wOg4ug" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_mi04ExR0Ee2PaIN2wOg4ug">
+    <substitutionBindings xmi:id="_zwB5MBR0Ee2PaIN2wOg4ug" template="username" propName="/Resources/db/gware/User"/>
+    <substitutionBindings xmi:id="_z6GbMBR0Ee2PaIN2wOg4ug" template="password" propName="/Resources/db/gware/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_mi04FBR0Ee2PaIN2wOg4ug">
+      <substitutionBindings xmi:id="_0D6egBR0Ee2PaIN2wOg4ug" template="jdbcDriver" propName="/Resources/db/gware/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_0MytsBR0Ee2PaIN2wOg4ug" template="dbURL" propName="/Resources/db/gware/DatabaseUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>
