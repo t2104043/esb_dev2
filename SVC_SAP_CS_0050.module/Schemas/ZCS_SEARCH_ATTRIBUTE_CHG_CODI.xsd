@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZCS_SEARCH_ATTRIBUTE_CHG_CODI" xmlns:tns="http://www.example.org/ZCS_SEARCH_ATTRIBUTE_CHG_CODI" elementFormDefault="qualified" xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZCS_SEARCH_ATTRIBUTE_CHG_CODI_req">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_CODY_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_CODY_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_STAT1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZCS_SEARCH_ATTRIBUTE_CHG_CODI_rsp">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_ITEM" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="CODY_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CODY_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="MOB_NUMBER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="ORG_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="ORG_TXT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="WORK_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="AWART" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="ATEXT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CODE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:keystore="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/cred/keystore" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmi:id="_r7XHsfhUEeys5_smGVfG1w" name="svc_sap_fi_0050.module.UMSssl" type="sslclient:SSLClientConfiguration">
+  <jndi:reference xmi:id="_r7XHsvhUEeys5_smGVfG1w" key="trustStoreServiceProvider" type="keystore:KeystoreConfiguration" value="svc_sap_fi_0050.module.UMSkey"/>
+  <jndi:configuration xsi:type="sslclient:SSLClientConfiguration" xmi:id="_r7XHs_hUEeys5_smGVfG1w"/>
+</jndi:namedResource>

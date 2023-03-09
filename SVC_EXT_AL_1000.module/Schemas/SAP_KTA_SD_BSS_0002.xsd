@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SAP_KTA_SD_BSS_0002" xmlns:tns="http://www.example.org/SAP_KTA_SD_BSS_0002" elementFormDefault="qualified">
+<element name="SAP_KTA_SD_BSS_0002_req">
+	<complexType>
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="request">
+			<complexType>
+					<sequence>
+						<element name="CowayDcBnfitTrmInListDTO" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="pageNo" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="lastPageYn" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="cowayDcBnfitTrmInDTO" maxOccurs="unbounded" minOccurs="0">
+										<complexType>
+											<sequence>
+												<element name="ifSvcContId" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="dcEfctStDt" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="dcEfctFnsDt" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="prodDcYn" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="dcAmt" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="dcMonsTmscnt" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="pinNoEcodVal" type="string" maxOccurs="1" minOccurs="0"/>
+												<element name="custNmEcodVal" type="string" maxOccurs="1" minOccurs="0"/>
+											</sequence>
+										</complexType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="SAP_KTA_SD_BSS_0002_rsp">
+	<complexType>
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="response">
+			<complexType>
+				<sequence>
+					<element name="CowayDcBnfitTrmOutListDTO" maxOccurs="1" minOccurs="0">
+						<complexType>
+							<sequence>
+								<element name="cowayDcBnfitTrmOutDTO" maxOccurs="unbounded" minOccurs="0">
+									<complexType>
+										<sequence>
+											<element name="ifSvcContId" type="string" maxOccurs="1" minOccurs="0"/>
+											<element name="resultCode" type="string" maxOccurs="1" minOccurs="0"/>
+											<element name="message" type="string" maxOccurs="1" minOccurs="0"/>
+										</sequence>
+									</complexType>
+								</element>
+							</sequence>
+						</complexType>
+					</element>
+				</sequence>
+			</complexType>
+			</element>
+			<element name="transactionid" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="sequenceno" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="returncode" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="returndescription" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="errorcode" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="errordescription" type="string" maxOccurs="1" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</element>
+<element name="Authorization">
+	<complexType>
+		<sequence>
+			<element name="ID" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="PASSWORD" type="string" maxOccurs="1" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</element>
+</schema>

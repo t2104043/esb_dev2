@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Z_PP_ERP_TO_CCMS_REFRG" xmlns:tns="http://www.example.org/Z_PP_ERP_TO_CCMS_REFRG" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="Z_PP_ERP_TO_CCMS_REFRG_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="REQUEST_YM" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="Z_PP_ERP_TO_CCMS_REFRG_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+					<element name="ET_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+<element name="YYYYMM" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="WERKS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MAKTX" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MENGE_MEINS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MEINS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="WRBTR" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="WAERS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MENGE" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="MEINH" type="string" maxOccurs="1" minOccurs="0"/>
+
+								</sequence>
+							</complexType>
+						</element>						
+						<element name="E_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

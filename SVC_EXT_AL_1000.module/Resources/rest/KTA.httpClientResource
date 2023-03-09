@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmi:id="_ZE7AoQvxEe2ne9MsPAZ7GQ" name="rest.KTA" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_wSCngAvxEe2ne9MsPAZ7GQ" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_wSCngQvxEe2ne9MsPAZ7GQ" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_wSCnggvxEe2ne9MsPAZ7GQ" name="transport">
+        <id:IdentityReference xmi:id="_wSDOkAvxEe2ne9MsPAZ7GQ" URI="ssl.KT_SSLClient" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_ZE7AogvxEe2ne9MsPAZ7GQ" useSSL="true" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_ZE7AowvxEe2ne9MsPAZ7GQ">
+      <substitutionBindings xmi:id="_3lCqwEO6Ee2y_9Uei7jhuQ" template="host" propName="/Resources/rest/KT/host"/>
+      <substitutionBindings xmi:id="_Rvkd8EO7Ee2y_9Uei7jhuQ" template="port" propName="/Resources/rest/KT/port"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

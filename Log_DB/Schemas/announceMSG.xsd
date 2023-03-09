@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/announceMSG" xmlns:tns="http://www.example.org/announceMSG" elementFormDefault="qualified" xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="announceMSG">
+		<complexType>
+			<sequence>
+				<element name="merge" maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element type="string" name="str" maxOccurs="1" minOccurs="0"/>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+<element name="mergeTag">
+	<complexType>
+		<sequence>
+			<element type="string" name="strTable" maxOccurs="1" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</element>
+<element name="SVC_UMS_AL_SER_0001">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="unbounded" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="FROMADDRESS" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="AUTOTYPEDESC" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="LEGACYID" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="EMAIL" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SENDTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SEND_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="CONTENTS" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="NAME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="DEPTCODE_OP" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="DEPTCODE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="FROMNAME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SEND_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TITLE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="AUTOTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

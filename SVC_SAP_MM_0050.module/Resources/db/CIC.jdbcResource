@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_eZ0GYWI3Eeyo76TJ_gs2Cg" name="db.CIC" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_eZ_FgGI3Eeyo76TJ_gs2Cg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_eZ_FgWI3Eeyo76TJ_gs2Cg">
+    <substitutionBindings xmi:id="_OfCPQGI4Eeyo76TJ_gs2Cg" template="username" propName="/Resources/db/cic/User"/>
+    <substitutionBindings xmi:id="_Pt7EQGI4Eeyo76TJ_gs2Cg" template="password" propName="/Resources/db/cic/Password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_eZ_FgmI3Eeyo76TJ_gs2Cg">
+      <substitutionBindings xmi:id="__sOroFizEe2r7L94qTo14A" template="jdbcDriver" propName="/Resources/db/cic/DatabaseDriver"/>
+      <substitutionBindings xmi:id="_M7KyIFi0Ee2r7L94qTo14A" template="dbURL" propName="/Resources/db/cic/DatabaseUrl"/>
+    </connectionConfig>
+    <connectionProperties xmi:id="_8WCq8FaaEe2r7L94qTo14A" key="jarFile" value="mysql"/>
+  </jndi:configuration>
+</jndi:namedResource>

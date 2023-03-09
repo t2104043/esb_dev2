@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:r3="http://www.tibco.com/xmlns/sapscalar/2015/05" xmlns:tns="http://www.tibco.com/xmlns/sap/SAP/ZHR_FIX_ORG_INFO_N" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/sap/SAP/ZHR_FIX_ORG_INFO_N" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.tibco.com/xmlns/sapscalar/2015/05" schemaLocation="/Schemas/.SAP/SAPSchema.xsd"/>
+    <xsd:element name="RequestInputType" type="tns:RequestInputTypeParam"/>
+    <xsd:complexType name="RequestInputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="timeout" type="xsd:long"/>
+            <xsd:element name="RfcRequest" type="tns:ZHR_FIX_ORG_INFO_N_RequestParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcRequest" type="tns:ZHR_FIX_ORG_INFO_N_RequestParam"/>
+    <xsd:complexType name="ZHR_FIX_ORG_INFO_N_RequestParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="IS_DATAX" type="tns:ZHRS5012X"/>
+            <xsd:element minOccurs="1" name="I_PERNR" r3:abapType="N" r3:document="사원번호" r3:javaType="java.lang.String" r3:jcoType="6">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_STDAT" r3:abapType="D" r3:document="기준일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_WPIN" r3:abapType="C" r3:document="'' = 복호화, 'X' = 암호화(WEB)" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RequestOutputType" type="tns:RequestOutputTypeParam"/>
+    <xsd:complexType name="RequestOutputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CPIC_ID" type="xsd:string"/>
+            <xsd:element name="RfcResponse" type="tns:ZHR_FIX_ORG_INFO_N_ResponseParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcResponse" type="tns:ZHR_FIX_ORG_INFO_N_ResponseParam"/>
+    <xsd:complexType name="ZHR_FIX_ORG_INFO_N_ResponseParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="O_KOSTL" r3:abapType="C" r3:document="코스트센터" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="O_PERINFO" type="tns:ZHRS5012"/>
+            <xsd:element minOccurs="0" name="O_PRCTR" r3:abapType="C" r3:document="손익센터" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SAPSystemException" type="tns:ZHR_FIX_ORG_INFO_N_FaultParam"/>
+    <xsd:complexType name="ZHR_FIX_ORG_INFO_N_FaultParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OTHERS" type="tns:RFCException"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZHRS5012X">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="PERNR" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SNAME" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STAT2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="4">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TEXT2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="6">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NUM01" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="8">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NUM02" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="10">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MOBI" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="12">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CHIEF" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="14">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="16">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CNAME" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="18">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="20">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WNAME" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="22">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="24">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GNAME" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="26">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ORGEH" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="28">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ORGTX" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="30">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WERKS" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="32">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NAME1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="34">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERSG" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="36">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PTEXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="38">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERSK" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="40">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PKTXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="42">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="REGNO" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="44">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PSTLZ" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="46">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STATE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="48">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BEZEI" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="50">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ADDRS" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="52">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="HTELN" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="54">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TELNR" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="56">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STAT1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="58">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TEXT1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="60">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="62">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="64">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="66">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="68">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="70">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="72">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="74">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="76">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="78">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="80">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="82">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="84">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="86">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="88">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="90">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="92">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="94">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="96">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="98">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="100">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="102">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="104">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="106">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="108">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="110">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="112">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="114">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="116">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="118">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="120">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="122">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="124">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="126">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="128">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="130">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="132">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="134">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="136">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="138">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H6" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="140">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="142">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="144">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="146">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="148">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="150">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L1" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="152">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="154">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="156">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="158">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="160">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="162">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L2" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="164">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="166">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="168">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="170">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="172">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="174">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L3" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="176">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="178">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="180">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="182">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="184">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="186">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L4" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="188">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="190">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="192">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="194">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="196">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="198">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L5" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="200">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERNO" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="202">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ENAME" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="204">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="206">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BTEXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="208">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="LPTYP" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="210">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="LPTXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="212">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BUKRS" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="214">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BUTXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="216">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CHFNO" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="218">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="DR_PART" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="220">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="222">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OSUBC" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="224">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SCODE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="226">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SCOXT" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="228">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="H_MAX_DATE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="230">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="X_MAX_DATE" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="232">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZSRSCD" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="234">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZSRSTX" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="236">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="KOSTL" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="238">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PRCTR" nillable="true" r3:abapType="C" r3:document="일반표시" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="240">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZHRS5012">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="PERNR" nillable="true" r3:abapType="N" r3:document="ID No." r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SNAME" nillable="true" r3:abapType="C" r3:document="사원 이름(성명으로 정렬 가능)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="16">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STAT2" nillable="true" r3:abapType="C" r3:document="계약상태" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="76">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TEXT2" nillable="true" r3:abapType="C" r3:document="텍스트 (40 문자)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="78">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NUM01" nillable="true" r3:abapType="C" r3:document="통신 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="158">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NUM02" nillable="true" r3:abapType="C" r3:document="통신 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="198">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MOBI" nillable="true" r3:abapType="C" r3:document="통신 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="238">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CHIEF" nillable="true" r3:abapType="C" r3:document="문자 필드 길이 1" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="278">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CCODE" nillable="true" r3:abapType="C" r3:document="직책" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="280">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CNAME" nillable="true" r3:abapType="C" r3:document="직책/직위/직급 TEXT" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="288">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WCODE" nillable="true" r3:abapType="C" r3:document="직위" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="348">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WNAME" nillable="true" r3:abapType="C" r3:document="직책/직위/직급 TEXT" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="356">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GCODE" nillable="true" r3:abapType="C" r3:document="직급" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="416">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GNAME" nillable="true" r3:abapType="C" r3:document="직책/직위/직급 TEXT" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="424">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ORGEH" nillable="true" r3:abapType="N" r3:document="조직 단위" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="484">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ORGTX" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="500">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WERKS" nillable="true" r3:abapType="C" r3:document="회사영역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="580">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NAME1" nillable="true" r3:abapType="C" r3:document="인사 영역 텍스트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="588">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERSG" nillable="true" r3:abapType="C" r3:document="그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="648">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PTEXT" nillable="true" r3:abapType="C" r3:document="사원 그룹 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="650">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERSK" nillable="true" r3:abapType="C" r3:document="하위 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="690">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PKTXT" nillable="true" r3:abapType="C" r3:document="사원 하위 그룹 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="694">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="REGNO" nillable="true" r3:abapType="C" r3:document="주민번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="734">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="13"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PSTLZ" nillable="true" r3:abapType="C" r3:document="우편번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="760">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STATE" nillable="true" r3:abapType="C" r3:document="지역(시/도, 도, 군)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="780">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BEZEI" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="786">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ADDRS" nillable="true" r3:abapType="C" r3:document="번지 및 상세 주소" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="826">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="60"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="HTELN" nillable="true" r3:abapType="C" r3:document="전화번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="946">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="14"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TELNR" nillable="true" r3:abapType="C" r3:document="전화번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="974">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="25"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STAT1" nillable="true" r3:abapType="C" r3:document="고객별 상태" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1024">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TEXT1" nillable="true" r3:abapType="C" r3:document="텍스트 (40 문자)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1026">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1106">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1114">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1154">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1160">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H1" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="1200">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H1" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1216">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H1" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1296">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H1" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1304">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H1" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1344">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H1" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1350">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H2" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="1390">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H2" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1406">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H2" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1486">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H2" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1494">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H2" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1534">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H2" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1540">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H3" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="1580">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H3" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1596">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H3" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1676">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H3" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1684">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H3" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1724">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H3" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1730">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H4" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="1770">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H4" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1786">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H4" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1866">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H4" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1874">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H4" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1914">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H4" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1920">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H5" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="1960">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H5" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1976">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H5" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2056">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H5" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2064">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H5" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2104">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H5" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2110">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_H6" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="2150">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_H6" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2166">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_H6" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2246">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_H6" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2254">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_H6" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2294">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_H6" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2300">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L1" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="2340">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L1" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2356">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L1" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2436">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L1" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2444">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L1" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2484">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L1" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2490">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L2" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="2530">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L2" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2546">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L2" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2626">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L2" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2634">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L2" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2674">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L2" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2680">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L3" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="2720">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L3" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2736">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L3" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2816">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L3" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2824">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L3" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2864">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L3" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2870">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L4" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="2910">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L4" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2926">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L4" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3006">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L4" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3014">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L4" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3054">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L4" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3060">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OBJID_L5" nillable="true" r3:abapType="N" r3:document="오브젝트 ID" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="3100">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STEXT_L5" nillable="true" r3:abapType="C" r3:document="오브젝트 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3116">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKBUR_L5" nillable="true" r3:abapType="C" r3:document="사업장" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3196">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKBTX_L5" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3204">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="VKGRP_L5" nillable="true" r3:abapType="C" r3:document="영업 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3244">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZVKGTX_L5" nillable="true" r3:abapType="C" r3:document="내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3250">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="PERNO" nillable="true" r3:abapType="N" r3:document="ID No." r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="3290">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ENAME" nillable="true" r3:abapType="C" r3:document="ID No. 포맷이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3306">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BCODE" nillable="true" r3:abapType="C" r3:document="본부구분" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3386">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BTEXT" nillable="true" r3:abapType="C" r3:document="본부구분 설명" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3394">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="LPTYP" nillable="true" r3:abapType="C" r3:document="조직원 유형 코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3454">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="LPTXT" nillable="true" r3:abapType="C" r3:document="조직원 유형 텍스트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3462">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BUKRS" nillable="true" r3:abapType="C" r3:document="회사 코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3522">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="BUTXT" nillable="true" r3:abapType="C" r3:document="회사 코드 또는 회사 이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3530">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="25"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CHFNO" nillable="true" r3:abapType="N" r3:document="ID No." r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="3580">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="DR_PART" nillable="true" r3:abapType="C" r3:document="닥터조" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3596">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OCODE" nillable="true" r3:abapType="C" r3:document="조직레벨" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3600">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="OSUBC" nillable="true" r3:abapType="C" r3:document="조직하위레벨" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3608">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SCODE" nillable="true" r3:abapType="C" r3:document="부문코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3612">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SCOXT" nillable="true" r3:abapType="C" r3:document="부문코드 설명" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3620">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="H_MAX_DATE" nillable="true" r3:abapType="D" r3:document="최근등록일(A0/A2/A4 중 최근)" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="3680">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="X_MAX_DATE" nillable="true" r3:abapType="D" r3:document="최근해약일(A8/A9 중 최근)" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="3696">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZSRSCD" nillable="true" r3:abapType="C" r3:document="급수코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3712">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ZSRSTX" nillable="true" r3:abapType="C" r3:document="급수텍스트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="3720">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RFCException">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="msg" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="msgCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

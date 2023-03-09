@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.coway.com/ZSD_1000_ECONTRACT_INFO" xmlns:tns="http://www.coway.com/ZSD_1000_ECONTRACT_INFO" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_1000_ECONTRACT_INFO_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_ZSND_NO" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZSD_1000_ECONTRACT_INFOrsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="E_ZSND_NO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ES_LIST" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="BAHNS" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MOB_NUMBER" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>		
+						<element name="ET_LIST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="CONTRACT_TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>		
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

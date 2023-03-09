@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZCS_IF_JOB_LIST" xmlns:tns="http://www.example.org/ZCS_IF_JOB_LIST" elementFormDefault="qualified" xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZCS_IF_JOB_LIST_req">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_JOB_DT_FR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_JOB_DT_TO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_PLAN_DEPT_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_RECV_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_VKGRP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_PLAN_TM_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_DELAY_DAYS_DOWN" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_DELAY_DAYS_UP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="IT_JOB_TP" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LOW" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_EMPL_NO" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LOW" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_STATUS" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LOW" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_PRODH2" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LOW" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_ORDERNO" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LOW" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZCS_IF_JOB_LIST_rsp">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_LIST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+<element name="ORDER_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_SEQ" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_TP_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="EQUNR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="QMNUM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="AUFNR1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="AUFNR2" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="STATUS" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="STATUS_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PLAN_DEPT_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="BEZEI" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PLAN_UEMPL_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="SNAME" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PLAN_TM_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="KUNNR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="CUST_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="GOODS_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="GOODS_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ZIP_SEQ" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ZIP1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ZIP2" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR2" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR1_ROAD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR2_ROAD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR1_LOT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ADDR2_LOT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="FIRST_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PASS_UEMPL_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="UEMPL_NO_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="DELAY_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="VKGRP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="VKGRP_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="RECV_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="RECV_DTL_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="RECV_DTL_TP_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_RECV_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="JOB_RECV_TP_TX" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ARRIVE_TM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="TPLNR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PASS_RSN" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="UPDT_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="UPDT_TM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PROC_TM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="UPDT_USER_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="UPDT_USER_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="CUST_REQ_DESC" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="E_CANCEL_SVC" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PLAN_TM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ET_EHR" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="WORKYMD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="EMPNO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="EMPNM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="WCODE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="CCODE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PERNO1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ENAME1" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PERNO2" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ENAME2" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="PERNO3" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ENAME3" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="ETC_INOUT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CODE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

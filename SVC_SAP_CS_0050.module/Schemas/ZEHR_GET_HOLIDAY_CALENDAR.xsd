@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZEHR_GET_HOLIDAY_CALENDAR" xmlns:tns="http://www.example.org/ZEHR_GET_HOLIDAY_CALENDAR" elementFormDefault="qualified" xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZEHR_GET_HOLIDAY_CALENDAR_req">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_YEAR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_MONTH" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZEHR_GET_HOLIDAY_CALENDAR_rsp">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element maxOccurs="unbounded" minOccurs="0" name="T_LIST">
+							<complexType>
+								<sequence>
+									<element name="DATUM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="LTEXT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

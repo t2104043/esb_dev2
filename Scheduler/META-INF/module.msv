@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="BatchSchedules" type="{http://www.cspi_scheduler.org/Scheduler}BatchSchedules" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_scheduler.org/Scheduler" location="../Schemas/Scheduler.xsd"/>
+</msv:DocumentRoot>

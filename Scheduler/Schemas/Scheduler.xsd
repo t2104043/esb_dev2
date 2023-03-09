@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.cspi_scheduler.org/Scheduler" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:Scheduler="http://www.cspi_scheduler.org/Scheduler">
+
+    <complexType name="CurrentInfo">
+    	<sequence>
+    		<element name="DayOfMonth" type="string"></element>
+    		<element name="DayOfWeek" type="string"></element>
+    		<element name="Hour" type="string"></element>
+    		<element name="Minute" type="string"></element>
+    		<element name="Month" type="string"></element>
+    		<element name="Year" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+
+    <complexType name="ScheduleInfo">
+    	<sequence>
+    		<element name="CycleUnit" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="EndDate" type="string"></element>
+    		<element name="EndTime" type="string"></element>
+    		<element name="Interval" type="string" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="StartDate" type="string"></element>
+    		<element name="StartTime" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="ScheduleSkip" type="boolean"></element>
+
+    <element name="ScheduleInfo" type="Scheduler:ScheduleInfo"></element>
+
+    <element name="CheckScheduleInfo">
+    	<complexType>
+    		<sequence>
+    			<element name="CurrentInfo"
+    				type="Scheduler:CurrentInfo">
+    			</element>
+    			<element name="ScheduleInfo" type="Scheduler:ScheduleInfo"></element>
+    		</sequence>
+    	</complexType></element>
+
+
+
+    <element name="CurrentInfo" type="Scheduler:CurrentInfo"></element>
+
+    <element name="ScheduleResult">
+    	<complexType>
+    		<sequence>
+    			<element name="InterfaceSysId" type="string"></element>
+    			<element name="LastSendDateTime" type="dateTime"></element>
+    			<element name="LastSendResult" type="string"></element>
+    			<element name="BatchSchedule" type="Scheduler:BatchSchedule"></element>
+    		</sequence>
+    	</complexType></element>
+
+    <complexType name="BatchSchedule">
+    	<sequence>
+    		<element name="Destination" type="string"></element>
+    		<element name="InterfaceId" type="string"></element>
+    		<element name="ScheduleInfo" type="Scheduler:ScheduleInfo"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="BatchSchedules">
+    	<complexType>
+    		<sequence>
+    			<element name="BatchSchedule" type="Scheduler:BatchSchedule" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType></element>
+</schema>

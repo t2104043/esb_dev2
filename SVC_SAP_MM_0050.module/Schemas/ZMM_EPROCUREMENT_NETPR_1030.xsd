@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPROCUREMENT_NETPR_1030" xmlns:tns="http://www.example.org/ZMM_EPROCUREMENT_NETPR_1030" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPROCUREMENT_NETPR_1030_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="IT_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+         <element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BLIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="ESOKZ" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="EKORG" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="WERKS" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="MWSKZ" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BNETPR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="NETPR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="PEINH" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="WAERS" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="SAYU" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="SAYU1" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="LEVEL3" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="DATAB" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BDATU" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="CAPD_D" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="SABUN" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZMM_EPROCUREMENT_NETPR_1030_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+         <element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="WERKS" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="EKORG" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="ESOKZ" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="NETPR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="PEINH" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="WAERS" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="DATAB" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BDATU" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="SAYU" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="SAYU1" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="LEVEL3" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BLIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="BNETPR" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="MSG_TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						 <element name="RGQNO" type="string" maxOccurs="1" minOccurs="0"/>
+						  <element name="RESULT" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

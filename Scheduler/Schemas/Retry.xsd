@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Retry" xmlns:tns="http://www.example.org/Retry" elementFormDefault="qualified">
+<element name="Retry">
+				<complexType>
+					<sequence>
+						<element name="IF_ID" type="string"/>
+						<element name="QUEUE" type="string"/>
+						<element name="COUNT" type="int"/>
+						<element name="DELAY" type="int"/>
+					</sequence>
+				</complexType>
+			</element>
+</schema>

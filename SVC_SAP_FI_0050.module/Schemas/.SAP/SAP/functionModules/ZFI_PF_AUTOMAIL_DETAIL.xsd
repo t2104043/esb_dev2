@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:r3="http://www.tibco.com/xmlns/sapscalar/2015/05" xmlns:tns="http://www.tibco.com/xmlns/sap/SAP/ZFI_PF_AUTOMAIL_DETAIL" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/sap/SAP/ZFI_PF_AUTOMAIL_DETAIL" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.tibco.com/xmlns/sapscalar/2015/05" schemaLocation="/Schemas/.SAP/SAPSchema.xsd"/>
+    <xsd:element name="RequestInputType" type="tns:RequestInputTypeParam"/>
+    <xsd:complexType name="RequestInputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="timeout" type="xsd:long"/>
+            <xsd:element name="RfcRequest" type="tns:ZFI_PF_AUTOMAIL_DETAIL_RequestParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcRequest" type="tns:ZFI_PF_AUTOMAIL_DETAIL_RequestParam"/>
+    <xsd:complexType name="ZFI_PF_AUTOMAIL_DETAIL_RequestParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="I_BUKRS" r3:abapType="C" r3:document="회사 코드" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_FR_DATE" r3:abapType="D" r3:document="일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_GGUBN" r3:abapType="C" r3:document="집계처리구분 ( 'A1' - 자동발행 , 'B1'-수기발행)" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="I_INVNO" r3:abapType="C" r3:document="세금계산서번호" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_MGUBN" r3:abapType="C" r3:document="메일 발행 구분( '01'- 세금계산서 기준 )" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="I_ORDER_NO" r3:abapType="C" r3:document="고객주문번호" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="12"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_PERNR" r3:abapType="N" r3:document="인사마스터데이타 레포팅을 위한 표준선택" r3:javaType="java.lang.String" r3:jcoType="6">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_SE_DATE" r3:abapType="D" r3:document="일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="I_STCD2" r3:abapType="C" r3:document="세금번호 2" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="11"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="I_TO_DATE" r3:abapType="D" r3:document="일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="E_ESB" type="tns:sequence_lsqb_ZCWSDCS7000_rsqb_"/>
+            <xsd:element minOccurs="1" name="O_ITEM" type="tns:sequence_lsqb_ZFIS3025_rsqb_"/>
+            <xsd:element minOccurs="1" name="O_LOG" type="tns:sequence_lsqb_ZFIS3024_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RequestOutputType" type="tns:RequestOutputTypeParam"/>
+    <xsd:complexType name="RequestOutputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CPIC_ID" type="xsd:string"/>
+            <xsd:element name="RfcResponse" type="tns:ZFI_PF_AUTOMAIL_DETAIL_ResponseParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcResponse" type="tns:ZFI_PF_AUTOMAIL_DETAIL_ResponseParam"/>
+    <xsd:complexType name="ZFI_PF_AUTOMAIL_DETAIL_ResponseParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="RETURN" type="tns:ZRETRETURN"/>
+            <xsd:element minOccurs="0" name="E_ESB" type="tns:sequence_lsqb_ZCWSDCS7000_rsqb_"/>
+            <xsd:element minOccurs="1" name="O_ITEM" type="tns:sequence_lsqb_ZFIS3025_rsqb_"/>
+            <xsd:element minOccurs="1" name="O_LOG" type="tns:sequence_lsqb_ZFIS3024_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SAPSystemException" type="tns:ZFI_PF_AUTOMAIL_DETAIL_FaultParam"/>
+    <xsd:complexType name="ZFI_PF_AUTOMAIL_DETAIL_FaultParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OTHERS" type="tns:RFCException"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZCWSDCS7000_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZCWSDCS7000"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZCWSDCS7000">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="IF_ID" nillable="true" r3:abapType="C" r3:document="인터페이스ID" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IF_UUID" nillable="true" r3:abapType="C" r3:document="UUID" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="40">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="36"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IF_HOST" nillable="true" r3:abapType="C" r3:document="EBS 호출/응답 한 곳의 호스트명(or IP Address)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="112">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="100"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IF_DATE" nillable="true" r3:abapType="C" r3:document="EBS 호출/응답 한 곳의 시간  (YYYYMMDDHH24miSS)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="312">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="14"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="IF_ADDITIONAL_DATA" nillable="true" r3:abapType="C" r3:document="추가사용필드(향후 확장 대비)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="340">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="100"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="RST_CD" nillable="true" r3:abapType="C" r3:document="처리결과 코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="540">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="RST_MSG" nillable="true" r3:abapType="C" r3:document="처리결과 메시지" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="548">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1000"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZFIS3025_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZFIS3025"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZFIS3025">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="BUKRS" nillable="true" r3:abapType="C" r3:document="회사 코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GGUBN" nillable="true" r3:abapType="C" r3:document="집계처리구분 ( 'A1' - 자동발행 , 'B1'-수기발행)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="8">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MGUBN" nillable="true" r3:abapType="C" r3:document="메일 발행 구분( '01'- 세금계산서 기준 )" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="12">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MDAT" nillable="true" r3:abapType="D" r3:document="메일전송일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="16">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MTIME" nillable="true" r3:abapType="T" r3:document="메일전송시간" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="3" r3:offset="32">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MREQ" nillable="true" r3:abapType="N" r3:document="집계횟수 (발행구분 &amp; 메일전송일자)" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="44">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MDNUM" nillable="true" r3:abapType="N" r3:document="순번 ( 집계 횟수 기준)" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="50">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ORDER_NO" nillable="true" r3:abapType="C" r3:document="고객주문번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="70">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="12"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="STCD2" nillable="true" r3:abapType="C" r3:document="세금번호 2" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="94">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="11"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GJAHR" nillable="true" r3:abapType="N" r3:document="회계연도" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="116">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="INVNO" nillable="true" r3:abapType="C" r3:document="세금계산서번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="124">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="CFDAT" nillable="true" r3:abapType="D" r3:document="발행일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="144">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NAME1" nillable="true" r3:abapType="C" r3:document="이름 1" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="160">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="35"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="NAME" nillable="true" r3:abapType="C" r3:document="[FI] 담당자이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="230">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="EMAIL" nillable="true" r3:abapType="C" r3:document="이메일주소" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="270">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MPATH" nillable="true" r3:abapType="C" r3:document="첨부문서 경로" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="370">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="128"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MFILE" nillable="true" r3:abapType="C" r3:document="첨부파일 명" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="626">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SEN_YN" nillable="true" r3:abapType="C" r3:document="대상전송여부  ( 'X' -  전송완료, ' ' - 미전송 )" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="726">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AUTOTYPE" nillable="true" r3:abapType="C" r3:document="UMS 발송구분(ZENIC001 고정)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="728">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERDAT" nillable="true" r3:abapType="D" r3:document="레코드 생성일" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="744">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERZET" nillable="true" r3:abapType="T" r3:document="입력 시간" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="3" r3:offset="760">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERID" nillable="true" r3:abapType="C" r3:document="등록자" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="772">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AEDAT" nillable="true" r3:abapType="D" r3:document="변경일" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="788">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AETIME" nillable="true" r3:abapType="T" r3:document="변경시간" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="3" r3:offset="804">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AEID" nillable="true" r3:abapType="C" r3:document="등록자" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="816">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERR_MSG" nillable="true" r3:abapType="C" r3:document="문자 100" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="832">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="100"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZFIS3024_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZFIS3024"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZFIS3024">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="BUKRS" nillable="true" r3:abapType="C" r3:document="회사 코드" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="GGUBN" nillable="true" r3:abapType="C" r3:document="집계처리구분 ( 'A1' - 자동발행 , 'B1'-수기발행)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="8">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MGUBN" nillable="true" r3:abapType="C" r3:document="메일 발행 구분( '01'- 세금계산서 기준 )" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="12">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MDAT" nillable="true" r3:abapType="D" r3:document="메일전송일자" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="16">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MREQ" nillable="true" r3:abapType="N" r3:document="집계횟수 (발행구분 &amp; 메일전송일자)" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="32">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MCNT" nillable="true" r3:abapType="N" r3:document="메일전송대상건수" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="38">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="TOT_YN" nillable="true" r3:abapType="C" r3:document="집계완료여부  ( 'X' -  집계완료, ' ' - 미집계 )" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="58">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SEN_YN" nillable="true" r3:abapType="C" r3:document="대상전송여부  ( 'X' -  전송완료, ' ' - 미전송 )" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="60">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERDAT" nillable="true" r3:abapType="D" r3:document="레코드 생성일" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="62">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERZET" nillable="true" r3:abapType="T" r3:document="입력 시간" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="3" r3:offset="78">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ERID" nillable="true" r3:abapType="C" r3:document="등록자" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="90">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AEDAT" nillable="true" r3:abapType="D" r3:document="변경일" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="1" r3:offset="106">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AETIME" nillable="true" r3:abapType="T" r3:document="변경시간" r3:javaType="javax.xml.datatype.XMLGregorianCalendar" r3:jcoType="3" r3:offset="122">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AEID" nillable="true" r3:abapType="C" r3:document="등록자" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="134">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="8"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZRETRETURN">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="TYPE" nillable="true" r3:abapType="C" r3:document="메시지 유형: S 성공, E 오류, W 경고, I 정보, A 중단" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MESSAGE" nillable="true" r3:abapType="C" r3:document="메시지 텍스트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="220"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RFCException">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="msg" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="msgCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

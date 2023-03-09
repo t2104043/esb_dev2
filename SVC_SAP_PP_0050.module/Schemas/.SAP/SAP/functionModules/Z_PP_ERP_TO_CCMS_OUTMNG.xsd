@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:r3="http://www.tibco.com/xmlns/sapscalar/2015/05" xmlns:tns="http://www.tibco.com/xmlns/sap/SAP/Z_PP_ERP_TO_CCMS_OUTMNG" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/sap/SAP/Z_PP_ERP_TO_CCMS_OUTMNG" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.tibco.com/xmlns/sapscalar/2015/05" schemaLocation="/Schemas/.SAP/SAPSchema.xsd"/>
+    <xsd:element name="RequestInputType" type="tns:RequestInputTypeParam"/>
+    <xsd:complexType name="RequestInputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="timeout" type="xsd:long"/>
+            <xsd:element name="RfcRequest" type="tns:Z_PP_ERP_TO_CCMS_OUTMNG_RequestParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcRequest" type="tns:Z_PP_ERP_TO_CCMS_OUTMNG_RequestParam"/>
+    <xsd:complexType name="Z_PP_ERP_TO_CCMS_OUTMNG_RequestParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="REQUEST_YM" r3:abapType="N" r3:document="분석기간 - 월" r3:javaType="java.lang.String" r3:jcoType="6">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ET_TAB" type="tns:sequence_lsqb_ZPPS2102_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RequestOutputType" type="tns:RequestOutputTypeParam"/>
+    <xsd:complexType name="RequestOutputTypeParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="sessionID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CPIC_ID" type="xsd:string"/>
+            <xsd:element name="RfcResponse" type="tns:Z_PP_ERP_TO_CCMS_OUTMNG_ResponseParam"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RfcResponse" type="tns:Z_PP_ERP_TO_CCMS_OUTMNG_ResponseParam"/>
+    <xsd:complexType name="Z_PP_ERP_TO_CCMS_OUTMNG_ResponseParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ES_RETURN" type="tns:ZPPS2100"/>
+            <xsd:element minOccurs="0" name="ET_TAB" type="tns:sequence_lsqb_ZPPS2102_rsqb_"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SAPSystemException" type="tns:Z_PP_ERP_TO_CCMS_OUTMNG_FaultParam"/>
+    <xsd:complexType name="Z_PP_ERP_TO_CCMS_OUTMNG_FaultParam">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OTHERS" type="tns:RFCException"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZPPS2102_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZPPS2102"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZPPS2102">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="YYYYMM" nillable="true" r3:abapType="N" r3:document="분석기간 - 월" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="WERKS" nillable="true" r3:abapType="C" r3:document="플랜트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="12">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="4"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MATNR" nillable="true" r3:abapType="C" r3:document="자재 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="20">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="18"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MENGE1" nillable="true" r3:abapType="C" r3:document="제품출고량(순중량)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="56">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MENGE2" nillable="true" r3:abapType="C" r3:document="제품출고량(부담금)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="156">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="EXTWG" nillable="true" r3:abapType="C" r3:document="외부 자재 그룹" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="256">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="18"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="EWBEZ" nillable="true" r3:abapType="C" r3:document="외부자재그룹에 대한 내역" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="292">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZPPS2100">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="MSGTYPE" nillable="true" r3:abapType="C" r3:document="메시지 유형: S 성공, E 오류, W 경고, I 정보, A 중단" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="MESSAGE" nillable="true" r3:abapType="C" r3:document="메시지 텍스트" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="220"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="RFCException">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="msg" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="msgCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZCS_GET_STAFF_BY_ORG" xmlns:tns="http://www.example.org/ZCS_GET_STAFF_BY_ORG" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZCS_GET_STAFF_BY_ORG_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_ORG_CD" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_PCOND" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_ONLY_CODY" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_ORG_NO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_ORG_NM" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZCS_GET_STAFF_BY_ORG_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_ITEM" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="ORG_NO" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORG_NO_NM" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MOB_NUMBER" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORG_CD" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORG_CD_NM" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="WORK_TP" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="AWART" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ATEXT" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

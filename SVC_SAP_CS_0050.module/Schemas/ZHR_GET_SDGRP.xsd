@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZHR_GET_SDGRP" xmlns:tns="http://www.example.org/ZHR_GET_SDGRP" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZHR_GET_SDGRP_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_SDATE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZHR_GET_SDGRP_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="T_SDGRP" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="BCODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="OCODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="VKGRP" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ZVKGTX" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORGEH" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="O_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

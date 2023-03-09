@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SAP_UMS_FI" xmlns:tns="http://www.example.org/SAP_UMS_FI" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="SAP_UMS_FI_req">
+	<complexType>
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="TAG1" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG2" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG3" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SEND_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SEND_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG4" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG5" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="ORDERNUMBER" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG6" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG7" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG8" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TAG9" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="NAME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="EMAIL" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="ATTPATH1" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="ATTNAME1" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TRAN_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="AUTOTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="SAP_UMS_FI_rsp">
+	<complexType>
+		<sequence>
+			<element name="code" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="msg" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="key" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="result" maxOccurs="unbounded" minOccurs="0">
+				<complexType>
+					<sequence>
+						<element name="arrCode" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="arrIdx" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="arrKey" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="BATCH">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="FROMDATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TODATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="SENDDATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TEST" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="responseCode">
+	<complexType>
+		<sequence>
+			<element name="code" type="string" maxOccurs="1" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</element>
+</schema>

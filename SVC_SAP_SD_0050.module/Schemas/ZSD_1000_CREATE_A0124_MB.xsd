@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZSD_1000_CREATE_A0124_MB" xmlns:tns="http://www.example.org/ZSD_1000_CREATE_A0124_MB" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_1000_CREATE_A0124_MB_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_SYS_ID" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element maxOccurs="1" minOccurs="0" name="IS_ASSIGN">
+							<complexType>
+								<sequence>
+									<element name="PLAN_DT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="PLAN_TM_TP" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="PLAN_TM_ITV" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZSD_1000_CREATE_A0124_MB_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

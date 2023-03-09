@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_txWDMNiREeuc-pMmi2Is2w" targetNamespace="http://tns.tibco.com/bw/composite/Scheduler" name="Scheduler" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_uISjkNiREeuc-pMmi2Is2w" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIYqMNiREeuc-pMmi2Is2w" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIbGcNiREeuc-pMmi2Is2w" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIeJwNiREeuc-pMmi2Is2w" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIf-8NiREeuc-pMmi2Is2w" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIjCQNiREeuc-pMmi2Is2w" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uImFkNiREeuc-pMmi2Is2w" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIpv8NiREeuc-pMmi2Is2w" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_uIszQNiREeuc-pMmi2Is2w" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EYW3sNrUEeu4BIosSWDDWQ" name="/Destination/ScheduleReload" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_M-8TANrUEeu4BIosSWDDWQ" name="/Destination/ScheduleResult" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EDYI4CqPEe2GI7JuoxPR9w" name="/Destination/ScheduleRetry" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_t-WkcNiREeuc-pMmi2Is2w" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_t-WkcdiREeuc-pMmi2Is2w" processName="Scheduler.M_BatchScheduler"/>
+  </sca:component>
+  <sca:component xmi:id="_wrKyANrsEeu4BIosSWDDWQ" name="ComponentM_BatchSchedule_Result" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wrKyAdrsEeu4BIosSWDDWQ" processName="Scheduler.M_BatchSchedule_Result"/>
+  </sca:component>
+  <sca:component xmi:id="_fSylYNr2Eeu4BIosSWDDWQ" name="ComponentM_BatchScheduleInfo_Reload" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_fSylYdr2Eeu4BIosSWDDWQ" processName="Scheduler.M_BatchScheduleInfo_Reload"/>
+  </sca:component>
+  <sca:component xmi:id="_kwDC0Nr3Eeu4BIosSWDDWQ" name="ComponentI_Set_ScheduleInfo" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kwDC0dr3Eeu4BIosSWDDWQ" processName="Scheduler.I_Set_ScheduleInfo"/>
+  </sca:component>
+  <sca:component xmi:id="_m0INACp5Ee2GI7JuoxPR9w" name="ComponentM_BatchScheduler_Retry" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_m0INASp5Ee2GI7JuoxPR9w" processName="Scheduler.M_BatchScheduler_Retry"/>
+  </sca:component>
+</sca:composite>

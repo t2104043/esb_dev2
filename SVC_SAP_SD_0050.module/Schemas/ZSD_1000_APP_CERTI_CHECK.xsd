@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZSD_1000_APP_CERTI_CHECK" xmlns:tns="http://www.example.org/ZSD_1000_APP_CERTI_CHECK" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_1000_APP_CERTI_CHECK_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+<element name="I_APP_ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="I_NAME1" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="I_BAHNS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="I_GENDER" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="I_XC_SYSTEM" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="I_XC_S_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZSD_1000_APP_CERTI_CHECK_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+<element name="E_APP_ORDER_NO" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="E_KUNNR" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="E_XC_E_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+
+
+						<element name="E_RETURN" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+							         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="CODE" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

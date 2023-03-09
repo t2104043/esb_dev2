@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPROCUREMENT_MAT_PLANT" xmlns:tns="http://www.example.org/ZMM_EPROCUREMENT_MAT_PLANT" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPROCUREMENT_MAT_PLANT_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="FDATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TDATE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZMM_EPROCUREMENT_MAT_PLANT_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_TAB" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+<element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="WERKS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="BESKZ" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="SOBSL" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="BSTMI" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="DISLS" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="LVORM" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="E_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

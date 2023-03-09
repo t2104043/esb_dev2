@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/cntsum"
+	xmlns:tns="http://www.example.org/cntsum" elementFormDefault="qualified">
+<element name="cntsum">
+	<complexType>
+		<sequence>
+			<element name="status" type="string" maxOccurs="1" minOccurs="0"/>
+			<element name="count" type="int" maxOccurs="1" minOccurs="0"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="cnt">
+				<complexType>
+					<sequence>
+						 <element name="success" type="string" maxOccurs="1" minOccurs="0"/>
+				         <element name="fail" type="string" maxOccurs="1" minOccurs="0"/>
+				         <element name="sapReturnMsg" type="string" maxOccurs="1" minOccurs="0"/>
+				         <element name="errMsg" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

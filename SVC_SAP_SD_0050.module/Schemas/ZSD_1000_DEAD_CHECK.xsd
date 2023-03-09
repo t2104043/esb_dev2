@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZSD_1000_DEAD_CHECK" xmlns:tns="http://www.example.org/ZSD_1000_DEAD_CHECK" elementFormDefault="qualified" xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_1000_DEAD_CHECK_req">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_ORDER_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZSD_1000_DEAD_CHECK_rsp">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="CODE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="ZMESSAGE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="E_RTN_SEQ" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="E_BIRTHDAY" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="E_CUST_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="E_ALIM_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

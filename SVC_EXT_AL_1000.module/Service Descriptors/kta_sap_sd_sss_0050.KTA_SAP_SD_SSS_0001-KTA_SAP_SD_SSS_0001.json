@@ -1,0 +1,157 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "KTA_SAP_SD_SSS_0001",
+    "description" : "KT_TO_SAPSD"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/kos/v1.0/CowayApiCallOut" : {
+      "post" : {
+        "summary" : "postKTA_SAP_SD_SSS_0001",
+        "description" : "postKTA_SAP_SD_SSS_0001",
+        "operationId" : "kta_sap_sd_sss_0001",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/KTA_SAP_SD_SSS_0001_req"
+          },
+          "required" : true
+        }, {
+          "name" : "apikey",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "chnlType",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "srcId",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "userId",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "orgId",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a KTA_SAP_SD_SSS_0001_rsp to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/KTA_SAP_SD_SSS_0001_rsp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "request" : {
+      "type" : "object",
+      "properties" : {
+        "CowayApiCallOutListDTO" : {
+          "$ref" : "#/definitions/CowayApiCallOutListDTO"
+        }
+      }
+    },
+    "CowayApiCallOutListDTO" : {
+      "type" : "object",
+      "properties" : {
+        "nowPageNum" : {
+          "type" : "string"
+        },
+        "lastPageYn" : {
+          "type" : "string"
+        },
+        "wrkjobDiv" : {
+          "type" : "string"
+        },
+        "CowayApiCallOutDTO" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/CowayApiCallOutDTO",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "response" : {
+      "type" : "object",
+      "properties" : {
+        "CowayApiCallOutDTO" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/CowayApiCallOutDTO",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "CowayApiCallOutDTO" : {
+      "type" : "object",
+      "properties" : {
+        "resultCode" : {
+          "type" : "string"
+        },
+        "message" : {
+          "type" : "string"
+        }
+      }
+    },
+    "KTA_SAP_SD_SSS_0001_req" : {
+      "type" : "object",
+      "properties" : {
+        "request" : {
+          "$ref" : "#/definitions/request"
+        }
+      }
+    },
+    "KTA_SAP_SD_SSS_0001_rsp" : {
+      "type" : "object",
+      "properties" : {
+        "response" : {
+          "$ref" : "#/definitions/response"
+        },
+        "transactionid" : {
+          "type" : "string"
+        },
+        "sequenceno" : {
+          "type" : "string"
+        },
+        "returncode" : {
+          "type" : "string"
+        },
+        "returndescription" : {
+          "type" : "string"
+        },
+        "errorcode" : {
+          "type" : "string"
+        },
+        "errordescription" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

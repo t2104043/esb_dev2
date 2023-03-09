@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmi:id="_ZVkcwX9VEe20hpYJkVDqqw" name="svc_sap_fi_0050.module.UMS" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_fwXV8H9VEe20hpYJkVDqqw" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_fwXV8X9VEe20hpYJkVDqqw" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_fwXV8n9VEe20hpYJkVDqqw" name="transport">
+        <id:IdentityReference xmi:id="_fwX9AH9VEe20hpYJkVDqqw" URI="" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_ZVlD0H9VEe20hpYJkVDqqw" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" useDefaultSSL="true" hystrixCommandName="svc_sap_fi_0050.module.UMS" cmdExecutionIsolationStrategy="COUNT_BASED" cmdExecutionIsolationTimeout="10" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="50" cmdCircuitBreakerSleepWindow="100" cmdCircuitBreakerErrorThresholdPercentage="100" cmdMetricsRollingStatsTime="100" cmdMetricsRollingStatsNumBuckets="60000" cmdMetricsHealthSnapshotInterval="500" tpCoreSize="10" tpMaxQueueSize="60000" tpQueueSizeRejectionThreshold="6000" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_ZVlD0X9VEe20hpYJkVDqqw">
+      <substitutionBindings xmi:id="_aHaJYH9VEe20hpYJkVDqqw" template="host" propName="/Resources/http/UMS_Host"/>
+      <substitutionBindings xmi:id="_a2tfYH9VEe20hpYJkVDqqw" template="port" propName="/Resources/http/UMS_Port"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_KjteELbiEeuK6-XHNINwBQ" targetNamespace="http://tns.tibco.com/bw/composite/Log_DB" name="Log_DB" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_K6HL4LbiEeuK6-XHNINwBQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6K2QLbiEeuK6-XHNINwBQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6NSgLbiEeuK6-XHNINwBQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6PHsLbiEeuK6-XHNINwBQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6Q84LbiEeuK6-XHNINwBQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6TZILbiEeuK6-XHNINwBQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6VOULbiEeuK6-XHNINwBQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6XDgLbiEeuK6-XHNINwBQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_K6ZfwLbiEeuK6-XHNINwBQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_r4qFQHeFEe2DSu_Y6_Lekw" name="/Destination/announceError" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_t4bkoHeFEe2DSu_Y6_Lekw" name="/Destination/QueueName_Reload" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_t5y2kHeFEe2DSu_Y6_Lekw" name="/Destination/QueueName_Reload_ALL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_xGMKAHeZEe2DSu_Y6_Lekw" name="/Destination/UMS.Q" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Kpt_cLbiEeuK6-XHNINwBQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Kpt_cbbiEeuK6-XHNINwBQ" processName="Log.M_Log_DB"/>
+  </sca:component>
+  <sca:component xmi:id="_bssz4NV6EeyAMKp91xy9lA" name="ComponentM_EngineResuorce" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bssz4dV6EeyAMKp91xy9lA" processName="JvmResource.M_EngineResuorce"/>
+  </sca:component>
+  <sca:component xmi:id="_x8fYUHd3Ee2DSu_Y6_Lekw" name="ComponentM_Announce_Error" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_x8fYUXd3Ee2DSu_Y6_Lekw" processName="Message.M_Announce_Error"/>
+  </sca:component>
+  <sca:component xmi:id="_mgFTgHeEEe2DSu_Y6_Lekw" name="ComponentM_SetBaseInfo_OnStartUp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mgFTgXeEEe2DSu_Y6_Lekw" processName="Message.M_SetBaseInfo_OnStartUp"/>
+  </sca:component>
+  <sca:component xmi:id="_oW3O8HeEEe2DSu_Y6_Lekw" name="ComponentM_SetBaseInfo_Reload" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oW3O8XeEEe2DSu_Y6_Lekw" processName="Message.M_SetBaseInfo_Reload"/>
+  </sca:component>
+  <sca:component xmi:id="_ooDFkHeEEe2DSu_Y6_Lekw" name="ComponentM_SetBaseInfo_ReloadAll" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ooDFkXeEEe2DSu_Y6_Lekw" processName="Message.M_SetBaseInfo_ReloadAll"/>
+  </sca:component>
+</sca:composite>
