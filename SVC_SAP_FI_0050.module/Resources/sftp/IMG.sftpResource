@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_a7Kt8fjUEeyyqYZWlS1npg" name="sftp.IMG" type="sftpconnection:sftpconnection">
-  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_a7Kt8vjUEeyyqYZWlS1npg">
-    <substitutionBindings xmi:id="_AT4lIPkHEeyoVshrRMzZQw" template="host" propName="/Resources/sftp/Host"/>
-    <substitutionBindings xmi:id="_BMV3IPkHEeyoVshrRMzZQw" template="port" propName="/Resources/sftp/Port"/>
-    <substitutionBindings xmi:id="_Ee1ioPkHEeyoVshrRMzZQw" template="userName" propName="/Resources/sftp/Id"/>
-    <substitutionBindings xmi:id="_FffuYPkHEeyoVshrRMzZQw" template="password" propName="/Resources/sftp/Password"/>
-  </jndi:configuration>
-</jndi:namedResource>

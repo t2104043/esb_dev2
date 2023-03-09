@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_oKlHUQizEe2SRNb87hGHEA" name="svc_ext_al_1000.module.KTA_SAP_SD_SSS_0001" type="httpconnector:HttpConnectorConfiguration">
-  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_oKlHUgizEe2SRNb87hGHEA">
-    <substitutionBindings xmi:id="_xbp64CUfEe2sE4qLAy6zxA" template="port" propName="/Resources/rest/COWAY/port"/>
-    <substitutionBindings xmi:id="_0ZTzsD-KEe2RAcr0c_yxuw" template="host" propName="BW.HOST.NAME"/>
-  </jndi:configuration>
-</jndi:namedResource>

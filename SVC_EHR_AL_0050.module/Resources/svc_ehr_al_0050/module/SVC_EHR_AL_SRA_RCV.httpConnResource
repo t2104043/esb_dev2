@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_jno-0yQWEe2KWofoi2mvcQ" name="svc_ehr_al_0050.module.SVC_EHR_AL_SRA_RCV" type="httpconnector:HttpConnectorConfiguration">
-  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_jno-1CQWEe2KWofoi2mvcQ">
-    <substitutionBindings xmi:id="_jno-1SQWEe2KWofoi2mvcQ" template="host" propName="BW.HOST.NAME"/>
-    <substitutionBindings xmi:id="_sRjJACQYEe2wh_I1FApyLg" template="port" propName="/Resources/http/svc_ehr_al_rcv/Port"/>
-  </jndi:configuration>
-</jndi:namedResource>

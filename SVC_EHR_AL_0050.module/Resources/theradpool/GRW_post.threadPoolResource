@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:tp="http://xsd.tns.tibco.com/bw/models/sharedresource/threadpool" xmi:id="_YSNTcfW6Eeys5_smGVfG1w" name="theradpool.GRW_post" type="tp:ThreadPoolConfiguration">
-  <jndi:configuration xsi:type="tp:ThreadPoolConfiguration" xmi:id="_YSNTcvW6Eeys5_smGVfG1w" coreThreadPoolSize="5" keepAliveTimeUnit="MILLISECONDS" threadNamePrefix="tibco_GRW"/>
-</jndi:namedResource>

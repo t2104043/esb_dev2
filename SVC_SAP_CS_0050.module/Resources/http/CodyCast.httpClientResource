@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_qtweMT73Ee2RAcr0c_yxuw" name="http.CodyCast" type="http:HttpClientConfiguration">
-  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_qtxFQD73Ee2RAcr0c_yxuw" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
-    <tcpDetails xmi:id="_qtxFQT73Ee2RAcr0c_yxuw">
-      <substitutionBindings xmi:id="_HH_DID74Ee2RAcr0c_yxuw" template="port" propName="/Resources/http/CodyCast/Port"/>
-      <substitutionBindings xmi:id="_Ha1GoD74Ee2RAcr0c_yxuw" template="host" propName="/Resources/http/CodyCast/Host"/>
-    </tcpDetails>
-  </jndi:configuration>
-</jndi:namedResource>
