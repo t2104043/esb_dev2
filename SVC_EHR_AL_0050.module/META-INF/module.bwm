@@ -167,9 +167,6 @@
   <sca:component xmi:id="_nW0wwBSIEe2PaIN2wOg4ug" name="Component2Process" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_nW0wwRSIEe2PaIN2wOg4ug" processName="svc_ehr_al_0050.module.EHR_SVC_HR_SEH_0001"/>
   </sca:component>
-  <sca:component xmi:id="_7xHIYBnSEe2TFsiP9QS2ug" name="Component2Process1" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_7xHIYRnSEe2TFsiP9QS2ug" processName="svc_ehr_al_0050.module.Process"/>
-  </sca:component>
   <sca:component xmi:id="_cTVW4CNqEe2hruxTKW8WCQ" name="ComponentGRW_EHR_HR_BHD_0001" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_cTV98CNqEe2hruxTKW8WCQ" processName="svc_ehr_al_0050.module.GRW_EHR_HR_BHD_0001"/>
   </sca:component>
