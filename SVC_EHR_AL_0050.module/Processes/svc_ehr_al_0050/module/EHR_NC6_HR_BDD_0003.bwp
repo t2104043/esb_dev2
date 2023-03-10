@@ -2719,8 +2719,7 @@
                         <bpws:target linkName="RepeatToGroupEnd1"/>
                     </bpws:targets>
                 </bpws:empty>
-                <bpws:scope name="Repeat" tibex:group="repeatUntil"
-                    tibex:indexToGlobal="false" tibex:xpdlId="ce70a3af-b1fe-4fa5-b4de-129a1ffe2299">
+                <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="ce70a3af-b1fe-4fa5-b4de-129a1ffe2299">
                     <bpws:targets>
                         <bpws:target linkName="Copy_1_Ins_tpo_work_table_syncToRepeat"/>
                     </bpws:targets>

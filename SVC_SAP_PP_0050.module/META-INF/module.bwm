@@ -73,4 +73,7 @@
   <sca:component xmi:id="_ZqWUoGYUEe2IyaLRCNnVOA" name="ComponentM_Resource_Check" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZqWUoWYUEe2IyaLRCNnVOA" processName="common.M_Resource_Check"/>
   </sca:component>
+  <sca:component xmi:id="_etnOwL7rEe2v4KAuTedOdw" name="ComponentTEST" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_etnOwb7rEe2v4KAuTedOdw" processName="svc_coa_pp_sed_0050.TEST"/>
+  </sca:component>
 </sca:composite>

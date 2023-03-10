@@ -2757,9 +2757,7 @@
                         </tibex:config>
                     </tibex:activityExtension>
                 </bpws:extensionActivity>
-                <bpws:scope name="Repeat" tibex:group="repeatUntil"
-                    tibex:indexOriginalName="index"
-                    tibex:indexToGlobal="false" tibex:xpdlId="0a32d478-312c-444a-b764-96d13264ed30">
+                <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="0a32d478-312c-444a-b764-96d13264ed30">
                     <bpws:targets>
                         <bpws:target linkName="Del_TB_INPUT_EHR_MH_ESBToRepeat"/>
                     </bpws:targets>

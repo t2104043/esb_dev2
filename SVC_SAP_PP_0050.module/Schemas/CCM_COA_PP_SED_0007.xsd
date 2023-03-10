@@ -33,6 +33,7 @@
 <element name="CUSTOMER_NO1" type="string" maxOccurs="1" minOccurs="0"/>
 <element name="CUSTOMER_NO2" type="string" maxOccurs="1" minOccurs="0"/>
 <element name="CUSTOMER_NO3" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="RENT_USE" type="string" maxOccurs="1" minOccurs="0"/>
 						         						         
 								</sequence>
 							</complexType>

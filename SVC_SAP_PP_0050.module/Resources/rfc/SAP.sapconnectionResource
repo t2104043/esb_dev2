@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sapconnection="http://ns.tibco.com/bw/sharedresource/sapconnection" xmi:id="_LK0fwQNKEe2rpYw9Rq1tnQ" name="rfc.SAP" type="sapconnection:SAPConnection">
-  <jndi:configuration xsi:type="sapconnection:SAPConnection" xmi:id="_LK-QwANKEe2rpYw9Rq1tnQ" clientConnName="rfc.SAP.ClientConnection" connType="Load Balancing" language="Korean" snc_Bsso="0" snc_SSOrecv="" snc_x509="" s_serverConnName="rfc.SAP.ServerConnection" s_connType="Default" sapConnAlias="a7b1c15d-233e-4acb-839a-a3f4645f4f97" languageCode="3">
+  <jndi:configuration xsi:type="sapconnection:SAPConnection" xmi:id="_LK-QwANKEe2rpYw9Rq1tnQ" clientConnName="rfc.SAP.ClientConnection" connType="Dedicated Application Server" language="Korean" snc_Bsso="0" snc_SSOrecv="" snc_x509="" s_serverConnName="rfc.SAP.ServerConnection" s_connType="Default" sapConnAlias="a7b1c15d-233e-4acb-839a-a3f4645f4f97" languageCode="3">
     <substitutionBindings xmi:id="_LK-QwQNKEe2rpYw9Rq1tnQ" template="appServer" propName="SAPAppServer"/>
     <substitutionBindings xmi:id="_LK-QwgNKEe2rpYw9Rq1tnQ" template="systemNumber" propName="SAPSystemNumber"/>
     <substitutionBindings xmi:id="_LK-QwwNKEe2rpYw9Rq1tnQ" template="client" propName="SAPClient"/>
