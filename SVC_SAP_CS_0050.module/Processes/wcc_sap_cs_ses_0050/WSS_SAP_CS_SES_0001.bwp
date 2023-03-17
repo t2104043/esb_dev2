@@ -1566,6 +1566,25 @@
                                     x="771"
                                     xsi:type="notation:Bounds" y="57"/>
                                     </children>
+                                    <children
+                                    description="[CS] 지점 창고 플랜트 검색 - 우편일련번호"
+                                    fillColor="13369343"
+                                    fontName="맑은 고딕"
+                                    lineColor="6737151"
+                                    lineWidth="1"
+                                    transparency="0" type="Note" xsi:type="notation:Shape">
+                                    <children type="DiagramName" xsi:type="notation:BasicDecorationNode">
+                                    <element xsi:nil="true"/>
+                                    </children>
+                                    <children type="Description" xsi:type="notation:BasicDecorationNode">
+                                    <element xsi:nil="true"/>
+                                    </children>
+                                    <styles xsi:type="notation:TextStyle"/>
+                                    <styles xsi:type="notation:LineTypeStyle"/>
+                                    <element xsi:nil="true"/>
+                                    <layoutConstraint x="55"
+                                    xsi:type="notation:Bounds" y="172"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1578,7 +1597,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="338"
+                                    <layoutConstraint height="295"
                                     width="927" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
@@ -1988,6 +2007,15 @@
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[25, 0, -192, 0]$[193, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges lineColor="0" lineWidth="1"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.12"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
+            type="NoteAttachment" xsi:type="notation:Connector">
+            <styles xsi:type="notation:ArrowStyle"/>
+            <styles xsi:type="notation:LineTypeStyle"/>
+            <element xsi:nil="true"/>
+            <bendpoints points="[0, 0, -82, -81]$[57, 57, -25, -24]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -2477,7 +2505,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.coway.com/ZCS_SEARCH_WERKS_BY_ZIP_SEQ&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns1=&quot;http://www.example.org/HEADER&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns5:ZCS_SEARCH_WERKS_BY_ZIP_SEQ_rsp>&lt;xsl:for-each select=&quot;$ParseHeaderJSON/tns1:HEADER&quot;>&lt;tns1:HEADER>&lt;tns1:IF_ID>&lt;xsl:value-of select=&quot;tns1:IF_ID&quot;/>&lt;/tns1:IF_ID>&lt;tns1:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns1:IF_UUID>&lt;tns1:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns1:IF_HOST>&lt;tns1:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns1:IF_DATE>&lt;tns1:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns1:RST_CD>&lt;tns1:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns1:RST_MSG>&lt;/tns1:HEADER>&lt;/xsl:for-each>&lt;tns5:DATA>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_WERKS&quot;>&lt;tns5:E_WERKS>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_WERKS&quot;/>&lt;/tns5:E_WERKS>&lt;/xsl:if>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_CD&quot;>&lt;tns5:E_ORG_CD>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_CD&quot;/>&lt;/tns5:E_ORG_CD>&lt;/xsl:if>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN&quot;>&lt;tns5:ES_RETURN>&lt;xsl:if test=&quot;TYPE&quot;>&lt;tns5:TYPE>&lt;xsl:copy-of select=&quot;TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TYPE&quot;/>&lt;/tns5:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;CODE&quot;>&lt;tns5:CODE>&lt;xsl:copy-of select=&quot;CODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CODE&quot;/>&lt;/tns5:CODE>&lt;/xsl:if>&lt;xsl:if test=&quot;MESSAGE&quot;>&lt;tns5:MESSAGE>&lt;xsl:copy-of select=&quot;MESSAGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MESSAGE&quot;/>&lt;/tns5:MESSAGE>&lt;/xsl:if>&lt;/tns5:ES_RETURN>&lt;/xsl:for-each>&lt;/tns5:DATA>&lt;/tns5:ZCS_SEARCH_WERKS_BY_ZIP_SEQ_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.coway.com/ZCS_SEARCH_WERKS_BY_ZIP_SEQ&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns1=&quot;http://www.example.org/HEADER&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns5:ZCS_SEARCH_WERKS_BY_ZIP_SEQ_rsp>&lt;xsl:for-each select=&quot;$ParseHeaderJSON/tns1:HEADER&quot;>&lt;tns1:HEADER>&lt;tns1:IF_ID>&lt;xsl:value-of select=&quot;tns1:IF_ID&quot;/>&lt;/tns1:IF_ID>&lt;tns1:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns1:IF_UUID>&lt;tns1:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns1:IF_HOST>&lt;tns1:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns1:IF_DATE>&lt;tns1:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns1:RST_CD>&lt;tns1:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns1:RST_MSG>&lt;/tns1:HEADER>&lt;/xsl:for-each>&lt;tns5:DATA>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_WERKS&quot;>&lt;tns5:E_WERKS>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_WERKS&quot;/>&lt;/tns5:E_WERKS>&lt;/xsl:if>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_CD&quot;>&lt;tns5:E_ORG_CD>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_CD&quot;/>&lt;/tns5:E_ORG_CD>&lt;/xsl:if>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_NM&quot;>&lt;tns5:E_ORG_NM>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/E_ORG_NM&quot;/>&lt;/tns5:E_ORG_NM>&lt;/xsl:if>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN&quot;>&lt;tns5:ES_RETURN>&lt;xsl:if test=&quot;TYPE&quot;>&lt;tns5:TYPE>&lt;xsl:copy-of select=&quot;TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TYPE&quot;/>&lt;/tns5:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;CODE&quot;>&lt;tns5:CODE>&lt;xsl:copy-of select=&quot;CODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CODE&quot;/>&lt;/tns5:CODE>&lt;/xsl:if>&lt;xsl:if test=&quot;MESSAGE&quot;>&lt;tns5:MESSAGE>&lt;xsl:copy-of select=&quot;MESSAGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MESSAGE&quot;/>&lt;/tns5:MESSAGE>&lt;/xsl:if>&lt;/tns5:ES_RETURN>&lt;/xsl:for-each>&lt;/tns5:DATA>&lt;/tns5:ZCS_SEARCH_WERKS_BY_ZIP_SEQ_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity

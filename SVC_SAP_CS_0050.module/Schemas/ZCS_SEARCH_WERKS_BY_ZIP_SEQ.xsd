@@ -28,6 +28,7 @@
 					<sequence>
 					<element name="E_WERKS" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 					<element name="E_ORG_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+					<element name="E_ORG_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="ES_RETURN" maxOccurs="1" minOccurs="0">
 							<complexType>
 								<sequence>

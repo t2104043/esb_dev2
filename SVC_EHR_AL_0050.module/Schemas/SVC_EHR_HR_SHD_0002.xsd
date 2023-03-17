@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SVC_EHR_HR_SHD_0002" xmlns:tns="http://www.example.org/SVC_EHR_HR_SHD_0002" elementFormDefault="qualified"   xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="SVC_EHR_HR_SHD_0001_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="WORKDATE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="SVC_EHR_HR_SHD_0001_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ITEM" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									 <element name="WORKDATE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="EMP_NO" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="LEAVE_YN" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="HOLI_YN" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="CLOSE_YN" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="ATTEND_CD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="ATTEND_NM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="ATTEND_DAY" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="C_IN_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="C_OUT_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="M_IN_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="M_OUT_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="TOTAL_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="BASE_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="OVER_TIME" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			
+		</sequence>
+	</complexType>
+</element>
+</schema>

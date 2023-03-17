@@ -186,13 +186,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jms/ProviderURL</name>
-			<value>tcp://10.101.3.194:7222</value>
+			<value>tcp://10.152.27.173:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>tcp://10.101.3.194:7222</lookupValue>
+			<lookupValue>tcp://10.152.27.173:7222</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jdbc/JDBCDriver</name>

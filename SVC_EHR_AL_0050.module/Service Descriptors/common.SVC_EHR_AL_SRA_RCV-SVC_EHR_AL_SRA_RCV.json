@@ -35,6 +35,32 @@
         }
       }
     },
+    "/svc_ehr_al_sra_rcv.svc_ehr_hr_shd_0002" : {
+      "post" : {
+        "summary" : "postSVC_EHR_AL_SRA_RCV",
+        "description" : "postSVC_EHR_AL_SRA_RCV",
+        "operationId" : "post-svc_ehr_al_sra_rcv-svc_ehr_hr_shd_0002",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "type" : "string"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
     "/svc_ehr_al_sra_rcv.svc_grw_hr_shh_0001" : {
       "post" : {
         "summary" : "postSVC_EHR_AL_SRA_RCV",
