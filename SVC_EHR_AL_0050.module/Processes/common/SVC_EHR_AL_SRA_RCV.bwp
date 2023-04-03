@@ -6019,7 +6019,7 @@
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles
                                     collapsed="true"
-                                    restoreHeight="418"
+                                    restoreHeight="419"
                                     restoreWidth="1432"
                                     restoreX="2"
                                     restoreY="42" xsi:type="bwnotation:ResizingStyle"/>
@@ -7135,7 +7135,7 @@
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles
                                     collapsed="true"
-                                    restoreHeight="393"
+                                    restoreHeight="394"
                                     restoreWidth="1432"
                                     restoreX="2"
                                     restoreY="63" xsi:type="bwnotation:ResizingStyle"/>
@@ -8882,6 +8882,38 @@
                                     xsi:type="notation:Bounds" y="48"/>
                                     </children>
 
+                                    <children
+                                    description="> xml 파싱시 특수문자 문제       &#xd;&#xa;1 [\] 는 esb에서 변환 처리       &#xd;&#xa;2 20230321 개행문자 esb 에서 xml 파싱 문제(RET_TABZNOTE) > 총무에서 개행문자를 [≒] 로 호출, 그룹웨에서 전환)"
+                                    fillColor="13369343"
+                                    fontName="맑은 고딕"
+                                    lineColor="6737151"
+                                    lineWidth="1"
+                                    transparency="0"
+                                    type="Note" xsi:type="notation:Shape">
+
+                                    <children
+                                    type="DiagramName" xsi:type="notation:BasicDecorationNode">
+
+                                    <element xsi:nil="true"/>
+                                    </children>
+
+                                    <children
+                                    type="Description" xsi:type="notation:BasicDecorationNode">
+
+                                    <element xsi:nil="true"/>
+                                    </children>
+
+                                    <styles xsi:type="notation:TextStyle"/>
+
+                                    <styles xsi:type="notation:LineTypeStyle"/>
+
+                                    <element xsi:nil="true"/>
+
+                                    <layoutConstraint
+                                    x="661"
+                                    xsi:type="notation:Bounds" y="143"/>
+                                    </children>
+
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -8903,8 +8935,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.5/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="222"
-                                    width="1327" xsi:type="notation:Bounds"/>
+                                    height="225"
+                                    width="1476" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -8923,8 +8955,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.5/@activity"/>
 
                                     <layoutConstraint
-                                    height="217"
-                                    width="1330"
+                                    height="225"
+                                    width="1479"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -9308,8 +9340,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.5/@activity"/>
 
                                     <layoutConstraint
-                                    height="418"
-                                    width="1370" xsi:type="notation:Bounds"/>
+                                    height="426"
+                                    width="1519" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -9364,15 +9396,14 @@
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles
-                                    collapsed="true"
                                     restoreHeight="443"
                                     restoreWidth="1432"
                                     restoreX="2"
                                     restoreY="105" xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.5"/>
                                     <layoutConstraint
-                                    height="22"
-                                    width="1432"
+                                    height="481"
+                                    width="1581"
                                     x="2"
                                     xsi:type="notation:Bounds" y="105"/>
                                     </children>
@@ -10490,7 +10521,7 @@
                                     height="22"
                                     width="1432"
                                     x="2"
-                                    xsi:type="notation:Bounds" y="126"/>
+                                    xsi:type="notation:Bounds" y="548"/>
                                     </children>
                                     <children type="4011">
                                     <children type="3012">
@@ -11576,10 +11607,10 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.7"/>
                                     <layoutConstraint
-                                    height="403"
+                                    height="400"
                                     width="1432"
                                     x="2"
-                                    xsi:type="notation:Bounds" y="147"/>
+                                    xsi:type="notation:Bounds" y="569"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -11591,8 +11622,8 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="580"
-                                    width="1451" xsi:type="notation:Bounds"/>
+                                    height="1046"
+                                    width="1600" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -11606,8 +11637,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="1588"
-                                    width="1461" xsi:type="notation:Bounds"/>
+                                    <layoutConstraint height="2199"
+                                    width="1610" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -11616,7 +11647,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="2499" width="1464" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="2199" width="1613" xsi:type="notation:Bounds"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -11626,7 +11657,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="2523" width="1464" x="1"
+                    <layoutConstraint height="2223" width="1613" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -11635,7 +11666,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="1664" width="1806" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="2275" width="1955" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -12805,6 +12836,15 @@
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.6/@activity/@activity/@links/@children.8"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges lineColor="0" lineWidth="1"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.5/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.5/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9"
+            type="NoteAttachment" xsi:type="notation:Connector">
+            <styles xsi:type="notation:ArrowStyle"/>
+            <styles xsi:type="notation:LineTypeStyle"/>
+            <element xsi:nil="true"/>
+            <bendpoints points="[0, 0, -637, -72]$[613, 69, -24, -3]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">

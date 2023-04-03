@@ -3,6 +3,7 @@
 	<name>SVC_SAP_HR_0050.module</name>
 	<comment></comment>
 	<projects>
+		<project>CSPI_Library</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

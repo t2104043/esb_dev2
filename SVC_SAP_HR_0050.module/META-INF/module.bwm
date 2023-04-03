@@ -148,4 +148,7 @@
   <sca:component xmi:id="_theh4IAEEe2nA9PfeeKLQQ" name="ComponentEDU_SAP_HR_SES_0005" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_theh4YAEEe2nA9PfeeKLQQ" processName="edu_sap_hr_ses_0050.EDU_SAP_HR_SES_0005"/>
   </sca:component>
+  <sca:component xmi:id="_ASM-UMbEEe2L8O5D16YNxA" name="ComponentEHR_SAP_HR_BDS_0207" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ASM-UcbEEe2L8O5D16YNxA" processName="ehr_sap_hr_0050.EHR_SAP_HR_BDS_0207"/>
+  </sca:component>
 </sca:composite>

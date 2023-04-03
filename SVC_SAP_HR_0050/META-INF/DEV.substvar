@@ -488,13 +488,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jdbc/DatabaseURL</name>
-			<value>jdbc:oracle:thin:@10.101.3.196:1521:esbdbdev</value>
+			<value>jdbc:oracle:thin:@esb.csjpgdhszdu9.ap-northeast-2.rds.amazonaws.com:1521:ESB</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>jdbc:oracle:thin:@10.101.3.196:1521:esbdbdev</lookupValue>
+			<lookupValue>jdbc:oracle:thin:@esb.csjpgdhszdu9.ap-northeast-2.rds.amazonaws.com:1521:ESB</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jms/UserName</name>
@@ -517,13 +517,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jms/ProviderURL</name>
-			<value>tcp://10.101.3.194:7222</value>
+			<value>tcp://10.152.27.173:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>tcp://10.101.3.194:7222</lookupValue>
+			<lookupValue>tcp://10.152.27.173:7222</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Destination/DBLog</name>

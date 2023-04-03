@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sapconnection="http://ns.tibco.com/bw/sharedresource/sapconnection" xmi:id="_JNLOoV4HEeyBEJxJCeCMng" name="rfc.SAP" type="sapconnection:SAPConnection">
   <jndi:reference xmi:id="_4SOs4L1IEe2wL5fHp2T1fA" key="jmsConnectionServiceProvider" type="jms:JMSConnectionFactory" value=""/>
-  <jndi:configuration xsi:type="sapconnection:SAPConnection" xmi:id="_JNafMF4HEeyBEJxJCeCMng" clientConnName="rfc.SAP.ClientConnection" connType="Dedicated Application Server" language="Korean" snc_Bsso="0" snc_SSOrecv="" snc_x509="" s_serverConnName="rfc.SAP.ServerConnection" s_connType="Default" sapConnAlias="2c2cb2a0-537e-4977-a3ff-b6736d8f600d" languageCode="3">
+  <jndi:configuration xsi:type="sapconnection:SAPConnection" xmi:id="_JNafMF4HEeyBEJxJCeCMng" clientConnName="rfc.SAP.ClientConnection" connType="Load Balancing" language="Korean" snc_Bsso="0" snc_SSOrecv="" snc_x509="" s_serverConnName="rfc.SAP.ServerConnection" s_connType="Default" sapConnAlias="2c2cb2a0-537e-4977-a3ff-b6736d8f600d" languageCode="3">
     <substitutionBindings xmi:id="_JNafMV4HEeyBEJxJCeCMng" template="appServer" propName="SAPAppServer"/>
     <substitutionBindings xmi:id="_JNafMl4HEeyBEJxJCeCMng" template="systemNumber" propName="SAPSystemNumber"/>
     <substitutionBindings xmi:id="_JNafM14HEeyBEJxJCeCMng" template="client" propName="SAPClient"/>

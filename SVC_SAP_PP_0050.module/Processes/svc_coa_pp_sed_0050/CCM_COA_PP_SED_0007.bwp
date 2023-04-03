@@ -16,6 +16,7 @@
     xmlns:ns15="activity.jsonRender.output+919c4e92-43e8-45de-9a8c-1d641acff8a3+ActivityOutputType"
     xmlns:ns16="http://www.example.org/DataNotParsed"
     xmlns:ns17="http://www.example.org/CCM_COA_PP_SED_0007"
+    xmlns:ns18="http://www.tibco.com/pe/WriteToLogActivitySchema"
     xmlns:ns2="activity.jsonParser.input+3552d6bb-bbcf-400d-900c-18e221db7d2a+ActivityInputType"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonParser"
     xmlns:ns4="activity.jsonParser.input+1d1c9c7f-6e84-4158-8077-d1ea2d479636+ActivityInputType"
@@ -453,13 +454,7 @@
                 <complexType>
                     <sequence>
                         <element maxOccurs="1" minOccurs="1"
-                            name="RENT_START_DATE_S" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="RENT_START_DATE_E" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="RENT_END_DATE_S" nillable="true" type="string"/>
-                        <element maxOccurs="1" minOccurs="1"
-                            name="RENT_END_DATE_E" nillable="true" type="string"/>
+                            name="REQUEST_YM" nillable="true" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
                             name="ServerTimeZone" type="string"/>
                         <element maxOccurs="1" minOccurs="0"
@@ -1718,7 +1713,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="272"
-                                    width="950" xsi:type="notation:Bounds"/>
+                                    width="964" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1727,7 +1722,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="299" width="953" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="272" width="967" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1959,7 +1954,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="500" width="953" x="1"
+                    <layoutConstraint height="473" width="967" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1968,7 +1963,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="525" width="1295" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="525" width="1309" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -2050,17 +2045,6 @@
             <bendpoints points="[25, 0, -110, 0]$[111, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
-            <bendpoints points="[-24, 22, 92, -84]$[-91, 84, 25, -22]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
             <children type="6002">
@@ -2068,7 +2052,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
             <bendpoints points="[-24, 0, 79, 0]$[-78, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -2079,7 +2063,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
             <bendpoints points="[-24, 0, 88, 0]$[-87, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -2090,7 +2074,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.10"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
             <bendpoints points="[-24, 0, 189, 0]$[-188, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -2126,6 +2110,17 @@
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[25, -2, -110, 11]$[111, -11, -24, 2]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.10"/>
+            <bendpoints points="[0, 25, 0, -103]$[0, 104, 0, -24]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -2158,6 +2153,8 @@
             namespace="http://www.example.org/DataNotParsed" prefix="tns11"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+256e5569-2446-4b7a-882d-1b06cbf2e883+input" prefix="tns7"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/pe/WriteToLogActivitySchema" prefix="tns8"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Library"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Log"/>
@@ -2376,10 +2373,10 @@
                 <bpws:link name="L_Set_LogToParseJSON" tibex:linkType="SUCCESS"/>
                 <bpws:link name="ParseJSONToL_Set_Log1" tibex:linkType="SUCCESS"/>
                 <bpws:link name="L_Set_Log1ToJDBCQuery" tibex:linkType="SUCCESS"/>
-                <bpws:link name="JDBCQueryToL_Set_Log2" tibex:linkType="SUCCESS"/>
                 <bpws:link name="L_Set_Log2ToRenderJSON" tibex:linkType="SUCCESS"/>
                 <bpws:link name="RenderJSONToJMSSendMessage" tibex:linkType="SUCCESS"/>
                 <bpws:link name="JMSSendMessageToL_Set_Log3" tibex:linkType="SUCCESS"/>
+                <bpws:link name="SELECT_COAToLog_3" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -2537,11 +2534,11 @@
                         <bpws:target linkName="L_Set_Log1ToJDBCQuery"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="JDBCQueryToL_Set_Log2"/>
+                        <bpws:source linkName="SELECT_COAToLog_3"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+3f00532f-fa9f-4d03-878b-0b0b3aaca3e5+input&quot; xmlns:tns4=&quot;http://www.example.org/CCM_COA_PP_SED_0007&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:template name=&quot;SELECT_COA-input&quot; match=&quot;/&quot;>&lt;tns3:jdbcQueryActivityInput>&lt;RENT_START_DATE_S>&lt;xsl:value-of select=&quot;concat($ParseJSON/tns4:DATA/tns4:REQUEST_YM,&amp;quot;01&amp;quot;)&quot;/>&lt;/RENT_START_DATE_S>&lt;RENT_START_DATE_E>&lt;xsl:value-of select=&quot;format-date(tib:add-to-date(tib:parse-date(&amp;quot;yyyyMMdd&amp;quot;,&amp;#xD;&amp;#xA;concat(format-date(tib:add-to-date(tib:parse-date(&amp;quot;yyyyMM&amp;quot;,$ParseJSON/tns4:DATA/tns4:REQUEST_YM), 0, 1, 0),&amp;quot;[Y0001][M01]&amp;quot;),&amp;quot;01&amp;quot;)), 0,0, -1), &amp;quot;[Y0001][M01][D01]&amp;quot;)&quot;/>&lt;/RENT_START_DATE_E>&lt;RENT_END_DATE_S>&lt;xsl:value-of select=&quot;concat($ParseJSON/tns4:DATA/tns4:REQUEST_YM,&amp;quot;01&amp;quot;)&quot;/>&lt;/RENT_END_DATE_S>&lt;RENT_END_DATE_E>&lt;xsl:value-of select=&quot;format-date(tib:add-to-date(tib:parse-date(&amp;quot;yyyyMMdd&amp;quot;,&amp;#xD;&amp;#xA;concat(format-date(tib:add-to-date(tib:parse-date(&amp;quot;yyyyMM&amp;quot;,$ParseJSON/tns4:DATA/tns4:REQUEST_YM), 0, 1, 0),&amp;quot;[Y0001][M01]&amp;quot;),&amp;quot;01&amp;quot;)), 0,0, -1), &amp;quot;[Y0001][M01][D01]&amp;quot;)&quot;/>&lt;/RENT_END_DATE_E>&lt;timeout>&lt;xsl:value-of select=&quot;xsd:long($L_Get_InterfaceInfo/Library:Interface/Library:Timeout *1000)&quot;/>&lt;/timeout>&lt;/tns3:jdbcQueryActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+3f00532f-fa9f-4d03-878b-0b0b3aaca3e5+input&quot; xmlns:tns4=&quot;http://www.example.org/CCM_COA_PP_SED_0007&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:template name=&quot;SELECT_COA-input&quot; match=&quot;/&quot;>&lt;tns3:jdbcQueryActivityInput>&lt;REQUEST_YM>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($ParseJSON/tns4:DATA/tns4:REQUEST_YM)&quot;>&lt;xsl:value-of select=&quot;$ParseJSON/tns4:DATA/tns4:REQUEST_YM&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/REQUEST_YM>&lt;timeout>&lt;xsl:value-of select=&quot;xsd:long($L_Get_InterfaceInfo/Library:Interface/Library:Timeout *1000)&quot;/>&lt;/timeout>&lt;/tns3:jdbcQueryActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2554,20 +2551,11 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCQueryActivity"/>
                                     <value
                                     sharedResourceProperty="jdbcProperty"
-                                    sqlStatement="SELECT&#xa;BUILDING_NO,&#xa;BUILDING_NAME,&#xa;RENT_STATUS,&#xa;TO_CHAR(RENT_START_DATE, 'YYYYMMDD') AS RENT_START_DATE,&#xa;TO_CHAR(RENT_END_DATE, 'YYYYMMDD') AS RENT_END_DATE,&#xa;CUSTOMER_NO1,&#xa;CUSTOMER_NO2,&#xa;CUSTOMER_NO3,&#xa;RENT_USE&#xa;  FROM VW_ESB_RENT_MST&#xa;where (RENT_START_DATE BETWEEN  to_date(?,'YYYY-MM-DD HH24:MI:SS') AND to_date(?,'YYYY-MM-DD HH24:MI:SS'))&#xa;or  (RENT_END_DATE BETWEEN  to_date(?,'YYYY-MM-DD HH24:MI:SS') AND to_date(?,'YYYY-MM-DD HH24:MI:SS'))&#xa;"
+                                    sqlStatement="SELECT&#xa;BUILDING_NO,&#xa;BUILDING_NAME,&#xa;RENT_STATUS,&#xa;TO_CHAR(RENT_START_DATE, 'YYYYMMDD') AS RENT_START_DATE,&#xa;TO_CHAR(RENT_END_DATE, 'YYYYMMDD') AS RENT_END_DATE,&#xa;CUSTOMER_NO1,&#xa;CUSTOMER_NO2,&#xa;CUSTOMER_NO3,&#xa;RENT_USE&#xa;  FROM VW_ESB_RENT_MST&#xa;where ? BETWEEN substr(TO_CHAR(RENT_START_DATE, 'YYYYMMDD'), 0, 6) AND substr(TO_CHAR(RENT_END_DATE, 'YYYYMMDD'), 0, 6)  -- REQUEST_YM"
                                     threadPool="threadPoolProperty" xsi:type="jdbcPalette:JDBCQueryActivity">
                                     <PreparedParameters
                                     DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="RENT_START_DATE_S"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="RENT_START_DATE_E"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="RENT_END_DATE_S"/>
-                                    <PreparedParameters
-                                    DataType="12"
-                                    DataTypeDisplayValue="VARCHAR" ParameterName="RENT_END_DATE_E"/>
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="REQUEST_YM"/>
                                     <columnMetadata columnIndex="1"
                                     columnName="BUILDING_NO"
                                     dataType="1111"
@@ -2726,7 +2714,7 @@
                     tibex:xpdlId="2daa3603-6acb-4530-bf3d-88b7757f0536"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="JDBCQueryToL_Set_Log2"/>
+                        <bpws:target linkName="SELECT_COAToLog_3"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="L_Set_Log2ToRenderJSON"/>
