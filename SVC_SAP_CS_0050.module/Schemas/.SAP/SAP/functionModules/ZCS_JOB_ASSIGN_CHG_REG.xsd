@@ -12,6 +12,13 @@
     <xsd:element name="RfcRequest" type="tns:ZCS_JOB_ASSIGN_CHG_REG_RequestParam"/>
     <xsd:complexType name="ZCS_JOB_ASSIGN_CHG_REG_RequestParam">
         <xsd:sequence>
+            <xsd:element minOccurs="0" name="I_STATUS" r3:abapType="C" r3:document="가접수건" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
             <xsd:element minOccurs="0" name="I_USER_ID" r3:abapType="C" r3:document="등록자(Web로긴ID)" r3:javaType="java.lang.String" r3:jcoType="0">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
@@ -332,6 +339,13 @@
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="20"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="RECV_NO" nillable="true" r3:abapType="C" r3:document="접수순번_WEB" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="1072">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="6"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>

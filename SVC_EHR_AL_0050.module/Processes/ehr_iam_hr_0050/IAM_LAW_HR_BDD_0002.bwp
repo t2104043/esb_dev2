@@ -774,6 +774,9 @@
                                     name="LDR_EMP_NO"
                                     nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
+                                    name="PARENT_CODE"
+                                    nillable="true" type="string"/>
+                                    <element maxOccurs="1" minOccurs="1"
                                     name="STATUS_CODE"
                                     nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
@@ -2612,7 +2615,7 @@
                         </bpws:sources>
                         <tibex:inputBindings>
                             <tibex:inputBinding
-                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+493fd3cb-37bf-4ac3-a702-98e2575feeda+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SEL_Deptmaster&quot;/>&lt;xsl:template name=&quot;Ins_T_SYS_GROUP_TEMP-input&quot; match=&quot;/&quot;>&lt;tns2:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$SEL_Deptmaster/Record&quot;>&lt;Record>&lt;CODE>&lt;xsl:value-of select=&quot;ORGEH&quot;/>&lt;/CODE>&lt;NAME_KO>&lt;xsl:value-of select=&quot;ORGTX&quot;/>&lt;/NAME_KO>&lt;LDR_EMP_NO>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(HEAD_EMP_NO)&quot;>&lt;xsl:value-of select=&quot;HEAD_EMP_NO&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/LDR_EMP_NO>&lt;STATUS_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(EXCHK)&quot;>&lt;xsl:value-of select=&quot;EXCHK&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/STATUS_CODE>&lt;NAME_EN>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/NAME_EN>&lt;/Record>&lt;/xsl:for-each>&lt;/tns2:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+493fd3cb-37bf-4ac3-a702-98e2575feeda+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;SEL_Deptmaster&quot;/>&lt;xsl:template name=&quot;Ins_T_SYS_GROUP_TEMP-input&quot; match=&quot;/&quot;>&lt;tns2:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$SEL_Deptmaster/Record&quot;>&lt;Record>&lt;CODE>&lt;xsl:value-of select=&quot;ORGEH&quot;/>&lt;/CODE>&lt;NAME_KO>&lt;xsl:value-of select=&quot;ORGTX&quot;/>&lt;/NAME_KO>&lt;LDR_EMP_NO>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(HEAD_EMP_NO)&quot;>&lt;xsl:value-of select=&quot;HEAD_EMP_NO&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/LDR_EMP_NO>&lt;PARENT_CODE>&lt;xsl:value-of select=&quot;UPORGEH&quot;/>&lt;/PARENT_CODE>&lt;STATUS_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(EXCHK)&quot;>&lt;xsl:value-of select=&quot;EXCHK&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/STATUS_CODE>&lt;NAME_EN>&lt;xsl:value-of select=&quot;''&quot;/>&lt;/NAME_EN>&lt;/Record>&lt;/xsl:for-each>&lt;/tns2:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                         </tibex:inputBindings>
                         <tibex:config>
                             <bwext:BWActivity
@@ -2625,7 +2628,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCUpdateActivity"/>
                                     <value batchUpdate="true"
                                     sharedResourceProperty="db.LAW"
-                                    sqlStatement="insert into T_SYS_GROUP_TEMP (&#xa;CODE&#xa;,NAME_KO&#xa;&#xa;&#xa;&#xa;,LDR_EMP_NO&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,STATUS_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,NAME_EN&#xa;)&#xa; values (&#xa; ? -- CODE&#xa;,? -- NAME_KO&#xa;&#xa;&#xa;&#xa;,? -- LDR_EMP_NO&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,? -- STATUS_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,? -- NAME_EN&#xa;)"
+                                    sqlStatement="insert into T_SYS_GROUP_TEMP (&#xa;CODE&#xa;,NAME_KO&#xa;&#xa;&#xa;&#xa;,LDR_EMP_NO&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,PARENT_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,STATUS_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,NAME_EN&#xa;)&#xa; values (&#xa; ? -- CODE&#xa;,? -- NAME_KO&#xa;&#xa;&#xa;&#xa;,? -- LDR_EMP_NO&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,? -- ,PARENT_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,? -- STATUS_CODE&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;,? -- NAME_EN&#xa;)"
                                     threadPool="theradpool.LAW"
                                     timeout="120" xsi:type="jdbcPalette:JDBCUpdateActivity">
                                     <PreparedParameters
@@ -2637,6 +2640,9 @@
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="LDR_EMP_NO"/>
+                                    <PreparedParameters
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="PARENT_CODE"/>
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="STATUS_CODE"/>

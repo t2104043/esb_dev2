@@ -1352,6 +1352,15 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>/Resources/http/ppl/pplTimeOut</name>
+			<value>600</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>/Resources/http/coala/Host</name>
 			<value>ncoala.coway.co.kr</value>
 			<deploymentSettable>false</deploymentSettable>

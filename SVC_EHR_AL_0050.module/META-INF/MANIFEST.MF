@@ -22,6 +22,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.jmsconnection)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.cred)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.sapconnection)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sftp)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.sslclient)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.threadpool)",
  com.tibco.bw.binding.model; filter:="(name=bw.rest)"

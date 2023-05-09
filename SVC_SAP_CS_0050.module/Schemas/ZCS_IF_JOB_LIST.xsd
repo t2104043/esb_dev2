@@ -8,6 +8,7 @@
 			<element maxOccurs="1" minOccurs="0" name="DATA">
 				<complexType>
 					<sequence>
+						<element name="I_CANCEL_SVC" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_JOB_DT_FR" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_JOB_DT_TO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_PLAN_DEPT_CD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>

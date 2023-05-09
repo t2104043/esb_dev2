@@ -758,12 +758,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_SAP_FI_0050.module//SAP_UMSFI_Timeout</name>
-			<value>2400000</value>
+			<value>3600000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>3600000</lookupValue>
 		</globalVariable>
 	</globalVariables>
 </repository>

@@ -12,6 +12,13 @@
     <xsd:element name="RfcRequest" type="tns:ZCS_IF_JOB_LIST_RequestParam"/>
     <xsd:complexType name="ZCS_IF_JOB_LIST_RequestParam">
         <xsd:sequence>
+            <xsd:element minOccurs="0" name="I_CANCEL_SVC" r3:abapType="C" r3:document="기서본 취소 건만 조회" r3:javaType="java.lang.String" r3:jcoType="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
             <xsd:element minOccurs="0" name="I_DELAY_DAYS_DOWN" r3:abapType="s" r3:document="작업경과 미만일 기준" r3:javaType="short" r3:jcoType="9">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:short"/>

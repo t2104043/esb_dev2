@@ -9,6 +9,7 @@
 				<complexType>
 					<sequence>
 						<element name="I_USER_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_STATUS" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="IT_ITEM" maxOccurs="unbounded" minOccurs="0">
 							<complexType>
 								<sequence>
@@ -48,6 +49,7 @@
 									<element name="ASSIGN_SALE_ORG" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 									<element name="FIRST_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 									<element name="DELAY_DAYS" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="RECV_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 								</sequence>
 							</complexType>
 						</element>		

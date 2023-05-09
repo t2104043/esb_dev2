@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SVC_EHR_HR_SHD_0003" xmlns:tns="http://www.example.org/SVC_EHR_HR_SHD_0003" elementFormDefault="qualified"   xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="SVC_EHR_HR_SHD_0003_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="FROMDATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="TODATE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="CHANGED_FLAG" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="SVC_EHR_HR_SHD_0003_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ITEM" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									 <element name="WORKDATE" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="EMP_NO" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="LABOR_CD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="STA_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="STA_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="END_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="END_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="REQ_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_STA_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_STA_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_END_YMD" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_END_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="CONF_REQ_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_NIGHT_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RESULT_BREAK_HM" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="RSN" type="string" maxOccurs="1" minOccurs="0"/>
+									 <element name="CHG_RSN" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+			
+		</sequence>
+	</complexType>
+</element>
+</schema>
