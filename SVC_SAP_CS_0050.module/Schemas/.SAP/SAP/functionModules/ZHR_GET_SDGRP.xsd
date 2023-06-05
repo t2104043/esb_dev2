@@ -159,14 +159,14 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="ID" nillable="true" r3:abapType="C" r3:document="" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2">
+            <xsd:element minOccurs="0" name="ID" nillable="true" r3:abapType="C" r3:document="Message Class" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="20"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="NUMBER" nillable="true" r3:abapType="N" r3:document="" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="42">
+            <xsd:element minOccurs="0" name="NUMBER" nillable="true" r3:abapType="N" r3:document="메시지 번호" r3:javaType="java.lang.String" r3:jcoType="6" r3:offset="42">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="3"/>
@@ -194,28 +194,28 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="MESSAGE_V1" nillable="true" r3:abapType="C" r3:document="" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="540">
+            <xsd:element minOccurs="0" name="MESSAGE_V1" nillable="true" r3:abapType="C" r3:document="메시지 변수" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="540">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="50"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="MESSAGE_V2" nillable="true" r3:abapType="C" r3:document="" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="640">
+            <xsd:element minOccurs="0" name="MESSAGE_V2" nillable="true" r3:abapType="C" r3:document="메시지 변수" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="640">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="50"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="MESSAGE_V3" nillable="true" r3:abapType="C" r3:document="" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="740">
+            <xsd:element minOccurs="0" name="MESSAGE_V3" nillable="true" r3:abapType="C" r3:document="메시지 변수" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="740">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="50"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="MESSAGE_V4" nillable="true" r3:abapType="C" r3:document="" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="840">
+            <xsd:element minOccurs="0" name="MESSAGE_V4" nillable="true" r3:abapType="C" r3:document="메시지 변수" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="840">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="50"/>

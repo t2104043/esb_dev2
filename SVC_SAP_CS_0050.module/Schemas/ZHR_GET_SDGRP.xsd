@@ -29,7 +29,8 @@
 							         <element name="OCODE" type="string" maxOccurs="1" minOccurs="0"/>
 							         <element name="VKGRP" type="string" maxOccurs="1" minOccurs="0"/>
 							         <element name="ZVKGTX" type="string" maxOccurs="1" minOccurs="0"/>
-							         <element name="ORGEH" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ZVKBTX" type="string" maxOccurs="1" minOccurs="0"/>
+							         <element name="ORGEH" type="string" maxOccurs="1" minOccurs="0"/>							         
 								</sequence>
 							</complexType>
 						</element>

@@ -67,4 +67,7 @@
   <sca:component xmi:id="_OVNCcNdAEe2IqeZOOVnN4A" name="ComponentSVC_SAP_EX_SEA_RCV" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OVNCcddAEe2IqeZOOVnN4A" processName="common.SVC_SAP_ETC_SEA_RCV"/>
   </sca:component>
+  <sca:component xmi:id="_tm8WYAAZEe6O_OG6lEW9FQ" name="ComponentICM_SAP_SY_SSES_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tm8WYQAZEe6O_OG6lEW9FQ" processName="icm_sap_sy_ses.ICM_SAP_SY_SES_0001"/>
+  </sca:component>
 </sca:composite>

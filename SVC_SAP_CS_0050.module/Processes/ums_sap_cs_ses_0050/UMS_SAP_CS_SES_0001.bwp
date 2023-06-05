@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="wcc_sap_cs_ses_0050.WSS_SAP_CS_SES_0009"
+    name="ums_sap_cs_ses_0050.UMS_SAP_CS_SES_0001"
     suppressJoinFailure="yes"
-    targetNamespace="http://xmlns.example.com/20221114105608"
+    targetNamespace="http://xmlns.example.com/20230524093641"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
-    xmlns:ns0="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output"
-    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jms+12ddadc5-8c0e-47f9-8182-c10144da4e93+input"
-    xmlns:ns10="activity.jsonRender.output+0b138e84-eb57-4cbb-9eea-40ed1b0678c0+ActivityOutputType"
-    xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
-    xmlns:ns12="activity.jsonRender.output+dc940165-3740-428d-995b-f7e62f2c49af+ActivityOutputType"
-    xmlns:ns13="http://www.example.org/DataNotParsed"
-    xmlns:ns14="http://www.tibco.com/namespaces/tnt/plugins/invokerequestresponse+919d5326-f71e-415b-9843-5cac047fd747+Input"
-    xmlns:ns15="http://ns.tibco.com/bw/palette/sap"
-    xmlns:ns16="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse"
-    xmlns:ns17="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP"
-    xmlns:ns18="http://www.example.org/ZHR_GET_SDGRP"
-    xmlns:ns19="http://www.tibco.com/xmlns/sap/ECC/ZHR_GET_SDGRP"
-    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms"
-    xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jms.send"
-    xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jms+ef1f9aea-22d8-4ee3-b0b0-624621e090b0+input"
-    xmlns:ns5="http://www.cspi_library.org/Library"
-    xmlns:ns6="http://www.cspi_library.org/Log"
-    xmlns:ns7="activity.jsonParser.input+29eeec67-45fc-44e6-86d9-6068b712e7e8+ActivityInputType"
+    xmlns:ns0="http://www.cspi_library.org/Library"
+    xmlns:ns1="http://www.cspi_library.org/Log"
+    xmlns:ns10="http://www.example.org/DataNotParsed"
+    xmlns:ns11="activity.jsonRender.output+57f04113-f244-4253-8fb6-cdb480ef10ec+ActivityOutputType"
+    xmlns:ns12="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
+    xmlns:ns13="http://www.tibco.com/xmlns/sap/SAP/ZCS_IF_JOB_LIST"
+    xmlns:ns14="activity.jsonRender.output+29733328-bd9c-4ef4-bcf1-c240efe997c3+ActivityOutputType"
+    xmlns:ns15="http://www.tibco.com/namespaces/tnt/plugins/jms+8dda6949-819f-4d02-bdb7-22f7a4d33e1c+input"
+    xmlns:ns16="http://www.example.org/ZCS_UMS_ORDER_INFO"
+    xmlns:ns17="http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO"
+    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output"
+    xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/jms+2f891889-086e-4715-accb-c04694ed8a0f+input"
+    xmlns:ns4="http://www.tibco.com/namespaces/tnt/plugins/jms"
+    xmlns:ns5="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jms.send"
+    xmlns:ns6="activity.jsonParser.input+d3a4c69a-d3ae-465e-b1ee-6332bb1f46b2+ActivityInputType"
+    xmlns:ns7="http://www.example.org/ZCS_IF_JOB_LIST"
     xmlns:ns8="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonParser"
-    xmlns:ns9="activity.jsonParser.input+196727b8-88b6-4c80-bbff-5ef621a7c306+ActivityInputType"
+    xmlns:ns9="activity.jsonParser.input+26fd1107-922f-449f-bc14-fb090b883c8d+ActivityInputType"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -193,9 +191,9 @@
         </schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -377,9 +375,9 @@
         </xsd:schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+12ddadc5-8c0e-47f9-8182-c10144da4e93+input"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+2f891889-086e-4715-accb-c04694ed8a0f+input"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+12ddadc5-8c0e-47f9-8182-c10144da4e93+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+2f891889-086e-4715-accb-c04694ed8a0f+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -800,11 +798,106 @@
             <element name="JMSSessionCreateException" type="tns:JMSSessionCreateExceptionType"/>
             <element name="JMSSendException" type="tns:JMSSendExceptionType"/>
         </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="activity.jsonParser.input+d3a4c69a-d3ae-465e-b1ee-6332bb1f46b2+ActivityInputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+d3a4c69a-d3ae-465e-b1ee-6332bb1f46b2+ActivityInputType">
+            <complexType name="ActivityInputClassType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1"
+                        name="jsonString" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://schemas.tibco.com/bw/plugins/xml/5.0/JSONActivitiesExceptions"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.tibco.com/bw/plugins/xml/5.0/JSONActivitiesExceptions">
+            <element name="JSONActivityException" type="tns:JSONActivityException"/>
+            <complexType name="JSONActivityException">
+                <sequence>
+                    <element name="msg" type="string"/>
+                    <element minOccurs="0" name="msgCode" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="UnsupportedEncodingException" type="tns:UnsupportedEncodingExceptionType"/>
+            <complexType name="UnsupportedEncodingExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException">
+                        <sequence>
+                            <element name="encoding" type="string"/>
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
+            <complexType name="JSONParserExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException"/>
+                </complexContent>
+            </complexType>
+            <element name="JSONParserException" type="tns:JSONParserExceptionType"/>
+            <complexType name="JSONTransformExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException"/>
+                </complexContent>
+            </complexType>
+            <element name="JSONTransformException" type="tns:JSONTransformExceptionType"/>
+            <complexType name="JSONRenderExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException"/>
+                </complexContent>
+            </complexType>
+            <element name="JSONRenderException" type="tns:JSONRenderExceptionType"/>
+            <complexType name="JSONRestExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException"/>
+                </complexContent>
+            </complexType>
+            <element name="JSONRestException" type="tns:JSONRestExceptionType"/>
+            <complexType name="ValidationExceptionType">
+                <complexContent>
+                    <extension base="tns:JSONActivityException"/>
+                </complexContent>
+            </complexType>
+            <element name="ValidationException" type="tns:ValidationExceptionType"/>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="activity.jsonParser.input+26fd1107-922f-449f-bc14-fb090b883c8d+ActivityInputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+26fd1107-922f-449f-bc14-fb090b883c8d+ActivityInputType">
+            <complexType name="ActivityInputClassType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1"
+                        name="jsonString" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
+        </schema>
+        <schema
+            targetNamespace="activity.jsonRender.output+57f04113-f244-4253-8fb6-cdb480ef10ec+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+57f04113-f244-4253-8fb6-cdb480ef10ec+ActivityOutputType">
+            <complexType name="ActivityOutputClassType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1"
+                        name="jsonString" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
+        </schema>
+        <schema
+            targetNamespace="activity.jsonRender.output+29733328-bd9c-4ef4-bcf1-c240efe997c3+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+29733328-bd9c-4ef4-bcf1-c240efe997c3+ActivityOutputType">
+            <complexType name="ActivityOutputClassType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1"
+                        name="jsonString" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
+        </schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ef1f9aea-22d8-4ee3-b0b0-624621e090b0+input"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+8dda6949-819f-4d02-bdb7-22f7a4d33e1c+input"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+ef1f9aea-22d8-4ee3-b0b0-624621e090b0+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+8dda6949-819f-4d02-bdb7-22f7a4d33e1c+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -1003,101 +1096,6 @@
             </complexType>
         </schema>
         <schema elementFormDefault="unqualified"
-            targetNamespace="activity.jsonParser.input+29eeec67-45fc-44e6-86d9-6068b712e7e8+ActivityInputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+29eeec67-45fc-44e6-86d9-6068b712e7e8+ActivityInputType">
-            <complexType name="ActivityInputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
-        </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="http://schemas.tibco.com/bw/plugins/xml/5.0/JSONActivitiesExceptions"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.tibco.com/bw/plugins/xml/5.0/JSONActivitiesExceptions">
-            <element name="JSONActivityException" type="tns:JSONActivityException"/>
-            <complexType name="JSONActivityException">
-                <sequence>
-                    <element name="msg" type="string"/>
-                    <element minOccurs="0" name="msgCode" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="UnsupportedEncodingException" type="tns:UnsupportedEncodingExceptionType"/>
-            <complexType name="UnsupportedEncodingExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException">
-                        <sequence>
-                            <element name="encoding" type="string"/>
-                        </sequence>
-                    </extension>
-                </complexContent>
-            </complexType>
-            <complexType name="JSONParserExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException"/>
-                </complexContent>
-            </complexType>
-            <element name="JSONParserException" type="tns:JSONParserExceptionType"/>
-            <complexType name="JSONTransformExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException"/>
-                </complexContent>
-            </complexType>
-            <element name="JSONTransformException" type="tns:JSONTransformExceptionType"/>
-            <complexType name="JSONRenderExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException"/>
-                </complexContent>
-            </complexType>
-            <element name="JSONRenderException" type="tns:JSONRenderExceptionType"/>
-            <complexType name="JSONRestExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException"/>
-                </complexContent>
-            </complexType>
-            <element name="JSONRestException" type="tns:JSONRestExceptionType"/>
-            <complexType name="ValidationExceptionType">
-                <complexContent>
-                    <extension base="tns:JSONActivityException"/>
-                </complexContent>
-            </complexType>
-            <element name="ValidationException" type="tns:ValidationExceptionType"/>
-        </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="activity.jsonParser.input+196727b8-88b6-4c80-bbff-5ef621a7c306+ActivityInputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+196727b8-88b6-4c80-bbff-5ef621a7c306+ActivityInputType">
-            <complexType name="ActivityInputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
-        </schema>
-        <schema
-            targetNamespace="activity.jsonRender.output+0b138e84-eb57-4cbb-9eea-40ed1b0678c0+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+0b138e84-eb57-4cbb-9eea-40ed1b0678c0+ActivityOutputType">
-            <complexType name="ActivityOutputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
-        </schema>
-        <schema
-            targetNamespace="activity.jsonRender.output+dc940165-3740-428d-995b-f7e62f2c49af+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+dc940165-3740-428d-995b-f7e62f2c49af+ActivityOutputType">
-            <complexType name="ActivityOutputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
-        </schema>
-        <schema elementFormDefault="unqualified"
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonParser"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://schemas.tibco.com/bw/plugins/xml/5.0/JSONActivitiesExceptions" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonParser">
@@ -1121,39 +1119,11 @@
                 </choice>
             </complexType>
         </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions">
-            <complexType name="BaseExceptionType">
-                <sequence>
-                    <element name="msg" type="string"/>
-                    <element minOccurs="0" name="msgCode" type="string"/>
-                </sequence>
-            </complexType>
-            <complexType name="PluginExceptionType">
-                <complexContent>
-                    <extension base="tns:BaseExceptionType"/>
-                </complexContent>
-            </complexType>
-            <element name="SAPPluginException" type="tns:PluginExceptionType"/>
-        </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse"
-            xmlns="http://www.w3.org/2001/XMLSchema"
-            xmlns:Q1="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse">
-            <import namespace="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions"/>
-            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
-            <complexType name="ActivityErrorDataType">
-                <choice>
-                    <element maxOccurs="1" minOccurs="0" ref="Q1:SAPPluginException"/>
-                </choice>
-            </complexType>
-        </schema>
     </tibex:Types>
-    <tibex:ProcessInfo callable="false" createdBy="Administrator"
-        createdOn="Mon Nov 14 10:56:08 KST 2022" description=""
+    <tibex:ProcessInfo callable="false" createdBy="dcshi"
+        createdOn="Wed May 24 09:36:41 KST 2023" description=""
         extraErrorVars="true" modifiers="public"
-        productVersion="6.8.1 HF1 V43 2022-08-11" scalable="true"
+        productVersion="6.8.1 HF2 V55 2023-01-13" scalable="true"
         singleton="true" stateless="false" type="IT"/>
     <tibex:ProcessInterface context="" input="" output=""/>
     <tibex:ProcessTemplateConfigurations/>
@@ -1182,7 +1152,7 @@
                             <children type="3020">
                                 <children type="4005">
                                     <children type="3007">
-                                    <children type="4002 bw.jms.receive">
+                                    <children type="4002">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1210,12 +1180,10 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
-                                    <layoutConstraint
-                                    height="40" width="40"
-                                    x="11"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    <layoutConstraint x="232"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
-                                    <children type="4002 bw.jms.send">
+                                    <children type="4002">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1243,10 +1211,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint
-                                    height="40" width="40"
-                                    x="372"
-                                    xsi:type="notation:Bounds" y="187"/>
+                                    <layoutConstraint x="362"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1276,8 +1242,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
-                                    <layoutConstraint x="332"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    <layoutConstraint x="482"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1307,8 +1273,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
-                                    <layoutConstraint x="230"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    <layoutConstraint x="177"
+                                    xsi:type="notation:Bounds" y="214"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1338,8 +1304,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
-                                    <layoutConstraint x="614"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    <layoutConstraint x="685"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1369,10 +1335,10 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
-                                    <layoutConstraint x="426"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    <layoutConstraint x="577"
+                                    xsi:type="notation:Bounds" y="214"/>
                                     </children>
-                                    <children type="4002">
+                                    <children type="4002 bw.jms.receive">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1400,10 +1366,12 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.6"/>
-                                    <layoutConstraint x="248"
-                                    xsi:type="notation:Bounds" y="187"/>
+                                    <layoutConstraint
+                                    height="40" width="40"
+                                    x="-6"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
-                                    <children type="4002">
+                                    <children type="4002 bw.jms.send">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1431,8 +1399,10 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
-                                    <layoutConstraint x="597"
-                                    xsi:type="notation:Bounds" y="187"/>
+                                    <layoutConstraint
+                                    height="40" width="40"
+                                    x="295"
+                                    xsi:type="notation:Bounds" y="214"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
                                     <children type="4017">
@@ -1464,8 +1434,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="521"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    x="587"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
                                     <children type="4017">
@@ -1497,8 +1467,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="119"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    x="117"
+                                    xsi:type="notation:Bounds" y="58"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
                                     <children type="4017">
@@ -1530,8 +1500,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.10"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="490"
-                                    xsi:type="notation:Bounds" y="187"/>
+                                    x="420"
+                                    xsi:type="notation:Bounds" y="214"/>
                                     </children>
                                     <children type="4002 bw.sap.InvokeRequestResponse">
                                     <children type="4017">
@@ -1563,8 +1533,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.11"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="714"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    x="685"
+                                    xsi:type="notation:Bounds" y="214"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1578,8 +1548,9 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="286"
-                                    width="876" xsi:type="notation:Bounds"/>
+                                    <layoutConstraint height="108"
+                                    width="400" x="2"
+                                    xsi:type="notation:Bounds" y="2"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1588,7 +1559,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="286" width="879" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="372" width="837" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1608,7 +1579,8 @@
                                     <children type="3032">
                                     <children type="4005">
                                     <children type="3007">
-                                    <children type="4002 bw.jms.send">
+                                    <eAnnotations source="Pixel"/>
+                                    <children type="4002">
                                     <children type="4017">
                                     <styles
                                     fontName="맑은 고딕"
@@ -1646,12 +1618,10 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="40"
-                                    width="40"
-                                    x="403"
-                                    xsi:type="notation:Bounds" y="25"/>
+                                    x="268"
+                                    xsi:type="notation:Bounds" y="72"/>
                                     </children>
-                                    <children type="4002">
+                                    <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
                                     <children type="4017">
                                     <styles
                                     fontName="맑은 고딕"
@@ -1689,8 +1659,10 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.1"/>
                                     <layoutConstraint
-                                    x="297"
-                                    xsi:type="notation:Bounds" y="25"/>
+                                    height="40"
+                                    width="40"
+                                    x="12"
+                                    xsi:type="notation:Bounds" y="72"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
                                     <children type="4017">
@@ -1732,10 +1704,10 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="183"
-                                    xsi:type="notation:Bounds" y="25"/>
+                                    x="142"
+                                    xsi:type="notation:Bounds" y="72"/>
                                     </children>
-                                    <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
+                                    <children type="4002 bw.jms.send">
                                     <children type="4017">
                                     <styles
                                     fontName="맑은 고딕"
@@ -1775,8 +1747,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="73"
-                                    xsi:type="notation:Bounds" y="25"/>
+                                    x="392"
+                                    xsi:type="notation:Bounds" y="72"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1790,8 +1762,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity"/>
-                                    <layoutConstraint
-                                    height="168" width="778" xsi:type="notation:Bounds"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1800,10 +1771,10 @@
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
                                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles restoreHeight="178"
-                                    restoreWidth="829" xsi:type="bwnotation:ResizingStyle"/>
+                                    restoreWidth="787" xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll"/>
                                     <layoutConstraint height="178"
-                                    width="829" xsi:type="notation:Bounds"/>
+                                    width="787" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1812,8 +1783,8 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity/@faultHandlers"/>
-                            <layoutConstraint height="200" width="839"
-                                x="22" xsi:type="notation:Bounds" y="286"/>
+                            <layoutConstraint height="200" width="797"
+                                x="22" xsi:type="notation:Bounds" y="375"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -1823,7 +1794,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="487" width="879" x="1"
+                    <layoutConstraint height="576" width="837" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1832,12 +1803,12 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="539" width="1221" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="628" width="1179" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
@@ -1845,43 +1816,43 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 4, -85, -15]$[86, 15, -24, -4]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -98, 0]$[99, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, -2, -121, 11]$[122, -11, -24, 2]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -90, 0]$[91, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.2"/>
-            <bendpoints points="[25, -9, -77, 0]$[78, 0, -24, 9]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -105, 0]$[106, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.3"/>
-            <bendpoints points="[25, 0, -77, 0]$[78, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -95, 0]$[96, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
@@ -1889,7 +1860,7 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.4"/>
-            <bendpoints points="[25, -7, -63, 0]$[64, 0, -24, 7]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -80, 0]$[81, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8"
@@ -1900,73 +1871,7 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.5"/>
-            <bendpoints points="[25, -7, -72, 0]$[73, 0, -24, 7]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
-            <bendpoints points="[-24, 8, 80, -24]$[-79, 24, 25, -8]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
-            <bendpoints points="[-24, 0, 236, 0]$[-235, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
-            <bendpoints points="[-24, 2, 92, -9]$[-91, 9, 25, -2]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 2, -102, -8]$[103, 8, -24, -2]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, 1, -75, 0]$[76, 0, -24, -1]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
-            <bendpoints points="[25, 4, -237, 0]$[238, 0, -24, -4]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, 0, -73, 0]$[74, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
@@ -1976,68 +1881,125 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <bendpoints points="[-17, 25, 91, -131]$[-91, 132, 17, -24]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.11"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[-24, 0, 133, 0]$[-132, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
+            <bendpoints points="[-24, 0, 101, 0]$[-100, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
+            <bendpoints points="[-24, 0, 94, 0]$[-93, 0, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.11"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.10"/>
-            <bendpoints
-                points="[0, 25, 117, -126]$[0, 151, 117, 0]$[-92, 151, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
+            <bendpoints points="[25, 0, -219, 0]$[220, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[25, 0, -80, 0]$[81, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
+            <bendpoints points="[25, -3, -130, 14]$[131, -14, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
-            namespace="activity.jsonParser.input+196727b8-88b6-4c80-bbff-5ef621a7c306+ActivityInputType" prefix="tns"/>
+            namespace="http://www.example.org/ZCS_IF_JOB_LIST" prefix="tns1"/>
+        <tibex:namespaceItem
+            namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
         <tibex:namespaceItem
             namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
+        <tibex:namespaceItem
+            namespace="http://www.cspi_library.org/Library" prefix="Library"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/xmlns/sap/SAP/ZCS_IF_JOB_LIST" prefix="tns"/>
+        <tibex:namespaceItem namespace="http://www.cspi_library.org/Log" prefix="Log"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/bw/xslt/custom-functions" prefix="tib"/>
         <tibex:namespaceItem namespace="http://www.example.org/HEADER" prefix="tns3"/>
         <tibex:namespaceItem
-            namespace="http://www.cspi_library.org/Library" prefix="Library"/>
-        <tibex:namespaceItem namespace="http://www.cspi_library.org/Log" prefix="Log"/>
-        <tibex:namespaceItem
-            namespace="activity.jsonParser.input+29eeec67-45fc-44e6-86d9-6068b712e7e8+ActivityInputType" prefix="tns1"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/ZCS_JOB_ASSIGN_CHG_REG" prefix="tns2"/>
-        <tibex:namespaceItem
-            namespace="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP" prefix="tns4"/>
-        <tibex:namespaceItem
-            namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/ZHR_GET_SDGRP" prefix="tns5"/>
-        <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+12ddadc5-8c0e-47f9-8182-c10144da4e93+input" prefix="tns6"/>
-        <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output" prefix="ns"/>
+            namespace="http://www.example.org/ZCS_UMS_ORDER_INFO" prefix="tns2"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/bw/xpath/bw-custom-functions" prefix="bw"/>
         <tibex:namespaceItem
-            namespace="http://www.example.org/DataNotParsed" prefix="tns7"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+2f891889-086e-4715-accb-c04694ed8a0f+input" prefix="tns7"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+47ae0ed8-0a30-446c-9f92-f99fb170db6e+input" prefix="tns9"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output" prefix="ns1"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ef1f9aea-22d8-4ee3-b0b0-624621e090b0+input" prefix="tns8"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+7d6b06d9-4a38-458e-add7-7946e421a1c5+output" prefix="ns"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/xmlns/sap/ECC/ZHR_GET_SDGRP" prefix="tns10"/>
+            namespace="http://www.example.org/DataNotParsed" prefix="tns10"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+8dda6949-819f-4d02-bdb7-22f7a4d33e1c+input" prefix="tns8"/>
     </tibex:NamespaceRegistry>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/DataNotParsed"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Library"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Log"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/DataNotParsed"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/ZHR_GET_SDGRP"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/ZCS_UMS_ORDER_INFO"/>
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
-        <bpws:variable element="ns0:ActivityOutput"
-            name="JMSReceiveMessage" sca-bpel:internal="true"/>
         <bpws:variable name="jmsConnection" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/bw/models/sharedresource/jms}JMSConnectionFactory" type="xsd:string">
@@ -2045,62 +2007,6 @@
                 <bpws:literal>ems.ESB</bpws:literal>
             </bpws:from>
         </bpws:variable>
-        <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
-        <bpws:variable element="ns:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:ActivityInput"
-            name="JMSSendMessage-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns2:aEmptyOutputClass"
-            name="JMSSendMessage" sca-bpel:internal="true"/>
-        <bpws:variable element="ns3:ActivityErrorData"
-            name="_error_JMSSendMessage" sca-bpel:internal="true"/>
-        <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
-        <bpws:variable element="ns4:ActivityInput"
-            name="JMSSendMessage1-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns2:aEmptyOutputClass"
-            name="JMSSendMessage1" sca-bpel:internal="true"/>
-        <bpws:variable element="ns3:ActivityErrorData"
-            name="_error_JMSSendMessage1" sca-bpel:internal="true"/>
-        <bpws:variable element="ns5:InterfaceSysId"
-            name="L_Get_InterfaceSysId-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns5:InterfaceSysId"
-            name="L_Get_InterfaceSysId" sca-bpel:internal="true"/>
-        <bpws:variable element="ns5:InterfaceId"
-            name="L_Get_InterfaceInfo-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns5:InterfaceInfo"
-            name="L_Get_InterfaceInfo" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:SetLog" name="Log_2-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:SetLog" name="Log_1-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:SetLog" name="Log_4-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:SetLog" name="Log_3-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:SetLog" name="Log_0-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:ActivityInputClass"
-            name="ParseJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns18:ZHR_GET_SDGRP_req" name="ParseJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:ActivityErrorData"
-            name="_error_ParseJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns9:ActivityInputClass"
-            name="ParseHeaderJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns13:EBSGram" name="ParseHeaderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:ActivityErrorData"
-            name="_error_ParseHeaderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns18:ZHR_GET_SDGRP_rsp"
-            name="RenderJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns10:ActivityOutputClass"
-            name="RenderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns11:ActivityErrorData"
-            name="_error_RenderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns13:EBSGram"
-            name="Render_ErrorJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns12:ActivityOutputClass"
-            name="Render_ErrorJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns11:ActivityErrorData"
-            name="_error_Render_ErrorJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns17:RequestInputType"
-            name="InvokeRFCBAPIinSAP-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns17:RequestOutputType"
-            name="InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
-        <bpws:variable element="ns16:ActivityErrorData"
-            name="_error_InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
         <bpws:variable name="sapConnectionProperty"
             sca-bpel:hotUpdate="false" sca-bpel:privateProperty="true"
             sca-bpel:property="yes"
@@ -2109,6 +2015,62 @@
                 <bpws:literal>rfc.SAP</bpws:literal>
             </bpws:from>
         </bpws:variable>
+        <bpws:variable element="ns0:InterfaceId"
+            name="L_Get_InterfaceInfo-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns0:InterfaceInfo"
+            name="L_Get_InterfaceInfo" sca-bpel:internal="true"/>
+        <bpws:variable element="ns0:InterfaceSysId"
+            name="L_Get_InterfaceSysId-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns0:InterfaceSysId"
+            name="L_Get_InterfaceSysId" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:SetLog" name="Log_1-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:SetLog" name="Log_4-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:SetLog" name="Log_2-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:SetLog" name="Log_3-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns2:ActivityOutput"
+            name="JMSReceiveMessage" sca-bpel:internal="true"/>
+        <bpws:variable element="ns3:ActivityInput"
+            name="JMSSendMessage-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns4:aEmptyOutputClass"
+            name="JMSSendMessage" sca-bpel:internal="true"/>
+        <bpws:variable element="ns5:ActivityErrorData"
+            name="_error_JMSSendMessage" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:ActivityInputClass"
+            name="ParseJSON-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ZCS_UMS_ORDER_INFO_req"
+            name="ParseJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:ActivityErrorData"
+            name="_error_ParseJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns9:ActivityInputClass"
+            name="ParseHeaderJSON-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns10:EBSGram" name="ParseHeaderJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns8:ActivityErrorData"
+            name="_error_ParseHeaderJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ZCS_UMS_ORDER_INFO_rsp"
+            name="RenderJSON-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityOutputClass"
+            name="RenderJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:ActivityErrorData"
+            name="_error_RenderJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns17:RequestInputType"
+            name="InvokeRFCBAPIinSAP-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns17:RequestOutputType"
+            name="InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
+        <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
+        <bpws:variable element="ns:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:SetLog" name="Log_0-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns10:EBSGram"
+            name="Render_ErrorJSON-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityOutputClass"
+            name="Render_ErrorJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:ActivityErrorData"
+            name="_error_Render_ErrorJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns15:ActivityInput"
+            name="JMSSendMessage1-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns4:aEmptyOutputClass"
+            name="JMSSendMessage1" sca-bpel:internal="true"/>
+        <bpws:variable element="ns5:ActivityErrorData"
+            name="_error_JMSSendMessage1" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -2121,27 +2083,87 @@
     <bpws:scope name="scope">
         <bpws:faultHandlers>
             <bpws:catchAll tibex:faultDetailsVar="FaultDetails"
-                tibex:faultNameVar="FaultName" tibex:xpdlId="bfdd5fbc-b937-473c-a2c3-520ccf3f972f">
+                tibex:faultNameVar="FaultName" tibex:xpdlId="480dc53d-859a-4112-857c-a25bd0dc1b3b">
                 <bpws:scope name="scope1">
                     <bpws:flow name="flow1">
                         <bpws:links>
                             <bpws:link name="EmptyToRenderJSON1" tibex:linkType="SUCCESS"/>
-                            <bpws:link name="RenderJSON1ToL_Set_Log4" tibex:linkType="SUCCESS"/>
-                            <bpws:link
-                                name="L_Set_Log4ToJMSSendMessage1" tibex:linkType="SUCCESS"/>
+                            <bpws:link name="RenderJSON1ToLog_0" tibex:linkType="SUCCESS"/>
+                            <bpws:link name="Log_0ToJMSSendMessage1" tibex:linkType="SUCCESS"/>
                         </bpws:links>
+                        <bpws:extensionActivity>
+                            <tibex:extActivity
+                                inputVariable="Log_0-input" name="Log_0"
+                                tibex:xpdlId="585ded96-6177-4687-90f7-596af295685c"
+                                type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                <bpws:targets>
+                                    <bpws:target linkName="RenderJSON1ToLog_0"/>
+                                </bpws:targets>
+                                <bpws:sources>
+                                    <bpws:source linkName="Log_0ToJMSSendMessage1"/>
+                                </bpws:sources>
+                                <tibex:inputBindings>
+                                    <tibex:inputBinding coercion=""
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;Log_0-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;0&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'TDOP'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;$Render_ErrorJSON/jsonString&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;xsl:for-each select=&quot;$FaultDetails&quot;>&lt;Log:Error>&lt;Log:StackTrace>&lt;xsl:value-of select=&quot;StackTrace&quot;/>&lt;/Log:StackTrace>&lt;Log:Msg>&lt;xsl:value-of select=&quot;Msg&quot;/>&lt;/Log:Msg>&lt;Log:FullClass>&lt;xsl:value-of select=&quot;FullClass&quot;/>&lt;/Log:FullClass>&lt;Log:ProcessStack>&lt;xsl:value-of select=&quot;ProcessStack&quot;/>&lt;/Log:ProcessStack>&lt;Log:MsgCode>&lt;xsl:value-of select=&quot;MsgCode&quot;/>&lt;/Log:MsgCode>&lt;Log:Data>&lt;xsl:copy-of select=&quot;Data/ancestor-or-self::*/namespace::node()&quot;/>&lt;xsl:copy-of select=&quot;Data/@*&quot;/>&lt;xsl:copy-of select=&quot;Data/node()&quot;/>&lt;/Log:Data>&lt;/Log:Error>&lt;/xsl:for-each>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <tibex:CallProcess
+                                    moduleRef="CSPI_Library"
+                                    subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                            </tibex:extActivity>
+                        </bpws:extensionActivity>
+                        <bpws:empty name="Empty" tibex:xpdlId="2739758c-9476-4ce2-bb5e-8d4058312627">
+                            <bpws:sources>
+                                <bpws:source linkName="EmptyToRenderJSON1"/>
+                            </bpws:sources>
+                        </bpws:empty>
+                        <bpws:extensionActivity>
+                            <tibex:activityExtension
+                                inputVariable="Render_ErrorJSON-input"
+                                name="Render_ErrorJSON"
+                                outputVariable="Render_ErrorJSON"
+                                tibex:xpdlId="29733328-bd9c-4ef4-bcf1-c240efe997c3" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                <bpws:targets>
+                                    <bpws:target linkName="EmptyToRenderJSON1"/>
+                                </bpws:targets>
+                                <bpws:sources>
+                                    <bpws:source linkName="RenderJSON1ToLog_0"/>
+                                </bpws:sources>
+                                <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns10=&quot;http://www.example.org/DataNotParsed&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;Render_ErrorJSON-input&quot; match=&quot;/&quot;>&lt;tns10:EBSGram>&lt;xsl:for-each select=&quot;$ParseHeaderJSON&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;tns3:HEADER/tns3:IF_ID&quot;/>&lt;/tns3:IF_ID>&lt;xsl:if test=&quot;tns3:HEADER/tns3:IF_UUID&quot;>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;tns3:HEADER/tns3:IF_UUID&quot;/>&lt;/tns3:IF_UUID>&lt;/xsl:if>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:HEADER/tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:value-of select=&quot;tns3:HEADER/tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'9999'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;concat(&amp;quot;전송중 Error 발생 : &amp;quot;, substring($FaultDetails/StackTrace, 1,200))&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;xsl:copy-of select=&quot;$ParseHeaderJSON/tns10:DATA&quot;/>&lt;/tns10:EBSGram>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <tibex:config>
+                                    <bwext:BWActivity
+                                    activityTypeID="bw.restjson.JsonRender"
+                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                                    xmlns:restjson="http://ns.tibco.com/bw/palette/restjson" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <activityConfig>
+                                    <properties name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/palette/restjson#//JsonRender"/>
+                                    <value
+                                    jsonOutputStyle="None"
+                                    schemaType="Xsd" xsi:type="restjson:JsonRender">
+                                    <inputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/DataNotParsed.xsd#//EBSGram;XSDElementDeclaration"/>
+                                    </value>
+                                    </properties>
+                                    </activityConfig>
+                                    </bwext:BWActivity>
+                                </tibex:config>
+                            </tibex:activityExtension>
+                        </bpws:extensionActivity>
                         <bpws:extensionActivity>
                             <tibex:activityExtension
                                 inputVariable="JMSSendMessage1-input"
                                 name="JMSSendMessage1"
                                 outputVariable="JMSSendMessage1"
-                                tibex:xpdlId="ef1f9aea-22d8-4ee3-b0b0-624621e090b0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                tibex:xpdlId="8dda6949-819f-4d02-bdb7-22f7a4d33e1c" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
-                                    <bpws:target linkName="L_Set_Log4ToJMSSendMessage1"/>
+                                    <bpws:target linkName="Log_0ToJMSSendMessage1"/>
                                 </bpws:targets>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns8=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+ef1f9aea-22d8-4ee3-b0b0-624621e090b0+input&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;JMSSendMessage1-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns8:ActivityInput>&#xa;            &lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;>&#xa;                &lt;destination>&#xa;                    &lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;/>&#xa;                &lt;/destination>&#xa;            &lt;/xsl:if>&#xa;            &lt;JMSExpiration>&#xa;                &lt;xsl:value-of select=&quot;60000&quot;/>&#xa;            &lt;/JMSExpiration>&#xa;            &lt;Body>&#xa;                &lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($Render_ErrorJSON/jsonString))&quot;/>&#xa;            &lt;/Body>&#xa;        &lt;/tns8:ActivityInput>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns8=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+8dda6949-819f-4d02-bdb7-22f7a4d33e1c+input&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+7d6b06d9-4a38-458e-add7-7946e421a1c5+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&lt;xsl:template name=&quot;JMSSendMessage1-input&quot; match=&quot;/&quot;>&lt;tns8:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($Render_ErrorJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns8:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
@@ -2165,67 +2187,6 @@
                                 </tibex:config>
                             </tibex:activityExtension>
                         </bpws:extensionActivity>
-                        <bpws:extensionActivity>
-                            <tibex:extActivity
-                                inputVariable="Log_0-input" name="Log_0"
-                                tibex:xpdlId="7a98d49d-8744-4040-9603-c9a1a2a66dc4"
-                                type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                <bpws:targets>
-                                    <bpws:target linkName="RenderJSON1ToL_Set_Log4"/>
-                                </bpws:targets>
-                                <bpws:sources>
-                                    <bpws:source linkName="L_Set_Log4ToJMSSendMessage1"/>
-                                </bpws:sources>
-                                <tibex:inputBindings>
-                                    <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;_error&quot;/>&#xa;    &lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_0-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;0&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'TDOP'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;$Render_ErrorJSON/jsonString&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;            &lt;xsl:for-each select=&quot;$_error&quot;>&#xa;                &lt;Log:Error>&#xa;                    &lt;Log:StackTrace>&#xa;                        &lt;xsl:value-of select=&quot;StackTrace&quot;/>&#xa;                    &lt;/Log:StackTrace>&#xa;                    &lt;Log:Msg>&#xa;                        &lt;xsl:value-of select=&quot;Msg&quot;/>&#xa;                    &lt;/Log:Msg>&#xa;                    &lt;Log:FullClass>&#xa;                        &lt;xsl:value-of select=&quot;FullClass&quot;/>&#xa;                    &lt;/Log:FullClass>&#xa;                    &lt;Log:ProcessStack>&#xa;                        &lt;xsl:value-of select=&quot;ProcessStack&quot;/>&#xa;                    &lt;/Log:ProcessStack>&#xa;                    &lt;xsl:if test=&quot;MsgCode&quot;>&#xa;                        &lt;Log:MsgCode>&#xa;                            &lt;xsl:value-of select=&quot;MsgCode&quot;/>&#xa;                        &lt;/Log:MsgCode>&#xa;                    &lt;/xsl:if>&#xa;                    &lt;Log:Data>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/ancestor-or-self::*/namespace::node()&quot;/>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/@*&quot;/>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/node()&quot;/>&#xa;                    &lt;/Log:Data>&#xa;                &lt;/Log:Error>&#xa;            &lt;/xsl:for-each>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                </tibex:inputBindings>
-                                <tibex:CallProcess
-                                    moduleRef="CSPI_Library"
-                                    subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                            </tibex:extActivity>
-                        </bpws:extensionActivity>
-                        <bpws:extensionActivity>
-                            <tibex:activityExtension
-                                inputVariable="Render_ErrorJSON-input"
-                                name="Render_ErrorJSON"
-                                outputVariable="Render_ErrorJSON"
-                                tibex:xpdlId="dc940165-3740-428d-995b-f7e62f2c49af" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON1"/>
-                                </bpws:targets>
-                                <bpws:sources>
-                                    <bpws:source linkName="RenderJSON1ToL_Set_Log4"/>
-                                </bpws:sources>
-                                <tibex:inputBindings>
-                                    <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:tns7=&quot;http://www.example.org/DataNotParsed&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:template name=&quot;Render_ErrorJSON-input&quot; match=&quot;/&quot;>&lt;tns7:EBSGram>&lt;xsl:for-each select=&quot;$ParseHeaderJSON/tns3:HEADER&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;tns3:IF_ID&quot;/>&lt;/tns3:IF_ID>&lt;xsl:if test=&quot;tns3:IF_UUID&quot;>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;tns3:IF_UUID&quot;/>&lt;/tns3:IF_UUID>&lt;/xsl:if>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:value-of select=&quot;tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'9999'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;concat(&amp;quot;전송중 Error 발생 : &amp;quot;, substring($_error/StackTrace, 1,200))&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;xsl:copy-of select=&quot;$ParseHeaderJSON/tns7:DATA&quot;/>&lt;/tns7:EBSGram>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                </tibex:inputBindings>
-                                <tibex:config>
-                                    <bwext:BWActivity
-                                    activityTypeID="bw.restjson.JsonRender"
-                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
-                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:restjson="http://ns.tibco.com/bw/palette/restjson" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                    <activityConfig>
-                                    <properties name="config" xsi:type="activityconfig:EMFProperty">
-                                    <type href="http://ns.tibco.com/bw/palette/restjson#//JsonRender"/>
-                                    <value
-                                    jsonOutputStyle="None"
-                                    schemaType="Xsd" xsi:type="restjson:JsonRender">
-                                    <inputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/DataNotParsed.xsd#//EBSGram;XSDElementDeclaration"/>
-                                    </value>
-                                    </properties>
-                                    </activityConfig>
-                                    </bwext:BWActivity>
-                                </tibex:config>
-                            </tibex:activityExtension>
-                        </bpws:extensionActivity>
-                        <bpws:empty name="Empty" tibex:xpdlId="ac1d56ef-8afc-4d68-b4cf-d2b6e7eb3d98">
-                            <bpws:sources>
-                                <bpws:source linkName="EmptyToRenderJSON1"/>
-                            </bpws:sources>
-                        </bpws:empty>
                     </bpws:flow>
                 </bpws:scope>
             </bpws:catchAll>
@@ -2236,19 +2197,136 @@
                 <bpws:link name="ParseJSON1ToL_Get_InterfaceInfo" tibex:linkType="SUCCESS"/>
                 <bpws:link
                     name="L_Get_InterfaceInfoToL_Get_InterfaceSysId" tibex:linkType="SUCCESS"/>
-                <bpws:link name="L_Get_InterfaceSysIdToL_Set_Log1" tibex:linkType="SUCCESS"/>
-                <bpws:link name="L_Set_Log1ToParseJSON" tibex:linkType="SUCCESS"/>
-                <bpws:link name="ParseJSONToL_Set_Log" tibex:linkType="SUCCESS"/>
+                <bpws:link name="L_Get_InterfaceSysIdToL_Set_Log" tibex:linkType="SUCCESS"/>
+                <bpws:link name="L_Set_LogToParseJSON" tibex:linkType="SUCCESS"/>
+                <bpws:link name="ParseJSONToL_Set_Log2" tibex:linkType="SUCCESS"/>
+                <bpws:link name="L_Set_Log2ToL_Set_Log3" tibex:linkType="SUCCESS"/>
                 <bpws:link name="L_Set_Log3ToRenderJSON" tibex:linkType="SUCCESS"/>
                 <bpws:link name="RenderJSONToJMSSendMessage" tibex:linkType="SUCCESS"/>
-                <bpws:link name="JMSSendMessageToL_Set_Log2" tibex:linkType="SUCCESS"/>
-                <bpws:link name="Log_2ToInvokeRFCBAPIinSAP" tibex:linkType="SUCCESS"/>
+                <bpws:link name="JMSSendMessageToL_Set_Log1" tibex:linkType="SUCCESS"/>
                 <bpws:link name="InvokeRFCBAPIinSAPToLog_3" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
+                <tibex:extActivity
+                    inputVariable="L_Get_InterfaceInfo-input"
+                    name="L_Get_InterfaceInfo"
+                    outputVariable="L_Get_InterfaceInfo"
+                    tibex:xpdlId="ff533a0e-3ad1-42df-939d-6a0269a4eec5"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="ParseJSON1ToL_Get_InterfaceInfo"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="L_Get_InterfaceInfoToL_Get_InterfaceSysId"/>
+                    </bpws:sources>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;L_Get_InterfaceInfo-input&quot; match=&quot;/&quot;>&#xa;        &lt;Library:InterfaceId>&#xa;            &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&#xa;        &lt;/Library:InterfaceId>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Get_InterfaceInfo" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity
+                    inputVariable="L_Get_InterfaceSysId-input"
+                    name="L_Get_InterfaceSysId"
+                    outputVariable="L_Get_InterfaceSysId"
+                    tibex:xpdlId="b992b899-86be-424f-8d10-9fa0bef50df9"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="L_Get_InterfaceInfoToL_Get_InterfaceSysId"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="L_Get_InterfaceSysIdToL_Set_Log"/>
+                    </bpws:sources>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:template name=&quot;L_Get_InterfaceSysId-input&quot; match=&quot;/&quot;>&lt;Library:InterfaceSysId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&lt;/Library:InterfaceSysId>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Get_InterfaceSysId" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity inputVariable="Log_1-input"
+                    name="Log_1"
+                    tibex:xpdlId="6206aa11-d1b3-4130-be30-87c15dafc4fa"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="L_Get_InterfaceSysIdToL_Set_Log"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="L_Set_LogToParseJSON"/>
+                    </bpws:sources>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_1-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;1&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'ESBReceive'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity inputVariable="Log_4-input"
+                    name="Log_4"
+                    tibex:xpdlId="1466c825-5bcc-41f8-849b-b0396a0f895e"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:documentation>20230308 메모리 oom 관련 문제에 원인일까 싶어, 4로그의 과도한 데이터 남김을 건수만 표시&#xd;
+tib:hex-to-string(replace(tib:string-to-hex($RenderJSON/jsonString), tib:string-to-hex('[{}]'), tib:string-to-hex('[]')))</bpws:documentation>
+                    <bpws:targets>
+                        <bpws:target linkName="JMSSendMessageToL_Set_Log1"/>
+                    </bpws:targets>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;Log_4-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;4&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;xsl:if test=&quot;not((string($InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN/CODE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN/CODE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN/CODE)&quot;>&lt;Log:BizUuId>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN/CODE&quot;/>&lt;/Log:BizUuId>&lt;/xsl:if>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'TDOP'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;concat('ET_ITEM:',string(count($InvokeRFCBAPIinSAP/RfcResponse/ET_ITEM/item)), ' IT_ITEM:',string(count($InvokeRFCBAPIinSAP/RfcResponse/IT_ITEM/item)))&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity inputVariable="Log_2-input"
+                    name="Log_2"
+                    tibex:xpdlId="e1bfb54b-d17c-48a4-bc48-825660a361f2"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="ParseJSONToL_Set_Log2"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="L_Set_Log2ToL_Set_Log3"/>
+                    </bpws:sources>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns2=&quot;http://www.example.org/ZCS_UMS_ORDER_INFO&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_2-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;2&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'TDOP'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON/tns2:DATA, false(),true())&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity inputVariable="Log_3-input"
+                    name="Log_3"
+                    tibex:xpdlId="4d9f872e-002a-4382-a46c-ee87b2146062"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="InvokeRFCBAPIinSAPToLog_3"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="L_Set_Log3ToRenderJSON"/>
+                    </bpws:sources>
+                    <tibex:inputBindings>
+                        <tibex:inputBinding coercion=""
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;Log_3-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;3&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'SapResponse'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;concat('[sessionID]',$InvokeRFCBAPIinSAP/sessionID,'[CPIC_ID]',$InvokeRFCBAPIinSAP/CPIC_ID)&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                    </tibex:inputBindings>
+                    <tibex:CallProcess moduleRef="CSPI_Library"
+                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
                     eventTimeout="60" name="JMSReceiveMessage"
-                    tibex:xpdlId="e5e70a07-8a52-4e7e-a8d8-385340842920"
+                    tibex:xpdlId="2c1c7368-94b1-49ca-b286-4b7f30101f07"
                     variable="JMSReceiveMessage" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="JMSReceiveMessageToParseJSON1"/>
@@ -2265,7 +2343,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jms#//JMSReceiverEventSource"/>
                                     <value
                                     connectionReference="jmsConnection"
-                                    destinationName="WSS.SAP.CS.SES.0009"
+                                    destinationName="UMS.SAP.CS.SES.0001"
                                     maxSessions="1"
                                     messageType="Bytes"
                                     messagingStyle="Queue"
@@ -2281,16 +2359,16 @@
                     inputVariable="JMSSendMessage-input"
                     name="JMSSendMessage"
                     outputVariable="JMSSendMessage"
-                    tibex:xpdlId="12ddadc5-8c0e-47f9-8182-c10144da4e93" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="2f891889-086e-4715-accb-c04694ed8a0f" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="RenderJSONToJMSSendMessage"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="JMSSendMessageToL_Set_Log2"/>
+                        <bpws:source linkName="JMSSendMessageToL_Set_Log1"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+12ddadc5-8c0e-47f9-8182-c10144da4e93+input&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;JMSSendMessage-input&quot; match=&quot;/&quot;>&lt;tns6:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($RenderJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns6:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+2f891889-086e-4715-accb-c04694ed8a0f+input&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+7d6b06d9-4a38-458e-add7-7946e421a1c5+output&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+2c1c7368-94b1-49ca-b286-4b7f30101f07+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:template name=&quot;JMSSendMessage-input&quot; match=&quot;/&quot;>&lt;tns7:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($RenderJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns7:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity activityTypeID="bw.jms.send"
@@ -2314,133 +2392,18 @@
                 </tibex:activityExtension>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:extActivity
-                    inputVariable="L_Get_InterfaceSysId-input"
-                    name="L_Get_InterfaceSysId"
-                    outputVariable="L_Get_InterfaceSysId"
-                    tibex:xpdlId="710a9074-ca65-4235-9c4a-10480b41fd75"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="L_Get_InterfaceInfoToL_Get_InterfaceSysId"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="L_Get_InterfaceSysIdToL_Set_Log1"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:template name=&quot;L_Get_InterfaceSysId-input&quot; match=&quot;/&quot;>&lt;Library:InterfaceSysId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&lt;/Library:InterfaceSysId>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Get_InterfaceSysId" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
-                <tibex:extActivity
-                    inputVariable="L_Get_InterfaceInfo-input"
-                    name="L_Get_InterfaceInfo"
-                    outputVariable="L_Get_InterfaceInfo"
-                    tibex:xpdlId="cf24f878-2db4-4819-9208-29aabd0da515"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="ParseJSON1ToL_Get_InterfaceInfo"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="L_Get_InterfaceInfoToL_Get_InterfaceSysId"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:template name=&quot;L_Get_InterfaceInfo-input&quot; match=&quot;/&quot;>&lt;Library:InterfaceId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&lt;/Library:InterfaceId>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Get_InterfaceInfo" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="Log_2-input"
-                    name="Log_2"
-                    tibex:xpdlId="8873e73d-cde0-4300-a020-31defe095f9f"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="ParseJSONToL_Set_Log"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="Log_2ToInvokeRFCBAPIinSAP"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns5=&quot;http://www.example.org/ZHR_GET_SDGRP&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_2-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;2&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'TDOP'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON/tns5:DATA, false(),true())&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="Log_1-input"
-                    name="Log_1"
-                    tibex:xpdlId="dba641ff-8128-46f2-89e2-ce979125886b"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="L_Get_InterfaceSysIdToL_Set_Log1"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="L_Set_Log1ToParseJSON"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_1-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;1&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'ESBReceive'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="Log_4-input"
-                    name="Log_4"
-                    tibex:xpdlId="1f8ab2ea-e065-46a5-805e-685c81976baa"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="JMSSendMessageToL_Set_Log2"/>
-                    </bpws:targets>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:template name=&quot;Log_4-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;4&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'TDOP'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;tib:hex-to-string(replace(tib:string-to-hex($RenderJSON/jsonString), tib:string-to-hex('[{}]'), tib:string-to-hex('[]')))&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="Log_3-input"
-                    name="Log_3"
-                    tibex:xpdlId="01c8dde4-f2ff-46ab-a57a-d577f4857f19"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="InvokeRFCBAPIinSAPToLog_3"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="L_Set_Log3ToRenderJSON"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;Log_3-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;3&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'SapResponse'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;concat('[sessionID]',$InvokeRFCBAPIinSAP/sessionID,'[CPIC_ID]',$InvokeRFCBAPIinSAP/CPIC_ID)&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess moduleRef="CSPI_Library"
-                        subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
                 <tibex:activityExtension inputVariable="ParseJSON-input"
                     name="ParseJSON" outputVariable="ParseJSON"
-                    tibex:xpdlId="29eeec67-45fc-44e6-86d9-6068b712e7e8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="d3a4c69a-d3ae-465e-b1ee-6332bb1f46b2" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="L_Set_Log1ToParseJSON"/>
+                        <bpws:target linkName="L_Set_LogToParseJSON"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="ParseJSONToL_Set_Log"/>
+                        <bpws:source linkName="ParseJSONToL_Set_Log2"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;activity.jsonParser.input+29eeec67-45fc-44e6-86d9-6068b712e7e8+ActivityInputType&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;ParseJSON-input&quot; match=&quot;/&quot;>&lt;tns1:ActivityInputClass>&lt;jsonString>&lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&lt;/jsonString>&lt;/tns1:ActivityInputClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;activity.jsonParser.input+d3a4c69a-d3ae-465e-b1ee-6332bb1f46b2+ActivityInputType&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;ParseJSON-input&quot; match=&quot;/&quot;>&lt;tns4:ActivityInputClass>&lt;jsonString>&lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&lt;/jsonString>&lt;/tns4:ActivityInputClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2456,7 +2419,7 @@
                                     hasMultipleNamespaces="true"
                                     jsonInputStyle="None"
                                     schemaType="Xsd" xsi:type="restjson:JsonParser">
-                                    <outputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/ZHR_GET_SDGRP.xsd#//ZHR_GET_SDGRP_req;XSDElementDeclaration"/>
+                                    <outputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/ZCS_UMS_ORDER_INFO.xsd#//ZCS_UMS_ORDER_INFO_req;XSDElementDeclaration"/>
                                     </value>
                                 </properties>
                             </activityConfig>
@@ -2469,7 +2432,7 @@
                     inputVariable="ParseHeaderJSON-input"
                     name="ParseHeaderJSON"
                     outputVariable="ParseHeaderJSON"
-                    tibex:xpdlId="196727b8-88b6-4c80-bbff-5ef621a7c306" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="26fd1107-922f-449f-bc14-fb090b883c8d" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="JMSReceiveMessageToParseJSON1"/>
                     </bpws:targets>
@@ -2478,7 +2441,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;activity.jsonParser.input+196727b8-88b6-4c80-bbff-5ef621a7c306+ActivityInputType&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;ParseHeaderJSON-input&quot; match=&quot;/&quot;>&lt;tns:ActivityInputClass>&lt;jsonString>&lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&lt;/jsonString>&lt;/tns:ActivityInputClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;activity.jsonParser.input+26fd1107-922f-449f-bc14-fb090b883c8d+ActivityInputType&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseHeaderJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns4:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2506,7 +2469,7 @@
                 <tibex:activityExtension
                     inputVariable="RenderJSON-input" name="RenderJSON"
                     outputVariable="RenderJSON"
-                    tibex:xpdlId="0b138e84-eb57-4cbb-9eea-40ed1b0678c0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="57f04113-f244-4253-8fb6-cdb480ef10ec" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="L_Set_Log3ToRenderJSON"/>
                     </bpws:targets>
@@ -2515,7 +2478,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.example.org/ZHR_GET_SDGRP&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns5:ZHR_GET_SDGRP_rsp>&lt;xsl:for-each select=&quot;$ParseHeaderJSON/tns3:HEADER&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/tns3:IF_ID>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns3:IF_UUID>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:value-of select=&quot;tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;tns5:DATA>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/T_SDGRP/item&quot;>&lt;tns5:T_SDGRP>&lt;xsl:if test=&quot;not((string(BCODE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(BCODE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(BCODE)&quot;>&lt;tns5:BCODE>&lt;xsl:value-of select=&quot;BCODE&quot;/>&lt;/tns5:BCODE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(OCODE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(OCODE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(OCODE)&quot;>&lt;tns5:OCODE>&lt;xsl:value-of select=&quot;OCODE&quot;/>&lt;/tns5:OCODE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(VKGRP/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(VKGRP/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(VKGRP)&quot;>&lt;tns5:VKGRP>&lt;xsl:value-of select=&quot;VKGRP&quot;/>&lt;/tns5:VKGRP>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(ZVKGTX/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(ZVKGTX/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(ZVKGTX)&quot;>&lt;tns5:ZVKGTX>&lt;xsl:value-of select=&quot;ZVKGTX&quot;/>&lt;/tns5:ZVKGTX>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(ZVKBTX/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(ZVKBTX/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(ZVKBTX)&quot;>&lt;tns5:ZVKBTX>&lt;xsl:value-of select=&quot;ZVKBTX&quot;/>&lt;/tns5:ZVKBTX>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(ORGEH/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(ORGEH/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(ORGEH)&quot;>&lt;tns5:ORGEH>&lt;xsl:value-of select=&quot;ORGEH&quot;/>&lt;/tns5:ORGEH>&lt;/xsl:if>&lt;/tns5:T_SDGRP>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/O_RETURN&quot;>&lt;tns5:O_RETURN>&lt;xsl:if test=&quot;not((string(TYPE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(TYPE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(TYPE)&quot;>&lt;tns5:TYPE>&lt;xsl:value-of select=&quot;TYPE&quot;/>&lt;/tns5:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string(MESSAGE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string(MESSAGE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists(MESSAGE)&quot;>&lt;tns5:MESSAGE>&lt;xsl:value-of select=&quot;MESSAGE&quot;/>&lt;/tns5:MESSAGE>&lt;/xsl:if>&lt;/tns5:O_RETURN>&lt;/xsl:for-each>&lt;/tns5:DATA>&lt;/tns5:ZHR_GET_SDGRP_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:tns2=&quot;http://www.example.org/ZCS_UMS_ORDER_INFO&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns2:ZCS_UMS_ORDER_INFO_rsp>&lt;xsl:for-each select=&quot;$ParseHeaderJSON/tns3:HEADER&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;tns3:IF_ID&quot;/>&lt;/tns3:IF_ID>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns3:IF_UUID>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:value-of select=&quot;tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;tns2:DATA>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_ITEM/item&quot;>&lt;tns2:ET_ITEM>&lt;xsl:if test=&quot;ORDER_NO&quot;>&lt;tns2:ORDER_NO>&lt;xsl:copy-of select=&quot;ORDER_NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ORDER_NO&quot;/>&lt;/tns2:ORDER_NO>&lt;/xsl:if>&lt;xsl:if test=&quot;EQUNR&quot;>&lt;tns2:EQUNR>&lt;xsl:copy-of select=&quot;EQUNR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;EQUNR&quot;/>&lt;/tns2:EQUNR>&lt;/xsl:if>&lt;xsl:if test=&quot;GOODS_CD&quot;>&lt;tns2:GOODS_CD>&lt;xsl:copy-of select=&quot;GOODS_CD/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;GOODS_CD&quot;/>&lt;/tns2:GOODS_CD>&lt;/xsl:if>&lt;xsl:if test=&quot;MAKTX&quot;>&lt;tns2:MAKTX>&lt;xsl:copy-of select=&quot;MAKTX/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MAKTX&quot;/>&lt;/tns2:MAKTX>&lt;/xsl:if>&lt;xsl:if test=&quot;PRODH&quot;>&lt;tns2:PRODH>&lt;xsl:copy-of select=&quot;PRODH/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PRODH&quot;/>&lt;/tns2:PRODH>&lt;/xsl:if>&lt;xsl:if test=&quot;PRODH1&quot;>&lt;tns2:PRODH1>&lt;xsl:copy-of select=&quot;PRODH1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PRODH1&quot;/>&lt;/tns2:PRODH1>&lt;/xsl:if>&lt;xsl:if test=&quot;PRODH2&quot;>&lt;tns2:PRODH2>&lt;xsl:copy-of select=&quot;PRODH2/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PRODH2&quot;/>&lt;/tns2:PRODH2>&lt;/xsl:if>&lt;xsl:if test=&quot;INBDT&quot;>&lt;tns2:INBDT>&lt;xsl:copy-of select=&quot;INBDT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;INBDT&quot;/>&lt;/tns2:INBDT>&lt;/xsl:if>&lt;xsl:if test=&quot;END_DT&quot;>&lt;tns2:END_DT>&lt;xsl:copy-of select=&quot;END_DT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;END_DT&quot;/>&lt;/tns2:END_DT>&lt;/xsl:if>&lt;xsl:if test=&quot;CUST_TP&quot;>&lt;tns2:CUST_TP>&lt;xsl:copy-of select=&quot;CUST_TP/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUST_TP&quot;/>&lt;/tns2:CUST_TP>&lt;/xsl:if>&lt;xsl:if test=&quot;CUST_TP_TX&quot;>&lt;tns2:CUST_TP_TX>&lt;xsl:copy-of select=&quot;CUST_TP_TX/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUST_TP_TX&quot;/>&lt;/tns2:CUST_TP_TX>&lt;/xsl:if>&lt;xsl:if test=&quot;USE_TP&quot;>&lt;tns2:USE_TP>&lt;xsl:copy-of select=&quot;USE_TP/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USE_TP&quot;/>&lt;/tns2:USE_TP>&lt;/xsl:if>&lt;xsl:if test=&quot;USE_TP_TX&quot;>&lt;tns2:USE_TP_TX>&lt;xsl:copy-of select=&quot;USE_TP_TX/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USE_TP_TX&quot;/>&lt;/tns2:USE_TP_TX>&lt;/xsl:if>&lt;xsl:if test=&quot;RTN_DT&quot;>&lt;tns2:RTN_DT>&lt;xsl:copy-of select=&quot;RTN_DT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;RTN_DT&quot;/>&lt;/tns2:RTN_DT>&lt;/xsl:if>&lt;xsl:if test=&quot;USE_CUST_ID&quot;>&lt;tns2:USE_CUST_ID>&lt;xsl:copy-of select=&quot;USE_CUST_ID/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USE_CUST_ID&quot;/>&lt;/tns2:USE_CUST_ID>&lt;/xsl:if>&lt;xsl:if test=&quot;E_CUST_NM&quot;>&lt;tns2:E_CUST_NM>&lt;xsl:copy-of select=&quot;E_CUST_NM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_CUST_NM&quot;/>&lt;/tns2:E_CUST_NM>&lt;/xsl:if>&lt;xsl:if test=&quot;E_MOB&quot;>&lt;tns2:E_MOB>&lt;xsl:copy-of select=&quot;E_MOB/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_MOB&quot;/>&lt;/tns2:E_MOB>&lt;/xsl:if>&lt;xsl:if test=&quot;E_EMAIL&quot;>&lt;tns2:E_EMAIL>&lt;xsl:copy-of select=&quot;E_EMAIL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_EMAIL&quot;/>&lt;/tns2:E_EMAIL>&lt;/xsl:if>&lt;xsl:if test=&quot;E_KTOKD&quot;>&lt;tns2:E_KTOKD>&lt;xsl:copy-of select=&quot;E_KTOKD/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_KTOKD&quot;/>&lt;/tns2:E_KTOKD>&lt;/xsl:if>&lt;xsl:if test=&quot;E_KTOKD_TX&quot;>&lt;tns2:E_KTOKD_TX>&lt;xsl:copy-of select=&quot;E_KTOKD_TX/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_KTOKD_TX&quot;/>&lt;/tns2:E_KTOKD_TX>&lt;/xsl:if>&lt;xsl:if test=&quot;E_POST_CODE1&quot;>&lt;tns2:E_POST_CODE1>&lt;xsl:copy-of select=&quot;E_POST_CODE1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_POST_CODE1&quot;/>&lt;/tns2:E_POST_CODE1>&lt;/xsl:if>&lt;xsl:if test=&quot;E_ZIP_SEQ&quot;>&lt;tns2:E_ZIP_SEQ>&lt;xsl:copy-of select=&quot;E_ZIP_SEQ/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_ZIP_SEQ&quot;/>&lt;/tns2:E_ZIP_SEQ>&lt;/xsl:if>&lt;xsl:if test=&quot;E_DONG&quot;>&lt;tns2:E_DONG>&lt;xsl:copy-of select=&quot;E_DONG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_DONG&quot;/>&lt;/tns2:E_DONG>&lt;/xsl:if>&lt;xsl:if test=&quot;E_CITY1&quot;>&lt;tns2:E_CITY1>&lt;xsl:copy-of select=&quot;E_CITY1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_CITY1&quot;/>&lt;/tns2:E_CITY1>&lt;/xsl:if>&lt;xsl:if test=&quot;E_KATR1&quot;>&lt;tns2:E_KATR1>&lt;xsl:copy-of select=&quot;E_KATR1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_KATR1&quot;/>&lt;/tns2:E_KATR1>&lt;/xsl:if>&lt;xsl:if test=&quot;E_AGE&quot;>&lt;tns2:E_AGE>&lt;xsl:copy-of select=&quot;E_AGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_AGE&quot;/>&lt;/tns2:E_AGE>&lt;/xsl:if>&lt;xsl:if test=&quot;E_BAHNS&quot;>&lt;tns2:E_BAHNS>&lt;xsl:copy-of select=&quot;E_BAHNS/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_BAHNS&quot;/>&lt;/tns2:E_BAHNS>&lt;/xsl:if>&lt;xsl:if test=&quot;E_USE_GRADE&quot;>&lt;tns2:E_USE_GRADE>&lt;xsl:copy-of select=&quot;E_USE_GRADE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;E_USE_GRADE&quot;/>&lt;/tns2:E_USE_GRADE>&lt;/xsl:if>&lt;/tns2:ET_ITEM>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/IT_ITEM/item&quot;>&lt;tns2:IT_ITEM>&lt;xsl:if test=&quot;ORDER_NO&quot;>&lt;tns2:ORDER_NO>&lt;xsl:copy-of select=&quot;ORDER_NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ORDER_NO&quot;/>&lt;/tns2:ORDER_NO>&lt;/xsl:if>&lt;/tns2:IT_ITEM>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_RETURN&quot;>&lt;tns2:ES_RETURN>&lt;xsl:if test=&quot;TYPE&quot;>&lt;tns2:TYPE>&lt;xsl:copy-of select=&quot;TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TYPE&quot;/>&lt;/tns2:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;CODE&quot;>&lt;tns2:CODE>&lt;xsl:copy-of select=&quot;CODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CODE&quot;/>&lt;/tns2:CODE>&lt;/xsl:if>&lt;xsl:if test=&quot;MESSAGE&quot;>&lt;tns2:MESSAGE>&lt;xsl:copy-of select=&quot;MESSAGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MESSAGE&quot;/>&lt;/tns2:MESSAGE>&lt;/xsl:if>&lt;/tns2:ES_RETURN>&lt;/xsl:for-each>&lt;/tns2:DATA>&lt;/tns2:ZCS_UMS_ORDER_INFO_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2528,7 +2491,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/restjson#//JsonRender"/>
                                     <value jsonOutputStyle="None"
                                     schemaType="Xsd" xsi:type="restjson:JsonRender">
-                                    <inputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/ZHR_GET_SDGRP.xsd#//ZHR_GET_SDGRP_rsp;XSDElementDeclaration=1"/>
+                                    <inputEditorElement href="platform:/resource/SVC_SAP_CS_0050.module/Schemas/ZCS_UMS_ORDER_INFO.xsd#//ZCS_UMS_ORDER_INFO_rsp;XSDElementDeclaration=1"/>
                                     </value>
                                 </properties>
                             </activityConfig>
@@ -2541,16 +2504,16 @@
                     inputVariable="InvokeRFCBAPIinSAP-input"
                     name="InvokeRFCBAPIinSAP"
                     outputVariable="InvokeRFCBAPIinSAP"
-                    tibex:xpdlId="919d5326-f71e-415b-9843-5cac047fd747" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="712fcd98-3c91-4290-be0e-8079f00ab7c8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="Log_2ToInvokeRFCBAPIinSAP"/>
+                        <bpws:target linkName="L_Set_Log2ToL_Set_Log3"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="InvokeRFCBAPIinSAPToLog_3"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://www.example.org/ZHR_GET_SDGRP&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns4=&quot;http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:template name=&quot;InvokeRFCBAPIinSAP-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:RequestInputType>&#xa;            &lt;timeout>&#xa;                &lt;xsl:value-of select=&quot;xsd:long($L_Get_InterfaceInfo/Library:Interface/Library:Timeout *1000)&quot;/>&#xa;            &lt;/timeout>&#xa;            &lt;RfcRequest>&#xa;                &lt;I_SDATE>&#xa;                    &lt;xsl:value-of select=&quot;$ParseJSON/tns5:DATA/tns5:I_SDATE&quot;/>&#xa;                &lt;/I_SDATE>&#xa;            &lt;/RfcRequest>&#xa;        &lt;/tns4:RequestInputType>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.org/ZCS_UMS_ORDER_INFO&quot; xmlns:tns4=&quot;http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;InvokeRFCBAPIinSAP-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns4:RequestInputType>&#xa;            &lt;RfcRequest>&#xa;                &lt;xsl:if test=&quot;not((string($ParseJSON/tns2:DATA/tns2:I_SYS_DT_FR/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns2:DATA/tns2:I_SYS_DT_FR/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns2:DATA/tns2:I_SYS_DT_FR)&quot;>&#xa;                    &lt;I_SYS_DT_FR>&#xa;                        &lt;xsl:value-of select=&quot;$ParseJSON/tns2:DATA/tns2:I_SYS_DT_FR&quot;/>&#xa;                    &lt;/I_SYS_DT_FR>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;not((string($ParseJSON/tns2:DATA/tns2:I_SYS_DT_TO/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns2:DATA/tns2:I_SYS_DT_TO/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns2:DATA/tns2:I_SYS_DT_TO)&quot;>&#xa;                    &lt;I_SYS_DT_TO>&#xa;                        &lt;xsl:value-of select=&quot;$ParseJSON/tns2:DATA/tns2:I_SYS_DT_TO&quot;/>&#xa;                    &lt;/I_SYS_DT_TO>&#xa;                &lt;/xsl:if>&#xa;                &lt;ET_ITEM/>&#xa;                &lt;IT_ITEM/>&#xa;            &lt;/RfcRequest>&#xa;        &lt;/tns4:RequestInputType>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2564,16 +2527,15 @@
                                     <type href="http://ns.tibco.com/bw/palette/sap#//InvokeRequestResponse"/>
                                     <value
                                     connectionReference="sapConnectionProperty"
-                                    operation="ZHR_GET_SDGRP"
-                                    schemaPath="/SVC_SAP_CS_0050.module/Schemas/.SAP/SAP/functionModules/ZHR_GET_SDGRP.xsd" xsi:type="sap:InvokeRequestResponse">
+                                    operation="ZCS_UMS_ORDER_INFO"
+                                    schemaPath="/SVC_SAP_CS_0050.module/Schemas/.SAP/SAP/functionModules/ZCS_UMS_ORDER_INFO.xsd" xsi:type="sap:InvokeRequestResponse">
                                     <internalConfig
                                     bLastForInput="true"
                                     bLastForOutput="true"
                                     connRefName="SAP"
-                                    errorXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP##SAPSystemException"
-                                    inputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP##RfcRequest"
-                                    minOccurs="true"
-                                    outputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZHR_GET_SDGRP##RfcResponse" xsi:type="internalization:InvokeRFC"/>
+                                    errorXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO##SAPSystemException"
+                                    inputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO##RfcRequest"
+                                    outputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZCS_UMS_ORDER_INFO##RfcResponse" xsi:type="internalization:InvokeRFC"/>
                                     </value>
                                 </properties>
                             </activityConfig>

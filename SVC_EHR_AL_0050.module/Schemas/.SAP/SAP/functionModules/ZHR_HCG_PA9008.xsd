@@ -124,6 +124,13 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
+            <xsd:element minOccurs="0" name="CNCST" nillable="true" r3:abapType="C" r3:document="취소여부 [ X : 취소 / space : 정상 ]" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="632">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="RFCException">

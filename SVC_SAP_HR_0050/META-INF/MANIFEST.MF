@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ETC_SAP_HR_0050
 Bundle-SymbolicName: SVC_SAP_HR_0050
-Bundle-Version: 5.9.0.qualifier
+Bundle-Version: 6.0.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 6.7.0 HF3 V102 2021-08-10
 TIBCO-BW-Edition: bwe

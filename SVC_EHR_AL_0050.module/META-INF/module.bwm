@@ -489,7 +489,4 @@
   <sca:component xmi:id="_sGvCAHYbEe2MHcXoaf3oRw" name="ComponentSAP_IAM_HR_BSD_0003" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_sGvCAXYbEe2MHcXoaf3oRw" processName="ehr_iam_hr_0050.SAP_IAM_HR_BSD_0003"/>
   </sca:component>
-  <sca:component xmi:id="_n1fPMN_aEe20ftk7Yf7Biw" name="ComponentPPL_TEST" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_n1fPMd_aEe20ftk7Yf7Biw" processName="svc_ehr_al_0050.module.PPL_TEST"/>
-  </sca:component>
 </sca:composite>

@@ -769,7 +769,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_SAP_CS_0050.module//SAPMaxconnectionCounts_outbound</name>
-			<value>10</value>
+			<value>30</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

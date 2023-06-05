@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmlns:tp="http://xsd.tns.tibco.com/bw/models/sharedresource/threadpool" xmi:id="_wCrtoRSIEe2PaIN2wOg4ug" name="http.COALA_Copy" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_9EAuMBayEe2PaIN2wOg4ug" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_9EAuMRayEe2PaIN2wOg4ug" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_9EAuMhayEe2PaIN2wOg4ug" name="transport">
+        <id:IdentityReference xmi:id="_9EAuMxayEe2PaIN2wOg4ug" URI="" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:description>총무시스템 API관련.  개발/운영 포트 및 ssl 다름. 배포시 ssl 적용 변경 필요&#xD;
+개발 ncoala.coway.co.kr 80&#xD;
+운영 coala.coway.co.kr 448</jndi:description>
+  <jndi:reference xmi:id="_3D8w8BSIEe2PaIN2wOg4ug" key="threadPoolConfigurationName" type="tp:ThreadPoolConfiguration" value="theradpool.COALA"/>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_wCsUsBSIEe2PaIN2wOg4ug" acceptRedirect="true" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_wCsUsRSIEe2PaIN2wOg4ug" host="coala.coway.co.kr" port="448"/>
+  </jndi:configuration>
+</jndi:namedResource>

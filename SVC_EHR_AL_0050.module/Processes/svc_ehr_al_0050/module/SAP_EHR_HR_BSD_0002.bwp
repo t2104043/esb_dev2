@@ -613,6 +613,8 @@
                                     nillable="true" type="string"/>
                                     <element maxOccurs="1" minOccurs="1"
                                     name="APPL_ID" nillable="true" type="string"/>
+                                    <element maxOccurs="1" minOccurs="1"
+                                    name="CNCST" nillable="true" type="string"/>
                                 </sequence>
                             </complexType>
                         </element>
@@ -2157,7 +2159,7 @@
                         </bpws:sources>
                         <tibex:inputBindings>
                             <tibex:inputBinding
-                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+ec2f4714-ffbc-4116-898c-011486d2bba7+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;Ins_IF_SAP_SYS002_R_T-input&quot; match=&quot;/&quot;>&lt;tns2:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_TAB/item&quot;>&lt;Record>&lt;EMP_ID>&lt;xsl:copy-of select=&quot;PERNR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PERNR&quot;/>&lt;/EMP_ID>&lt;STA_YMD>&lt;xsl:copy-of select=&quot;BEGDA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;BEGDA&quot;/>&lt;/STA_YMD>&lt;END_YMD>&lt;xsl:copy-of select=&quot;ENDDA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ENDDA&quot;/>&lt;/END_YMD>&lt;BTRIP_CD>&lt;xsl:copy-of select=&quot;IOBND/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;IOBND&quot;/>&lt;/BTRIP_CD>&lt;BTRIP_AREA_TYPE>&lt;xsl:copy-of select=&quot;LANDL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LANDL&quot;/>&lt;/BTRIP_AREA_TYPE>&lt;BTRIP_DEST>&lt;xsl:copy-of select=&quot;WHERETO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;WHERETO&quot;/>&lt;/BTRIP_DEST>&lt;BTRIP_PURPOSE>&lt;xsl:copy-of select=&quot;WHATFOR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;WHATFOR&quot;/>&lt;/BTRIP_PURPOSE>&lt;APPL_ID>&lt;xsl:copy-of select=&quot;DOCNO1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DOCNO1&quot;/>&lt;/APPL_ID>&lt;/Record>&lt;/xsl:for-each>&lt;/tns2:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+ec2f4714-ffbc-4116-898c-011486d2bba7+input&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:template name=&quot;Ins_IF_SAP_SYS002_R_T-input&quot; match=&quot;/&quot;>&lt;tns2:jdbcUpdateActivityInput>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_TAB/item&quot;>&lt;Record>&lt;EMP_ID>&lt;xsl:copy-of select=&quot;PERNR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PERNR&quot;/>&lt;/EMP_ID>&lt;STA_YMD>&lt;xsl:copy-of select=&quot;BEGDA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;BEGDA&quot;/>&lt;/STA_YMD>&lt;END_YMD>&lt;xsl:copy-of select=&quot;ENDDA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ENDDA&quot;/>&lt;/END_YMD>&lt;BTRIP_CD>&lt;xsl:copy-of select=&quot;IOBND/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;IOBND&quot;/>&lt;/BTRIP_CD>&lt;BTRIP_AREA_TYPE>&lt;xsl:copy-of select=&quot;LANDL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LANDL&quot;/>&lt;/BTRIP_AREA_TYPE>&lt;BTRIP_DEST>&lt;xsl:copy-of select=&quot;WHERETO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;WHERETO&quot;/>&lt;/BTRIP_DEST>&lt;BTRIP_PURPOSE>&lt;xsl:copy-of select=&quot;WHATFOR/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;WHATFOR&quot;/>&lt;/BTRIP_PURPOSE>&lt;APPL_ID>&lt;xsl:copy-of select=&quot;DOCNO1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DOCNO1&quot;/>&lt;/APPL_ID>&lt;CNCST>&lt;xsl:copy-of select=&quot;CNCST/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CNCST&quot;/>&lt;/CNCST>&lt;/Record>&lt;/xsl:for-each>&lt;/tns2:jdbcUpdateActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                         </tibex:inputBindings>
                         <tibex:config>
                             <bwext:BWActivity
@@ -2170,7 +2172,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCUpdateActivity"/>
                                     <value batchUpdate="true"
                                     sharedResourceProperty="db.EHR"
-                                    sqlStatement="INSERT INTO DTM_BTRIP_RESULT&#xa;(&#xa;EMP_ID&#xa;,STA_YMD&#xa;,END_YMD&#xa;,BTRIP_CD&#xa;,BTRIP_AREA_TYPE&#xa;,BTRIP_DEST&#xa;,BTRIP_PURPOSE&#xa;,APPL_ID&#xa;)&#xa;VALUES&#xa;(&#xa; ? -- EMP_ID&#xa;,? --STA_YMD&#xa;,? --END_YMD&#xa;,? --BTRIP_CD&#xa;,? --BTRIP_AREA_TYPE&#xa;,? --BTRIP_DEST&#xa;,? --BTRIP_PURPOSE&#xa;,? --APPL_ID&#xa;)"
+                                    sqlStatement="INSERT INTO DTM_BTRIP_RESULT&#xa;(&#xa;EMP_ID&#xa;,STA_YMD&#xa;,END_YMD&#xa;,BTRIP_CD&#xa;,BTRIP_AREA_TYPE&#xa;,BTRIP_DEST&#xa;,BTRIP_PURPOSE&#xa;,APPL_ID&#xa;,CNCST&#xa;)&#xa;VALUES&#xa;(&#xa; ? -- EMP_ID&#xa;,? --STA_YMD&#xa;,? --END_YMD&#xa;,? --BTRIP_CD&#xa;,? --BTRIP_AREA_TYPE&#xa;,? --BTRIP_DEST&#xa;,? --BTRIP_PURPOSE&#xa;,? --APPL_ID&#xa;,? --CNCST&#xa;)"
                                     threadPool="theradpool.EHR"
                                     timeout="10" xsi:type="jdbcPalette:JDBCUpdateActivity">
                                     <PreparedParameters
@@ -2197,6 +2199,9 @@
                                     <PreparedParameters
                                     DataType="12"
                                     DataTypeDisplayValue="VARCHAR" ParameterName="APPL_ID"/>
+                                    <PreparedParameters
+                                    DataType="12"
+                                    DataTypeDisplayValue="VARCHAR" ParameterName="CNCST"/>
                                     </value>
                                     </properties>
                                 </activityConfig>

@@ -795,13 +795,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_SAP_CS_0050.module//SAPMaxconnectionCounts_outbound</name>
-			<value>10</value>
+			<value>30</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>10</lookupValue>
+			<lookupValue>30</lookupValue>
 		</globalVariable>
 	</globalVariables>
 </repository>

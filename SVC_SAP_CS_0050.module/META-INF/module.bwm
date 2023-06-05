@@ -250,4 +250,10 @@
   <sca:component xmi:id="_kQpBwLzjEe2Ii6G0RJ18Ew" name="ComponentWSS_SAP_CS_SES_0012" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kQpBwbzjEe2Ii6G0RJ18Ew" processName="wcc_sap_cs_ses_0050.WSS_SAP_CS_SES_0012"/>
   </sca:component>
+  <sca:component xmi:id="_Deh5kPnLEe2rpKmVlnxM4Q" name="ComponentUMS_SAP_CS_SES_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Deh5kfnLEe2rpKmVlnxM4Q" processName="ums_sap_cs_ses_0050.UMS_SAP_CS_SES_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_Hsq3cPqbEe2UWYaAW46S7A" name="ComponentWSS_SAP_CS_SES_0013" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Hsq3cfqbEe2UWYaAW46S7A" processName="wcc_sap_cs_ses_0050.WSS_SAP_CS_SES_0013"/>
+  </sca:component>
 </sca:composite>
