@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SVC_EXT_AL_1000
 Bundle-SymbolicName: SVC_EXT_AL_1000
-Bundle-Version: 8.6.0.qualifier
+Bundle-Version: 8.7.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 6.8.1 HF1 V43 2022-08-11
 TIBCO-BW-Edition: bwe

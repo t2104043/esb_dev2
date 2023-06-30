@@ -122,30 +122,36 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_sn-3gZeREe2C6cKPN785NQ" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_04"/>
   </sca:component>
   <sca:component xmi:id="_liZQIJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_05" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_liZQIZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_05"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_liZQIZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_05" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lidhkJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_06" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lidhkZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_06"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lidhkZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_06" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lif90JmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_07" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lif90ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_07"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lif90ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_07" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lihL8JmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_08" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lihL8ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_08"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lihL8ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_08" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_limEcJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_09" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_limEcZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_09"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_limEcZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_09" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lipHwJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_10" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lipHwZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_10"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lipHwZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_10" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_liq88JmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_11" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_liq88ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_11"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_liq88ZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_11" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lisyIJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_12" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lisyIZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_12"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lisyIZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_12" autoStart="false"/>
   </sca:component>
   <sca:component xmi:id="_lixqoJmaEe2W-KU7gy3ckw" name="ComponentSAP_KTA_SD_BSS_0002_13" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lixqoZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_13"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lixqoZmaEe2W-KU7gy3ckw" processName="sap_kta_sd_bss_0050.SAP_KTA_SD_BSS_0002_13" autoStart="false"/>
+  </sca:component>
+  <sca:component xmi:id="_qMDsQATtEe6O_OG6lEW9FQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_qMDsQQTtEe6O_OG6lEW9FQ" processName="sap_gcs_cs_ssr.Process"/>
+  </sca:component>
+  <sca:component xmi:id="__80-ABYREe6O_OG6lEW9FQ" name="ComponentProcess1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__80-ARYREe6O_OG6lEW9FQ" processName="sap_gcs_cs_ssr.Process1"/>
   </sca:component>
 </sca:composite>

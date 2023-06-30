@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SVC_SAP_PP_0050 Application
 Bundle-SymbolicName: SVC_SAP_PP_0050.application
-Bundle-Version: 3.3.0.qualifier
+Bundle-Version: 3.4.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 6.7.0 HF3 V102 2021-08-10
 TIBCO-BW-Edition: bwe

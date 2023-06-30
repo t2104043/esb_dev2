@@ -10,12 +10,37 @@
 					<sequence>
 						<element name="I_FROM_DATE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_TO_DATE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
-						<element name="I_USER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
-						<element name="I_SR_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
-						<element name="I_MESS_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
-						<element name="I_NEED_CHECK" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_REPORT_TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 						<element name="I_USER_REQUEST" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						
+						<element name="IT_USER" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="USER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_SR_NO" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="SR_NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_MESS_ID" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MESS_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_NEED_CHECK" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="NEED_CHECK" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
 					</sequence>
 				</complexType>
 			</element>

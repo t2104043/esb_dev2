@@ -113,4 +113,7 @@
   <sca:component xmi:id="_SciqAMbTEe2q5rvhxC56ow" name="ComponentWSS_SAP_SD_SES_0003" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_SciqAcbTEe2q5rvhxC56ow" processName="wss_sap_sd_0050.WSS_SAP_SD_SES_0003"/>
   </sca:component>
+  <sca:component xmi:id="_EU-N8A5GEe6O_OG6lEW9FQ" name="ComponentSVC_SAP_SD_SES_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_EU-N8Q5GEe6O_OG6lEW9FQ" processName="svc_sap_sd_ses_0050.SVC_SAP_SD_SES_0002"/>
+  </sca:component>
 </sca:composite>

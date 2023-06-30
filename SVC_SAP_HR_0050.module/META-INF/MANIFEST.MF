@@ -15,9 +15,13 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.palette; filter:="(name=bw.restjson)",
  com.tibco.bw.palette; filter:="(name=bw.sap)",
  com.tibco.bw.palette; filter:="(name=bw.jms)",
+ com.tibco.bw.palette; filter:="(name=bw.http)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.jmsconnection)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.cred)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.sapconnection)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sslclient)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.threadpool)"
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
 TIBCO-BW-Version: 6.7.0 HF3 V102 2021-08-10

@@ -19,31 +19,10 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="1" name="I_MESS_ID" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:maxLength value="255"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element minOccurs="1" name="I_NEED_CHECK" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:maxLength value="1"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
             <xsd:element minOccurs="0" name="I_REPORT_TYPE" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="1"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element minOccurs="1" name="I_SR_NO" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:maxLength value="255"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
@@ -54,13 +33,6 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="1" name="I_USER" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:maxLength value="12"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
             <xsd:element minOccurs="0" name="I_USER_REQUEST" r3:abapType="C" r3:javaType="java.lang.String" r3:jcoType="0">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
@@ -68,9 +40,13 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="T_AUDIT_DUB_REPORT_DETAILS" type="tns:sequence_lsqb_ZADS0048_rsqb_"/>
-            <xsd:element minOccurs="0" name="T_AUDIT_DUB_REPORT_SUMMARY" type="tns:sequence_lsqb_ZADS0047_rsqb_"/>
-            <xsd:element minOccurs="0" name="T_AUDIT_REPORT_HEADER" type="tns:sequence_lsqb_ZADS0050_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_DUB_REPORT_DETAILS" type="tns:sequence_lsqb_ZADS0048_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_DUB_REPORT_SUMMARY" type="tns:sequence_lsqb_ZADS0047_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_REPORT_HEADER" type="tns:sequence_lsqb_ZADS0050_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_MESS_ID" type="tns:sequence_lsqb_ZADS0121_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_NEED_CHECK" type="tns:sequence_lsqb_ZADS0122_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_SR_NO" type="tns:sequence_lsqb_ZADS0120_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_USER" type="tns:sequence_lsqb_ZADS0116_rsqb_"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="RequestOutputType" type="tns:RequestOutputTypeParam"/>
@@ -86,9 +62,13 @@
         <xsd:sequence>
             <xsd:element minOccurs="0" name="ES_MESSAGE" type="tns:ZADS0051"/>
             <xsd:element minOccurs="0" name="E_ESB" type="tns:ZADS0052"/>
-            <xsd:element minOccurs="0" name="T_AUDIT_DUB_REPORT_DETAILS" type="tns:sequence_lsqb_ZADS0048_rsqb_"/>
-            <xsd:element minOccurs="0" name="T_AUDIT_DUB_REPORT_SUMMARY" type="tns:sequence_lsqb_ZADS0047_rsqb_"/>
-            <xsd:element minOccurs="0" name="T_AUDIT_REPORT_HEADER" type="tns:sequence_lsqb_ZADS0050_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_DUB_REPORT_DETAILS" type="tns:sequence_lsqb_ZADS0048_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_DUB_REPORT_SUMMARY" type="tns:sequence_lsqb_ZADS0047_rsqb_"/>
+            <xsd:element minOccurs="0" name="ET_AUDIT_REPORT_HEADER" type="tns:sequence_lsqb_ZADS0050_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_MESS_ID" type="tns:sequence_lsqb_ZADS0121_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_NEED_CHECK" type="tns:sequence_lsqb_ZADS0122_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_SR_NO" type="tns:sequence_lsqb_ZADS0120_rsqb_"/>
+            <xsd:element minOccurs="0" name="IT_USER" type="tns:sequence_lsqb_ZADS0116_rsqb_"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="SAPSystemException" type="tns:ZAD_WEB_01_FaultParam"/>
@@ -444,6 +424,70 @@
             </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZADS0121_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZADS0121"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZADS0121">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="MESS_ID" nillable="true" r3:abapType="C" r3:document="Message ID Debugging" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZADS0122_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZADS0122"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZADS0122">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="NEED_CHECK" nillable="true" r3:abapType="C" r3:document="Need to check" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZADS0120_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZADS0120"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZADS0120">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="SR_NO" nillable="true" r3:abapType="C" r3:document="SR 번호" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="11"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="sequence_lsqb_ZADS0116_rsqb_">
+        <xsd:sequence>
+            <xsd:element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="item" type="tns:ZADS0116"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ZADS0116">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="USER" nillable="true" r3:abapType="C" r3:document="사용자이름" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="12"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
     <xsd:complexType name="ZADS0051">
         <xsd:sequence>
             <xsd:element minOccurs="0" name="TYPE" nillable="true" r3:abapType="C" r3:document="메시지 유형" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
@@ -464,7 +508,7 @@
     </xsd:complexType>
     <xsd:complexType name="ZADS0052">
         <xsd:sequence>
-            <xsd:element minOccurs="0" name="IF_ID" nillable="true" r3:abapType="C" r3:document="ID Interface" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
+            <xsd:element minOccurs="0" name="IF_ID" nillable="true" r3:abapType="C" r3:document="Interface ID" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="0">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="50"/>
@@ -478,7 +522,7 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="IF_HOST" nillable="true" r3:abapType="C" r3:document="Host name (or IP address) of one EBS call/response" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="172">
+            <xsd:element minOccurs="0" name="IF_HOST" nillable="true" r3:abapType="C" r3:document="IF_HOST" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="172">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="100"/>
@@ -492,7 +536,7 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
-            <xsd:element minOccurs="0" name="IF_ADDITIONAL_DATA" nillable="true" r3:abapType="C" r3:document="Additional fields for use (preparation for future expansion)" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="400">
+            <xsd:element minOccurs="0" name="IF_ADDITIONAL_DATA" nillable="true" r3:abapType="C" r3:document="Additional fields for use" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="400">
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
                         <xsd:maxLength value="100"/>

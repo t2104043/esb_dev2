@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZSD_1000_MARKETING_AGREE" xmlns:tns="http://www.example.org/ZSD_1000_MARKETING_AGREE" elementFormDefault="qualified"   xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZSD_1000_MARKETING_AGREE_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_CONTRACT_CUST_ID" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_CONVERT" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+<element name="ZSD_1000_MARKETING_AGREE_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+				         <element name="TYPE" type="string" maxOccurs="1" minOccurs="0"/>
+				         <element name="CODE" type="string" maxOccurs="1" minOccurs="0"/>
+				         <element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

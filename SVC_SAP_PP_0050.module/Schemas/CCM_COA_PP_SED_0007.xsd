@@ -34,7 +34,8 @@
 <element name="CUSTOMER_NO2" type="string" maxOccurs="1" minOccurs="0"/>
 <element name="CUSTOMER_NO3" type="string" maxOccurs="1" minOccurs="0"/>
 <element name="RENT_USE" type="string" maxOccurs="1" minOccurs="0"/>
-						         						         
+<element name="RENT_AREA" type="string" maxOccurs="1" minOccurs="0"/>
+<element name="ASSIGNABLE_AREA" type="string" maxOccurs="1" minOccurs="0"/>				         
 								</sequence>
 							</complexType>
 						</element>

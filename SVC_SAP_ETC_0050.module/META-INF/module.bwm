@@ -70,4 +70,10 @@
   <sca:component xmi:id="_tm8WYAAZEe6O_OG6lEW9FQ" name="ComponentICM_SAP_SY_SSES_0001" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tm8WYQAZEe6O_OG6lEW9FQ" processName="icm_sap_sy_ses.ICM_SAP_SY_SES_0001"/>
   </sca:component>
+  <sca:component xmi:id="_bzGH8ANTEe6O_OG6lEW9FQ" name="ComponentICM_SAP_SY_SES_0002" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bzGH8QNTEe6O_OG6lEW9FQ" processName="icm_sap_sy_ses.ICM_SAP_SY_SES_0002"/>
+  </sca:component>
+  <sca:component xmi:id="_E7YzkANXEe6O_OG6lEW9FQ" name="ComponentICM_SAP_SY_SES_0003" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_E7YzkQNXEe6O_OG6lEW9FQ" processName="icm_sap_sy_ses.ICM_SAP_SY_SES_0003"/>
+  </sca:component>
 </sca:composite>

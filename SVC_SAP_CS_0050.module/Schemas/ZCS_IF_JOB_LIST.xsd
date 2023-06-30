@@ -122,6 +122,9 @@
 <element name="PLAN_TM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 <element name="PLAN_DT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 <element name="FIRST_TM_TP" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="INST_PRM_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="SALEMOD_GOODS_NM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+<element name="RTN_RSN_DESC" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
 								</sequence>
 							</complexType>
 						</element>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZAD_WEB_03" xmlns:tns="http://www.example.org/ZAD_WEB_03" elementFormDefault="qualified"  xmlns:hd="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZAD_WEB_03_req">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_FROM_DATE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_TO_DATE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_TYPE_OF_RISK" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_REPORT_TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						<element name="I_USER_REQUEST" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+						
+						<element name="IT_RISK_ID" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="RISK_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_USER" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="USER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_DEPT" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="DEPT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="IT_COST_CENTER" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="COST_CENTER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZAD_WEB_03_rsp">
+	<complexType>
+		<sequence>
+			<element ref="hd:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ES_MESSAGE" maxOccurs="1" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="T_AUDIT_REPORT_HEADER" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="DATE_FROM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="DATE_TO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="ISSUE_BY" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="PROGRAM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="LAST_MODIFY" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="LOGIC" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="REPORT_TYPE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CREATE_BY" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CREATE_AT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="T_AUDIT_SOD_REPORT" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="NO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>		
+									<element name="USER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>		
+									<element name="DEPARTMENT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="COST_CENTER" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="TYPE_OF_RISK" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="RISK_ID" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="FUNCTION" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="RISK_DESCRIPTION" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="COMPOSITE_ROLE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="SINGLE_ROLE" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="AUTHORIZATION_OBJECT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="FIELD" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="VALUE_FROM" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="VALUE_TO" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CHECKED" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="DESCRIPTION" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CREATE_BY" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+									<element name="CREATE_AT" type="string" maxOccurs="1" minOccurs="0" nillable="true"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

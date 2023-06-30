@@ -43,6 +43,8 @@
   <sca:property xmi:id="_xbXJ0AQLEe2ahfmfiJG8lA" name="/Resources/db/ehr/DatabaseUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_t9DGQHeCEe2MHcXoaf3oRw" name="/Resources/sap_ehr/SAPUserName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_uUpG4HeCEe2MHcXoaf3oRw" name="/Resources/sap_ehr/SAPPassword" type="property:password" scaext:simpleValue="#!prDG8BcviBav9z3EkQQ6SA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6t5LQAULEe6O_OG6lEW9FQ" name="/Resources/newGroup/host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7iZxYAULEe6O_OG6lEW9FQ" name="/Resources/newGroup/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_n64SEF4HEeyBEJxJCeCMng" name="ComponentM_SetBaseInfo_OnStartUp" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_n64SEV4HEeyBEJxJCeCMng" processName="common.M_SetBaseInfo_OnStartUp"/>
   </sca:component>
@@ -150,5 +152,8 @@
   </sca:component>
   <sca:component xmi:id="_ASM-UMbEEe2L8O5D16YNxA" name="ComponentEHR_SAP_HR_BDS_0207" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ASM-UcbEEe2L8O5D16YNxA" processName="ehr_sap_hr_0050.EHR_SAP_HR_BDS_0207"/>
+  </sca:component>
+  <sca:component xmi:id="_bxVkYATHEe6O_OG6lEW9FQ" name="ComponentEHR_SAP_HR_BDS_0111" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_bxVkYQTHEe6O_OG6lEW9FQ" processName="ehr_sap_hr_0050.EHR_SAP_HR_BDS_0111"/>
   </sca:component>
 </sca:composite>

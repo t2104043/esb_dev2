@@ -11,6 +11,7 @@
 						<element name="I_WERKS" type="string" maxOccurs="1" minOccurs="0"/>
 						<element name="I_GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
 						<element name="I_SALE_UEMPL_NO" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_PLAN_DT" type="string" maxOccurs="1" minOccurs="0"/>
 						<element maxOccurs="unbounded" minOccurs="0" name="T_INPUT">
 							<complexType>
 								<sequence>

@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="icm_sap_sy_ses.ICM_SAP_SY_SES_0001" suppressJoinFailure="yes"
-    targetNamespace="http://xmlns.example.com/20230601101452"
+    name="icm_sap_sy_ses.ICM_SAP_SY_SES_0002" suppressJoinFailure="yes"
+    targetNamespace="http://xmlns.example.com/20230605124537"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
-    xmlns:ns0="http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output"
-    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jms+ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5+input"
+    xmlns:ns0="http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output"
+    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jms+c655ad5f-9006-4980-af09-c99878716cd5+input"
     xmlns:ns10="http://www.example.org/DataNotParsed"
-    xmlns:ns11="activity.jsonRender.output+bc14b154-7077-4879-942c-2f88a189432c+ActivityOutputType"
+    xmlns:ns11="activity.jsonRender.output+83956549-be61-48ae-93ba-00080ffcc96a+ActivityOutputType"
     xmlns:ns12="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
-    xmlns:ns13="http://www.tibco.com/namespaces/tnt/plugins/jms+dd55c503-4505-4e83-8550-e553bbf2eea8+input"
-    xmlns:ns14="activity.jsonRender.output+462504ad-ae62-4f7b-8cbe-9139e43f93cd+ActivityOutputType"
-    xmlns:ns15="http://www.example.org/ZAD_WEB_01"
-    xmlns:ns16="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01"
-    xmlns:ns17="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse"
-    xmlns:ns18="activity.jsonRender.output+b73a9181-f9d5-4bba-aa54-7d7061c1a1ab+ActivityOutputType"
+    xmlns:ns13="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01"
+    xmlns:ns14="http://www.tibco.com/namespaces/tnt/plugins/jms+ec7cefd8-30cb-4b35-9fb0-69dd983f8114+input"
+    xmlns:ns15="activity.jsonRender.output+dfbbef3d-37d4-486f-9145-7e3f670a1073+ActivityOutputType"
+    xmlns:ns16="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02"
+    xmlns:ns17="http://www.example.org/ZAD_WEB_02"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jms"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jms.send"
     xmlns:ns4="http://www.cspi_library.org/Library"
     xmlns:ns5="http://www.cspi_library.org/Log"
-    xmlns:ns6="activity.jsonParser.input+6a4e69d8-7146-457a-9b7b-5d4ef764608e+ActivityInputType"
-    xmlns:ns7="http://www.example.org/ZHR_GET_SDGRP"
+    xmlns:ns6="activity.jsonParser.input+ba424d7c-8d80-4f35-8501-f7087fd1e47a+ActivityInputType"
+    xmlns:ns7="http://www.example.org/ZAD_WEB_01"
     xmlns:ns8="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonParser"
-    xmlns:ns9="activity.jsonParser.input+0f9b73fe-c6aa-48ba-9ded-ad61247a2cc7+ActivityInputType"
+    xmlns:ns9="activity.jsonParser.input+8428bc4c-76f3-4081-a2fc-cbe3ad6d452e+ActivityInputType"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -191,9 +190,9 @@
         </schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -375,9 +374,9 @@
         </xsd:schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5+input"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+c655ad5f-9006-4980-af09-c99878716cd5+input"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+c655ad5f-9006-4980-af09-c99878716cd5+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -799,8 +798,8 @@
             <element name="JMSSendException" type="tns:JMSSendExceptionType"/>
         </schema>
         <schema elementFormDefault="unqualified"
-            targetNamespace="activity.jsonParser.input+6a4e69d8-7146-457a-9b7b-5d4ef764608e+ActivityInputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+6a4e69d8-7146-457a-9b7b-5d4ef764608e+ActivityInputType">
+            targetNamespace="activity.jsonParser.input+ba424d7c-8d80-4f35-8501-f7087fd1e47a+ActivityInputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+ba424d7c-8d80-4f35-8501-f7087fd1e47a+ActivityInputType">
             <complexType name="ActivityInputClassType">
                 <sequence>
                     <element maxOccurs="1" minOccurs="1"
@@ -861,8 +860,8 @@
             <element name="ValidationException" type="tns:ValidationExceptionType"/>
         </schema>
         <schema elementFormDefault="unqualified"
-            targetNamespace="activity.jsonParser.input+0f9b73fe-c6aa-48ba-9ded-ad61247a2cc7+ActivityInputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+0f9b73fe-c6aa-48ba-9ded-ad61247a2cc7+ActivityInputType">
+            targetNamespace="activity.jsonParser.input+8428bc4c-76f3-4081-a2fc-cbe3ad6d452e+ActivityInputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+8428bc4c-76f3-4081-a2fc-cbe3ad6d452e+ActivityInputType">
             <complexType name="ActivityInputClassType">
                 <sequence>
                     <element maxOccurs="1" minOccurs="1"
@@ -872,8 +871,8 @@
             <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
         </schema>
         <schema
-            targetNamespace="activity.jsonRender.output+bc14b154-7077-4879-942c-2f88a189432c+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+bc14b154-7077-4879-942c-2f88a189432c+ActivityOutputType">
+            targetNamespace="activity.jsonRender.output+83956549-be61-48ae-93ba-00080ffcc96a+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+83956549-be61-48ae-93ba-00080ffcc96a+ActivityOutputType">
             <complexType name="ActivityOutputClassType">
                 <sequence>
                     <element maxOccurs="1" minOccurs="1"
@@ -884,9 +883,9 @@
         </schema>
         <xsd:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+dd55c503-4505-4e83-8550-e553bbf2eea8+input"
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ec7cefd8-30cb-4b35-9fb0-69dd983f8114+input"
             version="0.1"
-            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+dd55c503-4505-4e83-8550-e553bbf2eea8+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            xmlns="http://www.tibco.com/namespaces/tnt/plugins/jms+ec7cefd8-30cb-4b35-9fb0-69dd983f8114+input" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <xsd:complexType name="ActivityOutput">
                 <xsd:sequence>
                     <xsd:element name="MessageID" type="xsd:string"/>
@@ -1066,6 +1065,17 @@
             </xsd:complexType>
             <xsd:element name="GetJMSActivityInput" type="JMSQueueGetMessageInputSchema"/>
         </xsd:schema>
+        <schema
+            targetNamespace="activity.jsonRender.output+dfbbef3d-37d4-486f-9145-7e3f670a1073+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+dfbbef3d-37d4-486f-9145-7e3f670a1073+ActivityOutputType">
+            <complexType name="ActivityOutputClassType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1"
+                        name="jsonString" type="string"/>
+                </sequence>
+            </complexType>
+            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
+        </schema>
         <schema elementFormDefault="unqualified"
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jms.send"
             xmlns="http://www.w3.org/2001/XMLSchema"
@@ -1108,48 +1118,9 @@
                 </choice>
             </complexType>
         </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions">
-            <complexType name="BaseExceptionType">
-                <sequence>
-                    <element name="msg" type="string"/>
-                    <element minOccurs="0" name="msgCode" type="string"/>
-                </sequence>
-            </complexType>
-            <complexType name="PluginExceptionType">
-                <complexContent>
-                    <extension base="tns:BaseExceptionType"/>
-                </complexContent>
-            </complexType>
-            <element name="SAPPluginException" type="tns:PluginExceptionType"/>
-        </schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse"
-            xmlns="http://www.w3.org/2001/XMLSchema"
-            xmlns:Q1="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+bw.sap.InvokeRequestResponse">
-            <import namespace="http://schemas.tibco.com/bw/plugins/sap/6.0/SAPPluginExceptions"/>
-            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
-            <complexType name="ActivityErrorDataType">
-                <choice>
-                    <element maxOccurs="1" minOccurs="0" ref="Q1:SAPPluginException"/>
-                </choice>
-            </complexType>
-        </schema>
-        <schema
-            targetNamespace="activity.jsonRender.output+b73a9181-f9d5-4bba-aa54-7d7061c1a1ab+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+b73a9181-f9d5-4bba-aa54-7d7061c1a1ab+ActivityOutputType">
-            <complexType name="ActivityOutputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
-        </schema>
     </tibex:Types>
     <tibex:ProcessInfo callable="false" createdBy="dcshi"
-        createdOn="Thu Jun 01 10:14:52 KST 2023" description=""
+        createdOn="Mon Jun 05 12:45:37 KST 2023" description=""
         extraErrorVars="true" modifiers="public"
         productVersion="6.8.1 HF2 V55 2023-01-13" scalable="true"
         singleton="true" stateless="false" type="IT"/>
@@ -1159,9 +1130,7 @@
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
         xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <children type="2001">
-            <children type="5001">
-                <element href="//0/@process"/>
-            </children>
+            <children type="5001"/>
             <children type="3001">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1170,12 +1139,10 @@
             <children type="3002">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
-                <element href="//0/@process"/>
             </children>
             <children type="3003">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
-                <element href="//0/@process"/>
             </children>
             <children type="3004">
                 <children type="4018">
@@ -1218,8 +1185,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="21"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    x="31"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002 bw.jms.send">
                                     <children type="4017">
@@ -1255,8 +1222,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="382"
-                                    xsi:type="notation:Bounds" y="197"/>
+                                    x="392"
+                                    xsi:type="notation:Bounds" y="207"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1290,8 +1257,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.2"/>
-                                    <layoutConstraint x="342"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    <layoutConstraint x="352"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1325,8 +1292,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
-                                    <layoutConstraint x="240"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    <layoutConstraint x="250"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1360,8 +1327,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
-                                    <layoutConstraint x="624"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    <layoutConstraint x="634"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1395,8 +1362,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
-                                    <layoutConstraint x="436"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    <layoutConstraint x="446"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1430,8 +1397,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.6"/>
-                                    <layoutConstraint x="258"
-                                    xsi:type="notation:Bounds" y="197"/>
+                                    <layoutConstraint x="268"
+                                    xsi:type="notation:Bounds" y="207"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1465,8 +1432,8 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
-                                    <layoutConstraint x="607"
-                                    xsi:type="notation:Bounds" y="197"/>
+                                    <layoutConstraint x="617"
+                                    xsi:type="notation:Bounds" y="207"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
                                     <children type="4017">
@@ -1502,8 +1469,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="531"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    x="541"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
                                     <children type="4017">
@@ -1539,8 +1506,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="129"
-                                    xsi:type="notation:Bounds" y="46"/>
+                                    x="139"
+                                    xsi:type="notation:Bounds" y="56"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
                                     <children type="4017">
@@ -1576,8 +1543,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.10"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="500"
-                                    xsi:type="notation:Bounds" y="197"/>
+                                    x="510"
+                                    xsi:type="notation:Bounds" y="207"/>
                                     </children>
                                     <children type="4002 bw.sap.InvokeRequestResponse">
                                     <children type="4017">
@@ -1613,11 +1580,11 @@
                                     <element href="//0/@process/@activity/@activity/@activities.11"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="720"
-                                    xsi:type="notation:Bounds" y="47"/>
+                                    x="730"
+                                    xsi:type="notation:Bounds" y="57"/>
                                     </children>
                                     <children
-                                    description="[Audit] 디버깅 보고서 (ICM>SAP)"
+                                    description="[Audit] 특정권한 보고서(ICM>SAP)"
                                     fillColor="13369343"
                                     fontName="맑은 고딕"
                                     lineColor="6737151"
@@ -1632,8 +1599,8 @@
                                     <styles xsi:type="notation:TextStyle"/>
                                     <styles xsi:type="notation:LineTypeStyle"/>
                                     <element xsi:nil="true"/>
-                                    <layoutConstraint x="12"
-                                    xsi:type="notation:Bounds" y="142"/>
+                                    <layoutConstraint x="41"
+                                    xsi:type="notation:Bounds" y="179"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1647,18 +1614,17 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="282"
-                                    width="917" xsi:type="notation:Bounds"/>
+                                    <layoutConstraint height="308"
+                                    width="909" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
-                                <element href="//0/@process/@activity"/>
                             </children>
                             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="282" width="920" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="372" width="819" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1674,7 +1640,6 @@
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll"/>
                                     </children>
                                     <children type="3032">
                                     <children type="4005">
@@ -1724,8 +1689,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="413"
-                                    xsi:type="notation:Bounds" y="35"/>
+                                    x="423"
+                                    xsi:type="notation:Bounds" y="45"/>
                                     </children>
                                     <children type="4002">
                                     <children type="4017">
@@ -1769,8 +1734,8 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.1"/>
                                     <layoutConstraint
-                                    x="307"
-                                    xsi:type="notation:Bounds" y="35"/>
+                                    x="317"
+                                    xsi:type="notation:Bounds" y="45"/>
                                     </children>
                                     <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
                                     <children type="4017">
@@ -1816,8 +1781,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="83"
-                                    xsi:type="notation:Bounds" y="35"/>
+                                    x="93"
+                                    xsi:type="notation:Bounds" y="45"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
                                     <children type="4017">
@@ -1863,13 +1828,12 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="190"
-                                    xsi:type="notation:Bounds" y="35"/>
+                                    x="200"
+                                    xsi:type="notation:Bounds" y="45"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity"/>
                                     </children>
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1883,7 +1847,6 @@
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
-                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll"/>
                                     </children>
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1894,7 +1857,6 @@
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
-                                <element href="//0/@process/@activity/@faultHandlers"/>
                             </children>
                             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
@@ -1910,7 +1872,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="483" width="920" x="1"
+                    <layoutConstraint height="608" width="819" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1919,7 +1881,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="535" width="1262" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="561" width="1254" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -2023,28 +1985,6 @@
             <bendpoints points="[-24, 2, 92, -9]$[-91, 9, 25, -2]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 2, -102, -8]$[103, 8, -24, -2]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, 4, -237, 0]$[238, 0, -24, -4]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.11" type="4006">
             <children type="6002">
@@ -2067,6 +2007,37 @@
             <bendpoints
                 points="[0, 25, 113, -125]$[0, 150, 113, 0]$[-88, 150, 25, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges lineColor="0" lineWidth="1"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.12"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
+            type="NoteAttachment" xsi:type="notation:Connector">
+            <styles xsi:type="notation:ArrowStyle"/>
+            <styles xsi:type="notation:LineTypeStyle"/>
+            <element xsi:nil="true"/>
+            <bendpoints points="[0, 0, -92, -80]$[68, 59, -24, -21]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.2"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
+            <bendpoints points="[25, 2, -102, -8]$[103, 8, -24, -2]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[25, 4, -237, 0]$[238, 0, -24, -4]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.3"
             target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1" type="4006">
@@ -2078,51 +2049,46 @@
             <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
-        <edges lineColor="0" lineWidth="1"
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.12"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            type="NoteAttachment" xsi:type="notation:Connector">
-            <styles xsi:type="notation:ArrowStyle"/>
-            <styles xsi:type="notation:LineTypeStyle"/>
-            <element xsi:nil="true"/>
-            <bendpoints points="[0, 0, -82, -70]$[58, 49, -24, -21]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
             namespace="http://www.example.org/ZAD_WEB_01" prefix="tns"/>
-        <tibex:namespaceItem namespace="http://www.cspi_library.org/Log" prefix="Log"/>
-        <tibex:namespaceItem
-            namespace="http://www.cspi_library.org/Library" prefix="Library"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/ZHR_GET_SDGRP" prefix="tns5"/>
-        <tibex:namespaceItem
-            namespace="http://www.tibco.com/bw/xslt/custom-functions" prefix="tib"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01" prefix="tns1"/>
         <tibex:namespaceItem
+            namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
+        <tibex:namespaceItem
             namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
         <tibex:namespaceItem
-            namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
-        <tibex:namespaceItem namespace="http://www.example.org/HEADER" prefix="tns3"/>
+            namespace="http://www.cspi_library.org/Library" prefix="Library"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02" prefix="tns2"/>
+        <tibex:namespaceItem namespace="http://www.cspi_library.org/Log" prefix="Log"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/bw/xslt/custom-functions" prefix="tib"/>
+        <tibex:namespaceItem
+            namespace="http://www.example.org/ZAD_WEB_02" prefix="tns3"/>
+        <tibex:namespaceItem namespace="http://www.example.org/HEADER" prefix="tns4"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/bw/xpath/bw-custom-functions" prefix="bw"/>
         <tibex:namespaceItem
             namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output" prefix="ns1"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output" prefix="ns"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+c655ad5f-9006-4980-af09-c99878716cd5+input" prefix="tns6"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5+input" prefix="tns6"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output" prefix="ns"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+dd55c503-4505-4e83-8550-e553bbf2eea8+input" prefix="tns8"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output" prefix="ns2"/>
+        <tibex:namespaceItem
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jms+ec7cefd8-30cb-4b35-9fb0-69dd983f8114+input" prefix="tns8"/>
         <tibex:namespaceItem
             namespace="http://www.example.org/DataNotParsed" prefix="tns7"/>
     </tibex:NamespaceRegistry>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Library"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Log"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.cspi_library.org/Library"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/DataNotParsed"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/ZAD_WEB_01"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/ZAD_WEB_02"/>
     <bpws:variables>
         <bpws:variable element="ns:ProcessContext"
             name="_processContext" sca-bpel:internal="true"/>
@@ -2165,7 +2131,7 @@
         <bpws:variable element="ns5:SetLog" name="Log_3-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns6:ActivityInputClass"
             name="ParseJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns15:ZAD_WEB_01_req" name="ParseJSON" sca-bpel:internal="true"/>
+        <bpws:variable element="ns17:ZAD_WEB_02_req" name="ParseJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns8:ActivityErrorData"
             name="_error_ParseJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:ActivityInputClass"
@@ -2173,29 +2139,26 @@
         <bpws:variable element="ns10:EBSGram" name="ParseHeaderJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns8:ActivityErrorData"
             name="_error_ParseHeaderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns15:ZAD_WEB_01_rsp"
+        <bpws:variable element="ns17:ZAD_WEB_02_rsp"
             name="RenderJSON-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns11:ActivityOutputClass"
             name="RenderJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns12:ActivityErrorData"
             name="_error_RenderJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns13:ActivityInput"
+        <bpws:variable element="ns16:RequestInputType"
+            name="InvokeRFCBAPIinSAP-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:RequestOutputType"
+            name="InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityInput"
             name="JMSSendMessage1-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:aEmptyOutputClass"
             name="JMSSendMessage1" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:ActivityErrorData"
             name="_error_JMSSendMessage1" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:SetLog" name="Log_0-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns16:RequestInputType"
-            name="InvokeRFCBAPIinSAP-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns16:RequestOutputType"
-            name="InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
-        <bpws:variable element="ns17:ActivityErrorData"
-            name="_error_InvokeRFCBAPIinSAP" sca-bpel:internal="true"/>
-        <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable element="ns10:EBSGram"
             name="Render_ErrorJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns18:ActivityOutputClass"
+        <bpws:variable element="ns15:ActivityOutputClass"
             name="Render_ErrorJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns12:ActivityErrorData"
             name="_error_Render_ErrorJSON" sca-bpel:internal="true"/>
@@ -2211,7 +2174,7 @@
     <bpws:scope name="scope">
         <bpws:faultHandlers>
             <bpws:catchAll tibex:faultDetailsVar="FaultDetails"
-                tibex:faultNameVar="FaultName" tibex:xpdlId="2dae2671-f748-4a1d-a040-997d8e07a473">
+                tibex:faultNameVar="FaultName" tibex:xpdlId="dea4bb25-b825-44c1-b179-a1f2998d572d">
                 <bpws:scope name="scope1">
                     <bpws:flow name="flow1">
                         <bpws:links>
@@ -2225,13 +2188,13 @@
                                 inputVariable="JMSSendMessage1-input"
                                 name="JMSSendMessage1"
                                 outputVariable="JMSSendMessage1"
-                                tibex:xpdlId="dd55c503-4505-4e83-8550-e553bbf2eea8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                tibex:xpdlId="ec7cefd8-30cb-4b35-9fb0-69dd983f8114" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
                                     <bpws:target linkName="L_Set_Log4ToJMSSendMessage1"/>
                                 </bpws:targets>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns8=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+dd55c503-4505-4e83-8550-e553bbf2eea8+input&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&lt;xsl:template name=&quot;JMSSendMessage1-input&quot; match=&quot;/&quot;>&lt;tns8:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($Render_ErrorJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns8:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns8=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+ec7cefd8-30cb-4b35-9fb0-69dd983f8114+input&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&lt;xsl:template name=&quot;JMSSendMessage1-input&quot; match=&quot;/&quot;>&lt;tns8:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($Render_ErrorJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns8:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
@@ -2258,7 +2221,7 @@
                         <bpws:extensionActivity>
                             <tibex:extActivity
                                 inputVariable="Log_0-input" name="Log_0"
-                                tibex:xpdlId="5b67bf77-d8e0-4675-b49f-e2d7202d01d2"
+                                tibex:xpdlId="d93e3028-5fbd-489a-9b54-f40001385aa0"
                                 type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
                                     <bpws:target linkName="RenderJSON1ToLog_0"/>
@@ -2268,14 +2231,14 @@
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding coercion=""
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;_error&quot;/>&#xa;    &lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_0-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;0&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'TDOP'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;$Render_ErrorJSON/jsonString&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;            &lt;xsl:for-each select=&quot;$_error&quot;>&#xa;                &lt;Log:Error>&#xa;                    &lt;Log:StackTrace>&#xa;                        &lt;xsl:value-of select=&quot;StackTrace&quot;/>&#xa;                    &lt;/Log:StackTrace>&#xa;                    &lt;Log:Msg>&#xa;                        &lt;xsl:value-of select=&quot;Msg&quot;/>&#xa;                    &lt;/Log:Msg>&#xa;                    &lt;Log:FullClass>&#xa;                        &lt;xsl:value-of select=&quot;FullClass&quot;/>&#xa;                    &lt;/Log:FullClass>&#xa;                    &lt;Log:ProcessStack>&#xa;                        &lt;xsl:value-of select=&quot;ProcessStack&quot;/>&#xa;                    &lt;/Log:ProcessStack>&#xa;                    &lt;xsl:if test=&quot;MsgCode&quot;>&#xa;                        &lt;Log:MsgCode>&#xa;                            &lt;xsl:value-of select=&quot;MsgCode&quot;/>&#xa;                        &lt;/Log:MsgCode>&#xa;                    &lt;/xsl:if>&#xa;                    &lt;Log:Data>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/ancestor-or-self::*/namespace::node()&quot;/>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/@*&quot;/>&#xa;                        &lt;xsl:copy-of select=&quot;$_error/Data/node()&quot;/>&#xa;                    &lt;/Log:Data>&#xa;                &lt;/Log:Error>&#xa;            &lt;/xsl:for-each>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.example.org/HEADER&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:param name=&quot;Render_ErrorJSON&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;Log_0-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns4:HEADER/tns4:IF_UUID&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns4:HEADER/tns4:IF_ID&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;0&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'TDOP'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;$Render_ErrorJSON/jsonString&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;Log:Error>&lt;Log:StackTrace>&lt;xsl:value-of select=&quot;$FaultDetails/StackTrace&quot;/>&lt;/Log:StackTrace>&lt;Log:Msg>&lt;xsl:value-of select=&quot;$FaultDetails/Msg&quot;/>&lt;/Log:Msg>&lt;Log:FullClass>&lt;xsl:value-of select=&quot;$FaultDetails/FullClass&quot;/>&lt;/Log:FullClass>&lt;Log:ProcessStack>&lt;xsl:value-of select=&quot;$FaultDetails/ProcessStack&quot;/>&lt;/Log:ProcessStack>&lt;Log:MsgCode>&lt;xsl:value-of select=&quot;$FaultDetails/MsgCode&quot;/>&lt;/Log:MsgCode>&lt;Log:Data>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/ancestor-or-self::*/namespace::node()&quot;/>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/@*&quot;/>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/node()&quot;/>&lt;/Log:Data>&lt;/Log:Error>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:CallProcess
                                     moduleRef="CSPI_Library"
                                     subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                             </tibex:extActivity>
                         </bpws:extensionActivity>
-                        <bpws:empty name="Empty" tibex:xpdlId="c7e87072-b47a-4feb-a469-6166534e2747">
+                        <bpws:empty name="Empty" tibex:xpdlId="45f11c31-25ed-4c35-8b4d-26f79d67be18">
                             <bpws:sources>
                                 <bpws:source linkName="EmptyToLog_0"/>
                             </bpws:sources>
@@ -2285,7 +2248,7 @@
                                 inputVariable="Render_ErrorJSON-input"
                                 name="Render_ErrorJSON"
                                 outputVariable="Render_ErrorJSON"
-                                tibex:xpdlId="b73a9181-f9d5-4bba-aa54-7d7061c1a1ab" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                tibex:xpdlId="dfbbef3d-37d4-486f-9145-7e3f670a1073" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                 <bpws:targets>
                                     <bpws:target linkName="EmptyToLog_0"/>
                                 </bpws:targets>
@@ -2294,7 +2257,7 @@
                                 </bpws:sources>
                                 <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:tns7=&quot;http://www.example.org/DataNotParsed&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:param name=&quot;_error&quot;/>&lt;xsl:template name=&quot;Render_ErrorJSON-input&quot; match=&quot;/&quot;>&lt;tns7:EBSGram>&lt;xsl:for-each select=&quot;$ParseJSON/tns3:HEADER&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;tns3:IF_ID&quot;/>&lt;/tns3:IF_ID>&lt;xsl:if test=&quot;tns3:IF_UUID&quot;>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;tns3:IF_UUID&quot;/>&lt;/tns3:IF_UUID>&lt;/xsl:if>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:copy-of select=&quot;tns3:IF_ADDITIONAL_DATA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'9999'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;concat(&amp;quot;전송중 Error 발생 : &amp;quot;, substring($_error/StackTrace, 1,200))&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;tns7:DATA>&lt;xsl:copy-of select=&quot;$_error/Data/ancestor-or-self::*/namespace::node()&quot;/>&lt;xsl:copy-of select=&quot;$_error/Data/@*&quot;/>&lt;xsl:copy-of select=&quot;$_error/Data/node()&quot;/>&lt;/tns7:DATA>&lt;/tns7:EBSGram>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.example.org/HEADER&quot; xmlns:tns7=&quot;http://www.example.org/DataNotParsed&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:param name=&quot;FaultDetails&quot;/>&lt;xsl:template name=&quot;Render_ErrorJSON-input&quot; match=&quot;/&quot;>&lt;tns7:EBSGram>&lt;xsl:for-each select=&quot;$ParseJSON/tns4:HEADER&quot;>&lt;tns4:HEADER>&lt;tns4:IF_ID>&lt;xsl:value-of select=&quot;tns4:IF_ID&quot;/>&lt;/tns4:IF_ID>&lt;xsl:if test=&quot;tns4:IF_UUID&quot;>&lt;tns4:IF_UUID>&lt;xsl:value-of select=&quot;tns4:IF_UUID&quot;/>&lt;/tns4:IF_UUID>&lt;/xsl:if>&lt;tns4:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns4:IF_HOST>&lt;tns4:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns4:IF_DATE>&lt;xsl:if test=&quot;tns4:IF_ADDITIONAL_DATA&quot;>&lt;tns4:IF_ADDITIONAL_DATA>&lt;xsl:copy-of select=&quot;tns4:IF_ADDITIONAL_DATA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns4:IF_ADDITIONAL_DATA&quot;/>&lt;/tns4:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns4:RST_CD>&lt;xsl:value-of select=&quot;'9999'&quot;/>&lt;/tns4:RST_CD>&lt;tns4:RST_MSG>&lt;xsl:value-of select=&quot;concat(&amp;quot;전송중 Error 발생 : &amp;quot;, substring($FaultDetails/StackTrace, 1,200))&quot;/>&lt;/tns4:RST_MSG>&lt;/tns4:HEADER>&lt;/xsl:for-each>&lt;tns7:DATA>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/ancestor-or-self::*/namespace::node()&quot;/>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/@*&quot;/>&lt;xsl:copy-of select=&quot;$FaultDetails/Data/node()&quot;/>&lt;/tns7:DATA>&lt;/tns7:EBSGram>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:config>
                                     <bwext:BWActivity
@@ -2338,7 +2301,7 @@
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
                     eventTimeout="60" name="JMSReceiveMessage"
-                    tibex:xpdlId="f5d757ef-aaa8-4bb1-ac85-2bb4211d8901"
+                    tibex:xpdlId="fdcfac29-1f04-49d8-92c0-336eef04e2b0"
                     variable="JMSReceiveMessage" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:sources>
                         <bpws:source linkName="JMSReceiveMessageToParseJSON1"/>
@@ -2355,7 +2318,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jms#//JMSReceiverEventSource"/>
                                     <value
                                     connectionReference="jmsConnection"
-                                    destinationName="ICM.SAP.SY.SES.0001"
+                                    destinationName="ICM.SAP.SY.SES.0002"
                                     maxSessions="1"
                                     messageType="Bytes"
                                     messagingStyle="Queue"
@@ -2371,7 +2334,7 @@
                     inputVariable="JMSSendMessage-input"
                     name="JMSSendMessage"
                     outputVariable="JMSSendMessage"
-                    tibex:xpdlId="ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="c655ad5f-9006-4980-af09-c99878716cd5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="RenderJSONToJMSSendMessage"/>
                     </bpws:targets>
@@ -2380,7 +2343,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+ad5befd2-5c2c-4b63-98a1-4c19c6cea6b5+input&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+e5e70a07-8a52-4e7e-a8d8-385340842920+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;JMSSendMessage-input&quot; match=&quot;/&quot;>&lt;tns6:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns1:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($RenderJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns6:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+c655ad5f-9006-4980-af09-c99878716cd5+input&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:ns1=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+f5d757ef-aaa8-4bb1-ac85-2bb4211d8901+output&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:ns=&quot;http://www.tibco.com/namespaces/tnt/plugins/jms+fdcfac29-1f04-49d8-92c0-336eef04e2b0+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;RenderJSON&quot;/>&lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&lt;xsl:template name=&quot;JMSSendMessage-input&quot; match=&quot;/&quot;>&lt;tns6:ActivityInput>&lt;xsl:if test=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;>&lt;destination>&lt;xsl:value-of select=&quot;$JMSReceiveMessage/JMSHeaders/ns:JMSReplyTo&quot;/>&lt;/destination>&lt;/xsl:if>&lt;JMSExpiration>&lt;xsl:value-of select=&quot;60000&quot;/>&lt;/JMSExpiration>&lt;Body>&lt;xsl:value-of select=&quot;xsd:base64Binary(tib:string-to-base64($RenderJSON/jsonString))&quot;/>&lt;/Body>&lt;/tns6:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity activityTypeID="bw.jms.send"
@@ -2408,7 +2371,7 @@
                     inputVariable="L_Get_InterfaceSysId-input"
                     name="L_Get_InterfaceSysId"
                     outputVariable="L_Get_InterfaceSysId"
-                    tibex:xpdlId="96f60cce-40ab-4f1f-9068-234c5f02a45a"
+                    tibex:xpdlId="356f8a79-d37b-4ef6-b572-8e60cfeeef12"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="L_Get_InterfaceInfoToL_Get_InterfaceSysId"/>
@@ -2418,7 +2381,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:template name=&quot;L_Get_InterfaceSysId-input&quot; match=&quot;/&quot;>&lt;Library:InterfaceSysId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_UUID&quot;/>&lt;/Library:InterfaceSysId>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;L_Get_InterfaceSysId-input&quot; match=&quot;/&quot;>&#xa;        &lt;Library:InterfaceSysId>&#xa;            &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns4:HEADER/tns4:IF_UUID&quot;/>&#xa;        &lt;/Library:InterfaceSysId>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CSPI_Library"
                         subProcessName="L_Get_InterfaceSysId" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -2429,7 +2392,7 @@
                     inputVariable="L_Get_InterfaceInfo-input"
                     name="L_Get_InterfaceInfo"
                     outputVariable="L_Get_InterfaceInfo"
-                    tibex:xpdlId="e0c5d9ce-5628-475a-98c8-fe84467f65f7"
+                    tibex:xpdlId="685c2ea9-a04a-42b6-acad-78d6868abc15"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="ParseJSON1ToL_Get_InterfaceInfo"/>
@@ -2439,7 +2402,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&lt;xsl:template name=&quot;L_Get_InterfaceInfo-input&quot; match=&quot;/&quot;>&lt;Library:InterfaceId>&lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns3:HEADER/tns3:IF_ID&quot;/>&lt;/Library:InterfaceId>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns4=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseHeaderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;L_Get_InterfaceInfo-input&quot; match=&quot;/&quot;>&#xa;        &lt;Library:InterfaceId>&#xa;            &lt;xsl:value-of select=&quot;$ParseHeaderJSON/tns4:HEADER/tns4:IF_ID&quot;/>&#xa;        &lt;/Library:InterfaceId>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CSPI_Library"
                         subProcessName="L_Get_InterfaceInfo" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -2448,7 +2411,7 @@
             <bpws:extensionActivity>
                 <tibex:extActivity inputVariable="Log_2-input"
                     name="Log_2"
-                    tibex:xpdlId="fb458760-bdd6-40d5-be40-78f9c968b08b"
+                    tibex:xpdlId="7d30d59c-72ce-4d0d-b62c-2a6e4864a7b6"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="ParseJSONToL_Set_Log"/>
@@ -2458,7 +2421,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns5=&quot;http://www.example.org/ZHR_GET_SDGRP&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; xmlns:tns=&quot;http://www.example.org/ZAD_WEB_01&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;_processContext&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;Log_2-input&quot; match=&quot;/&quot;>&lt;Log:SetLog>&lt;Log:Info>&lt;Log:InterfaceSysId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/Log:InterfaceSysId>&lt;Log:InterfaceId>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/Log:InterfaceId>&lt;Log:Phase>&lt;xsl:value-of select=&quot;2&quot;/>&lt;/Log:Phase>&lt;Log:JobId>&lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&lt;/Log:JobId>&lt;/Log:Info>&lt;Log:Detail>&lt;Log:Key>&lt;xsl:value-of select=&quot;'TDOP'&quot;/>&lt;/Log:Key>&lt;Log:Value>&lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON/tns:DATA, false(),true())&quot;/>&lt;/Log:Value>&lt;/Log:Detail>&lt;/Log:SetLog>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Log=&quot;http://www.cspi_library.org/Log&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns3=&quot;http://www.example.org/ZAD_WEB_02&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;_processContext&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&#xa;    &lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;Log_2-input&quot; match=&quot;/&quot;>&#xa;        &lt;Log:SetLog>&#xa;            &lt;Log:Info>&#xa;                &lt;Log:InterfaceSysId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&#xa;                &lt;/Log:InterfaceSysId>&#xa;                &lt;Log:InterfaceId>&#xa;                    &lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&#xa;                &lt;/Log:InterfaceId>&#xa;                &lt;Log:Phase>&#xa;                    &lt;xsl:value-of select=&quot;2&quot;/>&#xa;                &lt;/Log:Phase>&#xa;                &lt;Log:JobId>&#xa;                    &lt;xsl:value-of select=&quot;$_processContext/JobId&quot;/>&#xa;                &lt;/Log:JobId>&#xa;            &lt;/Log:Info>&#xa;            &lt;Log:Detail>&#xa;                &lt;Log:Key>&#xa;                    &lt;xsl:value-of select=&quot;'TDOP'&quot;/>&#xa;                &lt;/Log:Key>&#xa;                &lt;Log:Value>&#xa;                    &lt;xsl:value-of select=&quot;tib:render-xml($ParseJSON/tns3:DATA, false(),true())&quot;/>&#xa;                &lt;/Log:Value>&#xa;            &lt;/Log:Detail>&#xa;        &lt;/Log:SetLog>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:CallProcess moduleRef="CSPI_Library"
                         subProcessName="L_Set_Log" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -2467,7 +2430,7 @@
             <bpws:extensionActivity>
                 <tibex:extActivity inputVariable="Log_1-input"
                     name="Log_1"
-                    tibex:xpdlId="8d334cdd-d648-4669-996a-b5df7d507769"
+                    tibex:xpdlId="a7bc183e-921a-459c-bcd1-9ad747de4999"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="L_Get_InterfaceSysIdToL_Set_Log1"/>
@@ -2486,7 +2449,7 @@
             <bpws:extensionActivity>
                 <tibex:extActivity inputVariable="Log_4-input"
                     name="Log_4"
-                    tibex:xpdlId="20a90ad7-bd85-4814-9334-2eb3afdf09e2"
+                    tibex:xpdlId="978b7d5a-03a5-4ff4-ae95-d839383ec4fa"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="JMSSendMessageToL_Set_Log2"/>
@@ -2502,7 +2465,7 @@
             <bpws:extensionActivity>
                 <tibex:extActivity inputVariable="Log_3-input"
                     name="Log_3"
-                    tibex:xpdlId="5f2b84e8-54d9-4f0c-b8ec-2579c7b767a5"
+                    tibex:xpdlId="589d0dd0-aee0-4a38-9dc9-6e47d54f44e6"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="InvokeRFCBAPIinSAPToLog_3"/>
@@ -2521,7 +2484,7 @@
             <bpws:extensionActivity>
                 <tibex:activityExtension inputVariable="ParseJSON-input"
                     name="ParseJSON" outputVariable="ParseJSON"
-                    tibex:xpdlId="6a4e69d8-7146-457a-9b7b-5d4ef764608e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="ba424d7c-8d80-4f35-8501-f7087fd1e47a" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="L_Set_Log1ToParseJSON"/>
                     </bpws:targets>
@@ -2530,7 +2493,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;activity.jsonParser.input+6a4e69d8-7146-457a-9b7b-5d4ef764608e+ActivityInputType&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns2:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;activity.jsonParser.input+ba424d7c-8d80-4f35-8501-f7087fd1e47a+ActivityInputType&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns5:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns5:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2546,7 +2509,7 @@
                                     hasMultipleNamespaces="true"
                                     jsonInputStyle="None"
                                     schemaType="Xsd" xsi:type="restjson:JsonParser">
-                                    <outputEditorElement href="platform:/resource/SVC_SAP_ETC_0050.module/Schemas/ZAD_WEB_01.xsd#//ZAD_WEB_01_req;XSDElementDeclaration"/>
+                                    <outputEditorElement href="platform:/resource/SVC_SAP_ETC_0050.module/Schemas/ZAD_WEB_02.xsd#//ZAD_WEB_02_req;XSDElementDeclaration"/>
                                     </value>
                                 </properties>
                             </activityConfig>
@@ -2559,7 +2522,7 @@
                     inputVariable="ParseHeaderJSON-input"
                     name="ParseHeaderJSON"
                     outputVariable="ParseHeaderJSON"
-                    tibex:xpdlId="0f9b73fe-c6aa-48ba-9ded-ad61247a2cc7" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="8428bc4c-76f3-4081-a2fc-cbe3ad6d452e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="JMSReceiveMessageToParseJSON1"/>
                     </bpws:targets>
@@ -2568,7 +2531,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;activity.jsonParser.input+0f9b73fe-c6aa-48ba-9ded-ad61247a2cc7+ActivityInputType&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseHeaderJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns2:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;activity.jsonParser.input+8428bc4c-76f3-4081-a2fc-cbe3ad6d452e+ActivityInputType&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;JMSReceiveMessage&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseHeaderJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns5:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;tib:base64-to-string(xsd:string($JMSReceiveMessage/Body))&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns5:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2596,7 +2559,7 @@
                 <tibex:activityExtension
                     inputVariable="RenderJSON-input" name="RenderJSON"
                     outputVariable="RenderJSON"
-                    tibex:xpdlId="bc14b154-7077-4879-942c-2f88a189432c" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="83956549-be61-48ae-93ba-00080ffcc96a" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="L_Set_Log3ToRenderJSON"/>
                     </bpws:targets>
@@ -2605,7 +2568,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns3=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns=&quot;http://www.example.org/ZAD_WEB_01&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns:ZAD_WEB_01_rsp>&lt;xsl:for-each select=&quot;$ParseJSON/tns3:HEADER&quot;>&lt;tns3:HEADER>&lt;tns3:IF_ID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/tns3:IF_ID>&lt;tns3:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns3:IF_UUID>&lt;tns3:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns3:IF_HOST>&lt;tns3:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns3:IF_DATE>&lt;xsl:if test=&quot;tns3:IF_ADDITIONAL_DATA&quot;>&lt;tns3:IF_ADDITIONAL_DATA>&lt;xsl:copy-of select=&quot;tns3:IF_ADDITIONAL_DATA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns3:IF_ADDITIONAL_DATA&quot;/>&lt;/tns3:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns3:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns3:RST_CD>&lt;tns3:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns3:RST_MSG>&lt;/tns3:HEADER>&lt;/xsl:for-each>&lt;tns:DATA>&lt;tns:ES_MESSAGE>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE&quot;>&lt;tns:TYPE>&lt;xsl:copy-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE&quot;/>&lt;/tns:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE&quot;>&lt;tns:MESSAGE>&lt;xsl:copy-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE&quot;/>&lt;/tns:MESSAGE>&lt;/xsl:if>&lt;/tns:ES_MESSAGE>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_REPORT_HEADER/item&quot;>&lt;tns:T_AUDIT_REPORT_HEADER>&lt;xsl:if test=&quot;DATE_FROM&quot;>&lt;tns:DATE_FROM>&lt;xsl:copy-of select=&quot;DATE_FROM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATE_FROM&quot;/>&lt;/tns:DATE_FROM>&lt;/xsl:if>&lt;xsl:if test=&quot;DATE_TO&quot;>&lt;tns:DATE_TO>&lt;xsl:copy-of select=&quot;DATE_TO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATE_TO&quot;/>&lt;/tns:DATE_TO>&lt;/xsl:if>&lt;xsl:if test=&quot;ISSUE_BY&quot;>&lt;tns:ISSUE_BY>&lt;xsl:copy-of select=&quot;ISSUE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ISSUE_BY&quot;/>&lt;/tns:ISSUE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;PROGRAM&quot;>&lt;tns:PROGRAM>&lt;xsl:copy-of select=&quot;PROGRAM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PROGRAM&quot;/>&lt;/tns:PROGRAM>&lt;/xsl:if>&lt;xsl:if test=&quot;LAST_MODIFY&quot;>&lt;tns:LAST_MODIFY>&lt;xsl:copy-of select=&quot;LAST_MODIFY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LAST_MODIFY&quot;/>&lt;/tns:LAST_MODIFY>&lt;/xsl:if>&lt;xsl:if test=&quot;CUL&quot;>&lt;tns:CUL>&lt;xsl:copy-of select=&quot;CUL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUL&quot;/>&lt;/tns:CUL>&lt;/xsl:if>&lt;xsl:if test=&quot;CUK&quot;>&lt;tns:CUK>&lt;xsl:copy-of select=&quot;CUK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUK&quot;/>&lt;/tns:CUK>&lt;/xsl:if>&lt;xsl:if test=&quot;CUM&quot;>&lt;tns:CUM>&lt;xsl:copy-of select=&quot;CUM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUM&quot;/>&lt;/tns:CUM>&lt;/xsl:if>&lt;xsl:if test=&quot;CUP&quot;>&lt;tns:CUP>&lt;xsl:copy-of select=&quot;CUP/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CUP&quot;/>&lt;/tns:CUP>&lt;/xsl:if>&lt;xsl:if test=&quot;TOTAL&quot;>&lt;tns:TOTAL>&lt;xsl:copy-of select=&quot;TOTAL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TOTAL&quot;/>&lt;/tns:TOTAL>&lt;/xsl:if>&lt;xsl:if test=&quot;LOGIC&quot;>&lt;tns:LOGIC>&lt;xsl:copy-of select=&quot;LOGIC/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LOGIC&quot;/>&lt;/tns:LOGIC>&lt;/xsl:if>&lt;xsl:if test=&quot;REPORT_TYPE&quot;>&lt;tns:REPORT_TYPE>&lt;xsl:copy-of select=&quot;REPORT_TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REPORT_TYPE&quot;/>&lt;/tns:REPORT_TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns:CREATE_AT>&lt;/xsl:if>&lt;/tns:T_AUDIT_REPORT_HEADER>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_DUB_REPORT_SUMMARY/item&quot;>&lt;tns:T_AUDIT_DUB_REPORT_SUMMARY>&lt;xsl:if test=&quot;PROGRAM&quot;>&lt;tns:PROGRAM>&lt;xsl:copy-of select=&quot;PROGRAM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PROGRAM&quot;/>&lt;/tns:PROGRAM>&lt;/xsl:if>&lt;xsl:if test=&quot;USER&quot;>&lt;tns:USER>&lt;xsl:copy-of select=&quot;USER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USER&quot;/>&lt;/tns:USER>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATION_DATE&quot;>&lt;tns:CREATION_DATE>&lt;xsl:copy-of select=&quot;CREATION_DATE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATION_DATE&quot;/>&lt;/tns:CREATION_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;MESSAGE_ID&quot;>&lt;tns:MESSAGE_ID>&lt;xsl:copy-of select=&quot;MESSAGE_ID/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;MESSAGE_ID&quot;/>&lt;/tns:MESSAGE_ID>&lt;/xsl:if>&lt;xsl:if test=&quot;CHECKED&quot;>&lt;tns:CHECKED>&lt;xsl:copy-of select=&quot;CHECKED/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CHECKED&quot;/>&lt;/tns:CHECKED>&lt;/xsl:if>&lt;xsl:if test=&quot;NEED_TO_CHECK&quot;>&lt;tns:NEED_TO_CHECK>&lt;xsl:copy-of select=&quot;NEED_TO_CHECK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;NEED_TO_CHECK&quot;/>&lt;/tns:NEED_TO_CHECK>&lt;/xsl:if>&lt;xsl:if test=&quot;TOTAL&quot;>&lt;tns:TOTAL>&lt;xsl:copy-of select=&quot;TOTAL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TOTAL&quot;/>&lt;/tns:TOTAL>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns:CREATE_AT>&lt;/xsl:if>&lt;/tns:T_AUDIT_DUB_REPORT_SUMMARY>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_DUB_REPORT_DETAILS/item&quot;>&lt;tns:T_AUDIT_DUB_REPORT_DETAILS>&lt;xsl:if test=&quot;NO&quot;>&lt;tns:NO>&lt;xsl:copy-of select=&quot;NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;NO&quot;/>&lt;/tns:NO>&lt;/xsl:if>&lt;xsl:if test=&quot;SERVER_NAME&quot;>&lt;tns:SERVER_NAME>&lt;xsl:copy-of select=&quot;SERVER_NAME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SERVER_NAME&quot;/>&lt;/tns:SERVER_NAME>&lt;/xsl:if>&lt;xsl:if test=&quot;SR_KEY_IN&quot;>&lt;tns:SR_KEY_IN>&lt;xsl:copy-of select=&quot;SR_KEY_IN/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SR_KEY_IN&quot;/>&lt;/tns:SR_KEY_IN>&lt;/xsl:if>&lt;xsl:if test=&quot;NEED_TO_CHECK&quot;>&lt;tns:NEED_TO_CHECK>&lt;xsl:copy-of select=&quot;NEED_TO_CHECK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;NEED_TO_CHECK&quot;/>&lt;/tns:NEED_TO_CHECK>&lt;/xsl:if>&lt;xsl:if test=&quot;REASON&quot;>&lt;tns:REASON>&lt;xsl:copy-of select=&quot;REASON/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REASON&quot;/>&lt;/tns:REASON>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATION_DATE&quot;>&lt;tns:CREATION_DATE>&lt;xsl:copy-of select=&quot;CREATION_DATE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATION_DATE&quot;/>&lt;/tns:CREATION_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;TIME&quot;>&lt;tns:TIME>&lt;xsl:copy-of select=&quot;TIME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TIME&quot;/>&lt;/tns:TIME>&lt;/xsl:if>&lt;xsl:if test=&quot;CLIENT&quot;>&lt;tns:CLIENT>&lt;xsl:copy-of select=&quot;CLIENT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CLIENT&quot;/>&lt;/tns:CLIENT>&lt;/xsl:if>&lt;xsl:if test=&quot;USER&quot;>&lt;tns:USER>&lt;xsl:copy-of select=&quot;USER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USER&quot;/>&lt;/tns:USER>&lt;/xsl:if>&lt;xsl:if test=&quot;TCODE&quot;>&lt;tns:TCODE>&lt;xsl:copy-of select=&quot;TCODE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;TCODE&quot;/>&lt;/tns:TCODE>&lt;/xsl:if>&lt;xsl:if test=&quot;PROGRAM&quot;>&lt;tns:PROGRAM>&lt;xsl:copy-of select=&quot;PROGRAM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PROGRAM&quot;/>&lt;/tns:PROGRAM>&lt;/xsl:if>&lt;xsl:if test=&quot;AREA&quot;>&lt;tns:AREA>&lt;xsl:copy-of select=&quot;AREA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AREA&quot;/>&lt;/tns:AREA>&lt;/xsl:if>&lt;xsl:if test=&quot;N&quot;>&lt;tns:N>&lt;xsl:copy-of select=&quot;N/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;N&quot;/>&lt;/tns:N>&lt;/xsl:if>&lt;xsl:if test=&quot;AUDIT_LOG&quot;>&lt;tns:AUDIT_LOG>&lt;xsl:copy-of select=&quot;AUDIT_LOG/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUDIT_LOG&quot;/>&lt;/tns:AUDIT_LOG>&lt;/xsl:if>&lt;xsl:if test=&quot;LONG_TEXT&quot;>&lt;tns:LONG_TEXT>&lt;xsl:copy-of select=&quot;LONG_TEXT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LONG_TEXT&quot;/>&lt;/tns:LONG_TEXT>&lt;/xsl:if>&lt;xsl:if test=&quot;SAP_PROCESS&quot;>&lt;tns:SAP_PROCESS>&lt;xsl:copy-of select=&quot;SAP_PROCESS/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;SAP_PROCESS&quot;/>&lt;/tns:SAP_PROCESS>&lt;/xsl:if>&lt;xsl:if test=&quot;WORK_PROCESS_NUMBER&quot;>&lt;tns:WORK_PROCESS_NUMBER>&lt;xsl:copy-of select=&quot;WORK_PROCESS_NUMBER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;WORK_PROCESS_NUMBER&quot;/>&lt;/tns:WORK_PROCESS_NUMBER>&lt;/xsl:if>&lt;xsl:if test=&quot;VAR_MESS_DATA_1&quot;>&lt;tns:VAR_MESS_DATA_1>&lt;xsl:copy-of select=&quot;VAR_MESS_DATA_1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;VAR_MESS_DATA_1&quot;/>&lt;/tns:VAR_MESS_DATA_1>&lt;/xsl:if>&lt;xsl:if test=&quot;DATA_1&quot;>&lt;tns:DATA_1>&lt;xsl:copy-of select=&quot;DATA_1/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATA_1&quot;/>&lt;/tns:DATA_1>&lt;/xsl:if>&lt;xsl:if test=&quot;VAR_MESS_DATA_2&quot;>&lt;tns:VAR_MESS_DATA_2>&lt;xsl:copy-of select=&quot;VAR_MESS_DATA_2/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;VAR_MESS_DATA_2&quot;/>&lt;/tns:VAR_MESS_DATA_2>&lt;/xsl:if>&lt;xsl:if test=&quot;DATA_2&quot;>&lt;tns:DATA_2>&lt;xsl:copy-of select=&quot;DATA_2/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATA_2&quot;/>&lt;/tns:DATA_2>&lt;/xsl:if>&lt;xsl:if test=&quot;DESCRIPTION&quot;>&lt;tns:DESCRIPTION>&lt;xsl:copy-of select=&quot;DESCRIPTION/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DESCRIPTION&quot;/>&lt;/tns:DESCRIPTION>&lt;/xsl:if>&lt;xsl:if test=&quot;CHECKED&quot;>&lt;tns:CHECKED>&lt;xsl:copy-of select=&quot;CHECKED/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CHECKED&quot;/>&lt;/tns:CHECKED>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns:CREATE_AT>&lt;/xsl:if>&lt;/tns:T_AUDIT_DUB_REPORT_DETAILS>&lt;/xsl:for-each>&lt;/tns:DATA>&lt;/tns:ZAD_WEB_01_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns4=&quot;http://www.example.org/HEADER&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:tns3=&quot;http://www.example.org/ZAD_WEB_02&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;InvokeRFCBAPIinSAP&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;L_Get_InterfaceSysId&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns3:ZAD_WEB_02_rsp>&lt;xsl:for-each select=&quot;$ParseJSON/tns4:HEADER&quot;>&lt;tns4:HEADER>&lt;tns4:IF_ID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceInfo/Library:InterfaceId&quot;/>&lt;/tns4:IF_ID>&lt;tns4:IF_UUID>&lt;xsl:value-of select=&quot;$L_Get_InterfaceSysId&quot;/>&lt;/tns4:IF_UUID>&lt;tns4:IF_HOST>&lt;xsl:value-of select=&quot;bw:getHostName()&quot;/>&lt;/tns4:IF_HOST>&lt;tns4:IF_DATE>&lt;xsl:value-of select=&quot;format-dateTime(current-dateTime(), &amp;quot;[Y0001][M01][D01][H01][m01][s01]&amp;quot;)&quot;/>&lt;/tns4:IF_DATE>&lt;xsl:if test=&quot;tns4:IF_ADDITIONAL_DATA&quot;>&lt;tns4:IF_ADDITIONAL_DATA>&lt;xsl:copy-of select=&quot;tns4:IF_ADDITIONAL_DATA/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns4:IF_ADDITIONAL_DATA&quot;/>&lt;/tns4:IF_ADDITIONAL_DATA>&lt;/xsl:if>&lt;tns4:RST_CD>&lt;xsl:value-of select=&quot;'0000'&quot;/>&lt;/tns4:RST_CD>&lt;tns4:RST_MSG>&lt;xsl:value-of select=&quot;'성공'&quot;/>&lt;/tns4:RST_MSG>&lt;/tns4:HEADER>&lt;/xsl:for-each>&lt;tns3:DATA>&lt;tns3:ES_MESSAGE>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE&quot;>&lt;tns3:TYPE>&lt;xsl:copy-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/TYPE&quot;/>&lt;/tns3:TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE&quot;>&lt;tns3:MESSAGE>&lt;xsl:copy-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ES_MESSAGE/MESSAGE&quot;/>&lt;/tns3:MESSAGE>&lt;/xsl:if>&lt;/tns3:ES_MESSAGE>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_REPORT_HEADER/item&quot;>&lt;tns3:T_AUDIT_REPORT_HEADER>&lt;xsl:if test=&quot;DATE_FROM&quot;>&lt;tns3:DATE_FROM>&lt;xsl:copy-of select=&quot;DATE_FROM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATE_FROM&quot;/>&lt;/tns3:DATE_FROM>&lt;/xsl:if>&lt;xsl:if test=&quot;DATE_TO&quot;>&lt;tns3:DATE_TO>&lt;xsl:copy-of select=&quot;DATE_TO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DATE_TO&quot;/>&lt;/tns3:DATE_TO>&lt;/xsl:if>&lt;xsl:if test=&quot;ISSUE_BY&quot;>&lt;tns3:ISSUE_BY>&lt;xsl:copy-of select=&quot;ISSUE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;ISSUE_BY&quot;/>&lt;/tns3:ISSUE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;PROGRAM&quot;>&lt;tns3:PROGRAM>&lt;xsl:copy-of select=&quot;PROGRAM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;PROGRAM&quot;/>&lt;/tns3:PROGRAM>&lt;/xsl:if>&lt;xsl:if test=&quot;LAST_MODIFY&quot;>&lt;tns3:LAST_MODIFY>&lt;xsl:copy-of select=&quot;LAST_MODIFY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LAST_MODIFY&quot;/>&lt;/tns3:LAST_MODIFY>&lt;/xsl:if>&lt;xsl:if test=&quot;LOGIC&quot;>&lt;tns3:LOGIC>&lt;xsl:copy-of select=&quot;LOGIC/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;LOGIC&quot;/>&lt;/tns3:LOGIC>&lt;/xsl:if>&lt;xsl:if test=&quot;REPORT_TYPE&quot;>&lt;tns3:REPORT_TYPE>&lt;xsl:copy-of select=&quot;REPORT_TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;REPORT_TYPE&quot;/>&lt;/tns3:REPORT_TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns3:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns3:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns3:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns3:CREATE_AT>&lt;/xsl:if>&lt;/tns3:T_AUDIT_REPORT_HEADER>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_SAO_REPORT_SUMMARY/item&quot;>&lt;tns3:T_AUDIT_SAO_REPORT_SUMMARY>&lt;xsl:if test=&quot;AUTH_CAT&quot;>&lt;tns3:AUTH_CAT>&lt;xsl:copy-of select=&quot;AUTH_CAT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUTH_CAT&quot;/>&lt;/tns3:AUTH_CAT>&lt;/xsl:if>&lt;xsl:if test=&quot;AUTH_NAME&quot;>&lt;tns3:AUTH_NAME>&lt;xsl:copy-of select=&quot;AUTH_NAME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUTH_NAME&quot;/>&lt;/tns3:AUTH_NAME>&lt;/xsl:if>&lt;xsl:if test=&quot;COUNT_OWNER&quot;>&lt;tns3:COUNT_OWNER>&lt;xsl:copy-of select=&quot;COUNT_OWNER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;COUNT_OWNER&quot;/>&lt;/tns3:COUNT_OWNER>&lt;/xsl:if>&lt;xsl:if test=&quot;COUNT_NEED_CHECK&quot;>&lt;tns3:COUNT_NEED_CHECK>&lt;xsl:copy-of select=&quot;COUNT_NEED_CHECK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;COUNT_NEED_CHECK&quot;/>&lt;/tns3:COUNT_NEED_CHECK>&lt;/xsl:if>&lt;xsl:if test=&quot;COUNT_CHECKED&quot;>&lt;tns3:COUNT_CHECKED>&lt;xsl:copy-of select=&quot;COUNT_CHECKED/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;COUNT_CHECKED&quot;/>&lt;/tns3:COUNT_CHECKED>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns3:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns3:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns3:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns3:CREATE_AT>&lt;/xsl:if>&lt;/tns3:T_AUDIT_SAO_REPORT_SUMMARY>&lt;/xsl:for-each>&lt;xsl:for-each select=&quot;$InvokeRFCBAPIinSAP/RfcResponse/ET_AUDIT_SAO_REPORT_DETAILS/item&quot;>&lt;tns3:T_AUDIT_SAO_REPORT_DETAILS>&lt;xsl:if test=&quot;AUTH_CAT&quot;>&lt;tns3:AUTH_CAT>&lt;xsl:copy-of select=&quot;AUTH_CAT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUTH_CAT&quot;/>&lt;/tns3:AUTH_CAT>&lt;/xsl:if>&lt;xsl:if test=&quot;AUTH_NAME&quot;>&lt;tns3:AUTH_NAME>&lt;xsl:copy-of select=&quot;AUTH_NAME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUTH_NAME&quot;/>&lt;/tns3:AUTH_NAME>&lt;/xsl:if>&lt;xsl:if test=&quot;USER&quot;>&lt;tns3:USER>&lt;xsl:copy-of select=&quot;USER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USER&quot;/>&lt;/tns3:USER>&lt;/xsl:if>&lt;xsl:if test=&quot;OWNER_NAME&quot;>&lt;tns3:OWNER_NAME>&lt;xsl:copy-of select=&quot;OWNER_NAME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;OWNER_NAME&quot;/>&lt;/tns3:OWNER_NAME>&lt;/xsl:if>&lt;xsl:if test=&quot;USER_TYPE&quot;>&lt;tns3:USER_TYPE>&lt;xsl:copy-of select=&quot;USER_TYPE/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;USER_TYPE&quot;/>&lt;/tns3:USER_TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;COMPANY&quot;>&lt;tns3:COMPANY>&lt;xsl:copy-of select=&quot;COMPANY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;COMPANY&quot;/>&lt;/tns3:COMPANY>&lt;/xsl:if>&lt;xsl:if test=&quot;EFFECTIVE_FROM&quot;>&lt;tns3:EFFECTIVE_FROM>&lt;xsl:copy-of select=&quot;EFFECTIVE_FROM/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;EFFECTIVE_FROM&quot;/>&lt;/tns3:EFFECTIVE_FROM>&lt;/xsl:if>&lt;xsl:if test=&quot;EFFECTIVE_TO&quot;>&lt;tns3:EFFECTIVE_TO>&lt;xsl:copy-of select=&quot;EFFECTIVE_TO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;EFFECTIVE_TO&quot;/>&lt;/tns3:EFFECTIVE_TO>&lt;/xsl:if>&lt;xsl:if test=&quot;DEV_ACCESS_KEY&quot;>&lt;tns3:DEV_ACCESS_KEY>&lt;xsl:copy-of select=&quot;DEV_ACCESS_KEY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DEV_ACCESS_KEY&quot;/>&lt;/tns3:DEV_ACCESS_KEY>&lt;/xsl:if>&lt;xsl:if test=&quot;AUTH_REASON&quot;>&lt;tns3:AUTH_REASON>&lt;xsl:copy-of select=&quot;AUTH_REASON/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;AUTH_REASON&quot;/>&lt;/tns3:AUTH_REASON>&lt;/xsl:if>&lt;xsl:if test=&quot;NEED_CHECK&quot;>&lt;tns3:NEED_CHECK>&lt;xsl:copy-of select=&quot;NEED_CHECK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;NEED_CHECK&quot;/>&lt;/tns3:NEED_CHECK>&lt;/xsl:if>&lt;xsl:if test=&quot;CHECKED&quot;>&lt;tns3:CHECKED>&lt;xsl:copy-of select=&quot;CHECKED/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CHECKED&quot;/>&lt;/tns3:CHECKED>&lt;/xsl:if>&lt;xsl:if test=&quot;DESCRIPTION&quot;>&lt;tns3:DESCRIPTION>&lt;xsl:copy-of select=&quot;DESCRIPTION/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;DESCRIPTION&quot;/>&lt;/tns3:DESCRIPTION>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_BY&quot;>&lt;tns3:CREATE_BY>&lt;xsl:copy-of select=&quot;CREATE_BY/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_BY&quot;/>&lt;/tns3:CREATE_BY>&lt;/xsl:if>&lt;xsl:if test=&quot;CREATE_AT&quot;>&lt;tns3:CREATE_AT>&lt;xsl:copy-of select=&quot;CREATE_AT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;CREATE_AT&quot;/>&lt;/tns3:CREATE_AT>&lt;/xsl:if>&lt;/tns3:T_AUDIT_SAO_REPORT_DETAILS>&lt;/xsl:for-each>&lt;/tns3:DATA>&lt;/tns3:ZAD_WEB_02_rsp>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2618,7 +2581,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/restjson#//JsonRender"/>
                                     <value jsonOutputStyle="None"
                                     schemaType="Xsd" xsi:type="restjson:JsonRender">
-                                    <inputEditorElement href="platform:/resource/SVC_SAP_ETC_0050.module/Schemas/ZAD_WEB_01.xsd#//ZAD_WEB_01_rsp;XSDElementDeclaration=1"/>
+                                    <inputEditorElement href="platform:/resource/SVC_SAP_ETC_0050.module/Schemas/ZAD_WEB_02.xsd#//ZAD_WEB_02_rsp;XSDElementDeclaration=1"/>
                                     </value>
                                 </properties>
                             </activityConfig>
@@ -2631,7 +2594,7 @@
                     inputVariable="InvokeRFCBAPIinSAP-input"
                     name="InvokeRFCBAPIinSAP"
                     outputVariable="InvokeRFCBAPIinSAP"
-                    tibex:xpdlId="82767bfd-9215-462e-b2d8-cdd301d8420b" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    tibex:xpdlId="e1abddf3-ea04-4501-b705-af92eedc03ae" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="Log_2ToInvokeRFCBAPIinSAP"/>
                     </bpws:targets>
@@ -2640,7 +2603,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:tns=&quot;http://www.example.org/ZAD_WEB_01&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;InvokeRFCBAPIinSAP-input&quot; match=&quot;/&quot;>&lt;tns1:RequestInputType>&lt;timeout>&lt;xsl:value-of select=&quot;xsd:long($L_Get_InterfaceInfo/Library:Interface/Library:Timeout *1000)&quot;/>&lt;/timeout>&lt;RfcRequest>&lt;xsl:if test=&quot;not((string($ParseJSON/tns:DATA/tns:I_FROM_DATE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns:DATA/tns:I_FROM_DATE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns:DATA/tns:I_FROM_DATE)&quot;>&lt;I_FROM_DATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns:DATA/tns:I_FROM_DATE&quot;/>&lt;/I_FROM_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns:DATA/tns:I_REPORT_TYPE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns:DATA/tns:I_REPORT_TYPE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns:DATA/tns:I_REPORT_TYPE)&quot;>&lt;I_REPORT_TYPE>&lt;xsl:value-of select=&quot;$ParseJSON/tns:DATA/tns:I_REPORT_TYPE&quot;/>&lt;/I_REPORT_TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns:DATA/tns:I_TO_DATE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns:DATA/tns:I_TO_DATE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns:DATA/tns:I_TO_DATE)&quot;>&lt;I_TO_DATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns:DATA/tns:I_TO_DATE&quot;/>&lt;/I_TO_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns:DATA/tns:I_USER_REQUEST/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns:DATA/tns:I_USER_REQUEST/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns:DATA/tns:I_USER_REQUEST)&quot;>&lt;I_USER_REQUEST>&lt;xsl:value-of select=&quot;$ParseJSON/tns:DATA/tns:I_USER_REQUEST&quot;/>&lt;/I_USER_REQUEST>&lt;/xsl:if>&lt;ET_AUDIT_DUB_REPORT_DETAILS/>&lt;ET_AUDIT_DUB_REPORT_SUMMARY/>&lt;ET_AUDIT_REPORT_HEADER/>&lt;IT_MESS_ID>&lt;xsl:for-each select=&quot;$ParseJSON/tns:DATA/tns:IT_MESS_ID&quot;>&lt;item>&lt;xsl:if test=&quot;tns:MESS_ID&quot;>&lt;MESS_ID>&lt;xsl:copy-of select=&quot;tns:MESS_ID/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns:MESS_ID&quot;/>&lt;/MESS_ID>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_MESS_ID>&lt;IT_NEED_CHECK>&lt;xsl:for-each select=&quot;$ParseJSON/tns:DATA/tns:IT_NEED_CHECK&quot;>&lt;item>&lt;xsl:if test=&quot;tns:NEED_CHECK&quot;>&lt;NEED_CHECK>&lt;xsl:copy-of select=&quot;tns:NEED_CHECK/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns:NEED_CHECK&quot;/>&lt;/NEED_CHECK>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_NEED_CHECK>&lt;IT_SR_NO>&lt;xsl:for-each select=&quot;$ParseJSON/tns:DATA/tns:IT_SR_NO&quot;>&lt;item>&lt;xsl:if test=&quot;tns:SR_NO&quot;>&lt;SR_NO>&lt;xsl:copy-of select=&quot;tns:SR_NO/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns:SR_NO&quot;/>&lt;/SR_NO>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_SR_NO>&lt;IT_USER>&lt;xsl:for-each select=&quot;$ParseJSON/tns:DATA/tns:IT_USER&quot;>&lt;item>&lt;xsl:if test=&quot;tns:USER&quot;>&lt;USER>&lt;xsl:copy-of select=&quot;tns:USER/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns:USER&quot;/>&lt;/USER>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_USER>&lt;/RfcRequest>&lt;/tns1:RequestInputType>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:Library=&quot;http://www.cspi_library.org/Library&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns2=&quot;http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02&quot; xmlns:tns3=&quot;http://www.example.org/ZAD_WEB_02&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;L_Get_InterfaceInfo&quot;/>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;InvokeRFCBAPIinSAP-input&quot; match=&quot;/&quot;>&lt;tns2:RequestInputType>&lt;timeout>&lt;xsl:value-of select=&quot;xsd:long($L_Get_InterfaceInfo/Library:Interface/Library:Timeout *1000)&quot;/>&lt;/timeout>&lt;RfcRequest>&lt;xsl:if test=&quot;not((string($ParseJSON/tns3:DATA/tns3:I_FROM_DATE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns3:DATA/tns3:I_FROM_DATE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns3:DATA/tns3:I_FROM_DATE)&quot;>&lt;I_FROM_DATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns3:DATA/tns3:I_FROM_DATE&quot;/>&lt;/I_FROM_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns3:DATA/tns3:I_REPORT_TYPE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns3:DATA/tns3:I_REPORT_TYPE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns3:DATA/tns3:I_REPORT_TYPE)&quot;>&lt;I_REPORT_TYPE>&lt;xsl:value-of select=&quot;$ParseJSON/tns3:DATA/tns3:I_REPORT_TYPE&quot;/>&lt;/I_REPORT_TYPE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns3:DATA/tns3:I_TO_DATE/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns3:DATA/tns3:I_TO_DATE/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns3:DATA/tns3:I_TO_DATE)&quot;>&lt;I_TO_DATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns3:DATA/tns3:I_TO_DATE&quot;/>&lt;/I_TO_DATE>&lt;/xsl:if>&lt;xsl:if test=&quot;not((string($ParseJSON/tns3:DATA/tns3:I_USER_REQUEST/@xsi:nil)=(&amp;quot;true&amp;quot;)) or (string($ParseJSON/tns3:DATA/tns3:I_USER_REQUEST/@xsi:nil)=(&amp;quot;1&amp;quot;))) and exists($ParseJSON/tns3:DATA/tns3:I_USER_REQUEST)&quot;>&lt;I_USER_REQUEST>&lt;xsl:value-of select=&quot;$ParseJSON/tns3:DATA/tns3:I_USER_REQUEST&quot;/>&lt;/I_USER_REQUEST>&lt;/xsl:if>&lt;ET_AUDIT_REPORT_HEADER/>&lt;ET_AUDIT_SAO_REPORT_DETAILS/>&lt;ET_AUDIT_SAO_REPORT_SUMMARY/>&lt;IT_ABNORMAL>&lt;xsl:for-each select=&quot;$ParseJSON/tns3:DATA/tns3:IT_ABNORMAL&quot;>&lt;item>&lt;xsl:if test=&quot;tns3:ABNORMAL&quot;>&lt;ABNORMAL>&lt;xsl:copy-of select=&quot;tns3:ABNORMAL/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns3:ABNORMAL&quot;/>&lt;/ABNORMAL>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_ABNORMAL>&lt;IT_AUTH_CAT>&lt;xsl:for-each select=&quot;$ParseJSON/tns3:DATA/tns3:IT_AUTH_CAT&quot;>&lt;item>&lt;xsl:if test=&quot;tns3:AUTH_CAT&quot;>&lt;AUTH_CAT>&lt;xsl:copy-of select=&quot;tns3:AUTH_CAT/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns3:AUTH_CAT&quot;/>&lt;/AUTH_CAT>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_AUTH_CAT>&lt;IT_AUTH_NAME>&lt;xsl:for-each select=&quot;$ParseJSON/tns3:DATA/tns3:IT_AUTH_NAME&quot;>&lt;item>&lt;xsl:if test=&quot;tns3:AUTH_NAME&quot;>&lt;AUTH_NAME>&lt;xsl:copy-of select=&quot;tns3:AUTH_NAME/@xsi:nil&quot;/>&lt;xsl:value-of select=&quot;tns3:AUTH_NAME&quot;/>&lt;/AUTH_NAME>&lt;/xsl:if>&lt;/item>&lt;/xsl:for-each>&lt;/IT_AUTH_NAME>&lt;/RfcRequest>&lt;/tns2:RequestInputType>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -2654,15 +2617,15 @@
                                     <type href="http://ns.tibco.com/bw/palette/sap#//InvokeRequestResponse"/>
                                     <value
                                     connectionReference="sapConnectionProperty"
-                                    operation="ZAD_WEB_01"
-                                    schemaPath="/SVC_SAP_ETC_0050.module/Schemas/.SAP/SAP/functionModules/ZAD_WEB_01.xsd" xsi:type="sap:InvokeRequestResponse">
+                                    operation="ZAD_WEB_02"
+                                    schemaPath="/SVC_SAP_ETC_0050.module/Schemas/.SAP/SAP/functionModules/ZAD_WEB_02.xsd" xsi:type="sap:InvokeRequestResponse">
                                     <internalConfig
                                     bLastForInput="true"
                                     bLastForOutput="true"
                                     connRefName="SAP"
-                                    errorXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01##SAPSystemException"
-                                    inputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01##RfcRequest"
-                                    outputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_01##RfcResponse" xsi:type="internalization:InvokeRFC"/>
+                                    errorXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02##SAPSystemException"
+                                    inputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02##RfcRequest"
+                                    outputXsdElement="http://www.tibco.com/xmlns/sap/SAP/ZAD_WEB_02##RfcResponse" xsi:type="internalization:InvokeRFC"/>
                                     </value>
                                 </properties>
                             </activityConfig>

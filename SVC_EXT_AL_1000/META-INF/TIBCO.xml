@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <packaging:packageUnit xmlns:ns="http://ns.tibco.com/bw/property" xmlns:packaging="http://schemas.tibco.com/tra/model/core/PackagingModel" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <packaging:description></packaging:description>
+  <packaging:description>어플리케이션 에서 버전 여러개 디플로이 되있을때 싱글톤이 중복되면 에러난다.. KisaSeed128KT 의 싱클톤 옵션 제거하거나, 하나의 버전만 어플리케이션에 등록해야 함</packaging:description>
   <packaging:properties>
     <packaging:property>
       <packaging:name>//SVC_EXT_AL_1000.module//BW.DEPLOYMENTUNIT.TYPE</packaging:name>

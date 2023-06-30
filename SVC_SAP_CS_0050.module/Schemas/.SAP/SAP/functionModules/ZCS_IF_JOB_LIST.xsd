@@ -676,6 +676,27 @@
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
+            <xsd:element minOccurs="0" name="INST_PRM_NM" nillable="true" r3:abapType="C" r3:document="설치 프로모션 명" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2734">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="70"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="SALEMOD_GOODS_NM" nillable="true" r3:abapType="C" r3:document="매변 후 제품명" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2874">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="40"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="RTN_RSN_DESC" nillable="true" r3:abapType="C" r3:document="반환 상세 사유" r3:javaType="java.lang.String" r3:jcoType="0" r3:offset="2954">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="70"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="sequence_lsqb_ZCSS2054_rsqb_">
