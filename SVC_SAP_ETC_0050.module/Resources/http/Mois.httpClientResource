@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:tp="http://xsd.tns.tibco.com/bw/models/sharedresource/threadpool" xmi:id="_5Ykn4RokEe6ih65ZD2FgwQ" name="http.Mois" type="http:HttpClientConfiguration">
+  <jndi:reference xmi:id="_D6YZwBolEe6ih65ZD2FgwQ" key="threadPoolConfigurationName" type="tp:ThreadPoolConfiguration" value="http.Mois_tpr"/>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_5YlO8BokEe6ih65ZD2FgwQ" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" hystrixCommandName="http.Mois" cmdExecutionIsolationStrategy="COUNT_BASED" cmdExecutionIsolationTimeout="10" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="50" cmdCircuitBreakerSleepWindow="100" cmdCircuitBreakerErrorThresholdPercentage="100" cmdMetricsRollingStatsTime="100" cmdMetricsRollingStatsNumBuckets="60000" cmdMetricsHealthSnapshotInterval="500" tpCoreSize="10" tpMaxQueueSize="60000" tpQueueSizeRejectionThreshold="6000" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_5YlO8RokEe6ih65ZD2FgwQ" host="update.juso.go.kr"/>
+  </jndi:configuration>
+</jndi:namedResource>

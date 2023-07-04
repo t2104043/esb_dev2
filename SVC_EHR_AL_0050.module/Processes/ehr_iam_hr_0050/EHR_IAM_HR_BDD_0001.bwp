@@ -2948,7 +2948,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/jdbc#//JDBCQueryActivity"/>
                                     <value
                                     sharedResourceProperty="db.EHR"
-                                    sqlStatement="SELECT count(I_BUKRS) as cnt&#xd;&#xa;FROM IF_IAM_PAS001_S_T&#xd;&#xa;  WHERE I_DATE = TO_DATE('20230101', 'YYYYMMDD')&#xd;&#xa;--  WHERE I_DATE = TO_DATE(TO_CHAR(SYSDATE, 'YYYYMMDD'), 'YYYYMMDD')"
+                                    sqlStatement="SELECT count(I_BUKRS) as cnt&#xd;&#xa;FROM IF_IAM_PAS001_S_T&#xd;&#xa;--  WHERE I_DATE = TO_DATE('20230101', 'YYYYMMDD')&#xd;&#xa;  WHERE I_DATE = TO_DATE(TO_CHAR(SYSDATE, 'YYYYMMDD'), 'YYYYMMDD')"
                                     threadPool="theradpool..EHR"
                                     timeout="60" xsi:type="jdbcPalette:JDBCQueryActivity">
                                     <columnMetadata columnIndex="1"
