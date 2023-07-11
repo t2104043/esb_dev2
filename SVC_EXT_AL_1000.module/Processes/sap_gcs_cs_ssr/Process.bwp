@@ -1215,8 +1215,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="593"
-                                    xsi:type="notation:Bounds" y="82"/>
+                                    x="904"
+                                    xsi:type="notation:Bounds" y="85"/>
                                     </children>
                                     <children
                                     description="ㄷ대용량 파일시 메모리 문제 방지위해 가져오기전 크기 체크필요"
