@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPS_DO_IDV_CREATE" xmlns:tns="http://www.example.org/ZMM_EPS_DO_IDV_CREATE" elementFormDefault="qualified" xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPS_DO_IDV_CREATE_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_EKORG" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_LFDAT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="IT_IDV_CREATE" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="ZPO_STAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="EBELN" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BEDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZCOUNT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZCON_DATE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="EKNAM" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="NAME1" type="string" maxOccurs="1" minOccurs="0"/>	
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZMM_EPS_DO_IDV_CREATE_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>						
+						<element name="E_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

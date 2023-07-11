@@ -151,7 +151,4 @@
   <sca:component xmi:id="_qMDsQATtEe6O_OG6lEW9FQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_qMDsQQTtEe6O_OG6lEW9FQ" processName="sap_gcs_cs_ssr.Process"/>
   </sca:component>
-  <sca:component xmi:id="__80-ABYREe6O_OG6lEW9FQ" name="ComponentProcess1" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__80-ARYREe6O_OG6lEW9FQ" processName="sap_gcs_cs_ssr.Process1"/>
-  </sca:component>
 </sca:composite>

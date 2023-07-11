@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPS_PO_LIST" xmlns:tns="http://www.example.org/ZMM_EPS_PO_LIST" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPS_PO_LIST_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_EKORG" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_FRDAT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_TODAT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_GUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_SORT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_POSTA" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_EBELN" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_GUBUN1" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_VALUE" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_FTAX" type="string" maxOccurs="1" minOccurs="0"/>
+
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZMM_EPS_PO_LIST_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_PO_LIST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MATNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TXZ01" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MAKTXE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="EBELN" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="EBELP" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MEINS" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MENGE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MENGE_GR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MENGE_GR_B" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MENGE_IR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MENGE_IR_B" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="BEDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="EINDT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="NAME1" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZFGUBUN" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZFDOCU" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZGITA" type="string" maxOccurs="1" minOccurs="0"/>									
+								</sequence>
+							</complexType>
+						</element>
+						<element name="E_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>

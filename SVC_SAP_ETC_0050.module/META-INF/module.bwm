@@ -76,7 +76,7 @@
   <sca:component xmi:id="_E7YzkANXEe6O_OG6lEW9FQ" name="ComponentICM_SAP_SY_SES_0003" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_E7YzkQNXEe6O_OG6lEW9FQ" processName="icm_sap_sy_ses.ICM_SAP_SY_SES_0003"/>
   </sca:component>
-  <sca:component xmi:id="_SipngBohEe6iV9ZlTBdTiw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_SipngRohEe6iV9ZlTBdTiw" processName="moi_sap_al_bhs.Process"/>
+  <sca:component xmi:id="_c30d8BsFEe6Lp-zI3NBhVQ" name="ComponentCopyOfProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c30d8RsFEe6Lp-zI3NBhVQ" processName="moi_sap_al_bhs.CopyOfProcess"/>
   </sca:component>
 </sca:composite>

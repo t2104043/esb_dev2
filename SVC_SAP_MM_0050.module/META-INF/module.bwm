@@ -123,4 +123,19 @@
   <sca:component xmi:id="_XcKm8KjdEe2eS9RPuHKJhQ" name="ComponentTEST" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_XcKm8ajdEe2eS9RPuHKJhQ" processName="ets_sap_mm_bds_0050.TEST"/>
   </sca:component>
+  <sca:component xmi:id="_kB5TQBrqEe6Lp-zI3NBhVQ" name="ComponentEPS_SAP_MM_SES_0101" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_kB5TQRrqEe6Lp-zI3NBhVQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0101"/>
+  </sca:component>
+  <sca:component xmi:id="_73tDABu0Ee6rwruZcVKJDQ" name="ComponentEPS_SAP_MM_SES_0105" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_73tDARu0Ee6rwruZcVKJDQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0105"/>
+  </sca:component>
+  <sca:component xmi:id="_tXyDgBu5Ee6rwruZcVKJDQ" name="ComponentEPS_SAP_MM_SES_0106" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tXyDgRu5Ee6rwruZcVKJDQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0106"/>
+  </sca:component>
+  <sca:component xmi:id="_KY_7MB-EEe6rwruZcVKJDQ" name="ComponentEPS_SAP_MM_SES_0107" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_KY_7MR-EEe6rwruZcVKJDQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0107"/>
+  </sca:component>
+  <sca:component xmi:id="_P9vucB-KEe6rwruZcVKJDQ" name="ComponentEPS_SAP_MM_SES_0118" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_P9vucR-KEe6rwruZcVKJDQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0118"/>
+  </sca:component>
 </sca:composite>
