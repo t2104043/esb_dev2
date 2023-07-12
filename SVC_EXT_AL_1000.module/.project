@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>KisaSeed128_KT</project>
+		<project>CSPI_Library</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

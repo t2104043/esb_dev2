@@ -112,13 +112,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jdbc/Password</name>
-			<value>#!TDisJLDokwPVivq3NTUDln7MmGEkQLRo</value>
+			<value>#!VwlBgpJ++0WzebQLkBRZRtYPMuQ7vyDc</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>#!TDisJLDokwPVivq3NTUDln7MmGEkQLRo</lookupValue>
+			<lookupValue>#!VwlBgpJ++0WzebQLkBRZRtYPMuQ7vyDc</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Destination/DBLog</name>
@@ -281,13 +281,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jms/ProviderURL</name>
-			<value>tcp://10.101.3.194:7222</value>
+			<value>tcp://10.152.27.173:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>tcp://10.101.3.194:7222</lookupValue>
+			<lookupValue>tcp://10.152.27.173:7222</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jdbc/JDBCDriver</name>
@@ -300,13 +300,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///BaseInfo/CfgFileDir</name>
-			<value>/home/esbmanager/cfgFile</value>
+			<value>/home/ubuntu/cfgFile</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>/home/esbmanager/cfgFile</lookupValue>
+			<lookupValue>/home/ubuntu/cfgFile</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library//BW.MODULE.NAME</name>
@@ -319,13 +319,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//CSPI_Library///Resources/Jdbc/DatabaseURL</name>
-			<value>jdbc:oracle:thin:@10.101.3.196:1521:esbdbdev</value>
+			<value>jdbc:oracle:thin:@esb.csjpgdhszdu9.ap-northeast-2.rds.amazonaws.com:1521:ESB</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>jdbc:oracle:thin:@10.101.3.196:1521:esbdbdev</lookupValue>
+			<lookupValue>jdbc:oracle:thin:@esb.csjpgdhszdu9.ap-northeast-2.rds.amazonaws.com:1521:ESB</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>Env</name>
@@ -375,7 +375,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/ems/ProviderURL</name>
-			<value>tcp://10.101.3.194:7222</value>
+			<value>tcp://10.152.27.173:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -456,7 +456,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module//SAPAppServer</name>
-			<value>vhcwlcoqcs.sap.coway.do</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -790,7 +790,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_13</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -799,7 +799,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_12</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -808,7 +808,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_11</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -817,7 +817,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_10</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -826,7 +826,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_02</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai01.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -835,7 +835,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_01</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -844,7 +844,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_04</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai03.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -853,7 +853,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_03</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai02.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -862,7 +862,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_09</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -871,7 +871,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_06</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -880,7 +880,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_05</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -889,7 +889,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_08</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -898,7 +898,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SVC_EXT_AL_1000.module///Resources/sap/sap_url_07</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>

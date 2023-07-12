@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/MOI_SAP_CS_BHS_0001" xmlns:tns="http://www.example.org/MOI_SAP_CS_BHS_0001" elementFormDefault="qualified">
+
+    <element name="RECODE">
+    	<complexType>
+    		<sequence>
+    			<element name="DATA" type="string"></element>
+    		</sequence>
+    	</complexType></element>
+</schema>

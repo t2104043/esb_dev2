@@ -97,9 +97,6 @@
       <sca:interface.wsdl xmi:id="_oJydIQizEe2SRNb87hGHEA" interface="http://xmlns.example.com/20220721141150PLT#wsdl.interface(kta_sap_sd_sss_0001)" scaext:wsdlLocation="../Processes/kta_sap_sd_sss_0050/KTA_SAP_SD_SSS_0001.bwp"/>
     </sca:service>
   </sca:component>
-  <sca:component xmi:id="_EFKvYAljEe2Dup02m7RwAQ" name="ComponentM_SetBaseInfo_OnStartUp" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_EFKvYQljEe2Dup02m7RwAQ" processName="common.M_SetBaseInfo_OnStartUp"/>
-  </sca:component>
   <sca:component xmi:id="_8GHAUA8DEe2Vs_xxhT6pIA" name="ComponentLDP_SAP_SD_BDS_0001" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8GHAUQ8DEe2Vs_xxhT6pIA" processName="ldp_sap_sd_bds_0050.LDP_SAP_SD_BDS_0001"/>
   </sca:component>
@@ -153,5 +150,11 @@
   </sca:component>
   <sca:component xmi:id="__80-ABYREe6O_OG6lEW9FQ" name="ComponentProcess1" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__80-ARYREe6O_OG6lEW9FQ" processName="sap_gcs_cs_ssr.Process1"/>
+  </sca:component>
+  <sca:component xmi:id="_ceSw8CBmEe6mAJArgHQQqQ" name="ComponentMOI_SAP_CS_BHS_0001" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ceSw8SBmEe6mAJArgHQQqQ" processName="moi_sap_cs_bhs.MOI_SAP_CS_BHS_0001"/>
+  </sca:component>
+  <sca:component xmi:id="_8NtosCBpEe6mAJArgHQQqQ" name="ComponentM_SetBaseInfo_OnStartUp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8NtosSBpEe6mAJArgHQQqQ" processName="common.M_SetBaseInfo_OnStartUp"/>
   </sca:component>
 </sca:composite>

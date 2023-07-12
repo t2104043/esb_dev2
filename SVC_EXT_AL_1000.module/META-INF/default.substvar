@@ -84,7 +84,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>SAPAppServer</name>
-			<value>vhcwlcoqcs.sap.coway.do</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -291,7 +291,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/ems/ProviderURL</name>
-			<value>tcp://10.101.3.194:7222</value>
+			<value>tcp://10.152.27.173:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -543,7 +543,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_01</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -552,7 +552,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_02</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai01.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -561,7 +561,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_03</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai02.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -570,7 +570,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_04</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqai03.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -579,7 +579,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_05</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -588,7 +588,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_06</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -597,7 +597,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_07</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -606,7 +606,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_08</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -615,7 +615,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_09</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -624,7 +624,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_10</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -633,7 +633,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_11</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -642,7 +642,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_12</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -651,7 +651,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Resources/sap/sap_url_13</name>
-			<value>192.1.1.149</value>
+			<value>vhcwlcoqci.sap.coway.do</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>

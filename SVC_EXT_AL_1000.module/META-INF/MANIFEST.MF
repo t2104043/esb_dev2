@@ -5,6 +5,7 @@ Bundle-SymbolicName: SVC_EXT_AL_1000.module
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: TIBCO Software Inc.
+Export-Package: moi
 Require-Bundle: KisaSeed128_KT;bundle-version="1.0.0"
 Automatic-Module-Name: SVC.EXT.AL.1000.module
 TIBCO-BW-Version: 6.7.0 HF3 V102 2021-08-10
@@ -20,7 +21,10 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.palette; filter:="(name=bw.file)",
  com.tibco.bw.palette; filter:="(name=bw.restjson)",
  com.tibco.bw.palette; filter:="(name=bw.sap)",
+ com.tibco.bw.palette; filter:="(name=bw.java)",
  com.tibco.bw.palette; filter:="(name=bw.jms)",
+ com.tibco.bw.palette; filter:="(name=bw.parse)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.dataformat)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)",

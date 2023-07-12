@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MOI_SAP_CS_BHS_0001="http://www.example.org/MOI_SAP_CS_BHS_0001" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_Tawi4R_BEe6RMsFzMME_sg" name="svc_ext_al_1000.module.MOI_DataFormatResource" type="dataformat:DataFormat">
+  <imports xmi:id="_A8bJ4B_CEe6RMsFzMME_sg" importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/MOI_SAP_CS_BHS_0001"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_Tawi4h_BEe6RMsFzMME_sg" formatType="Delimiter separated" colSeparator="" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="New Line" fillCharacter="Space" schemaElementQName="MOI_SAP_CS_BHS_0001:RECODE" fieldOffsetsStr="DATA(0,0)">
+    <fieldOffsets xmi:id="_A9CN4B_CEe6RMsFzMME_sg" name="DATA"/>
+  </jndi:configuration>
+</jndi:namedResource>
