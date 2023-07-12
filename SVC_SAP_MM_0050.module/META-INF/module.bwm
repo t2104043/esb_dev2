@@ -138,4 +138,10 @@
   <sca:component xmi:id="_P9vucB-KEe6rwruZcVKJDQ" name="ComponentEPS_SAP_MM_SES_0118" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_P9vucR-KEe6rwruZcVKJDQ" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0118"/>
   </sca:component>
+  <sca:component xmi:id="_TxFvQCBxEe6_I8eBehWnTg" name="ComponentEPS_SAP_MM_SES_0121" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TxFvQSBxEe6_I8eBehWnTg" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0121"/>
+  </sca:component>
+  <sca:component xmi:id="_TI1VECB0Ee6_I8eBehWnTg" name="ComponentEPS_SAP_MM_SES_0131" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TI1VESB0Ee6_I8eBehWnTg" processName="eps_sap_mm_ses_0100.EPS_SAP_MM_SES_0131"/>
+  </sca:component>
 </sca:composite>

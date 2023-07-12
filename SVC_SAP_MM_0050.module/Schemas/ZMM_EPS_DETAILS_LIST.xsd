@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZMM_EPS_DETAILS_LIST" xmlns:tns="http://www.example.org/ZMM_EPS_DETAILS_LIST" elementFormDefault="qualified"  xmlns:Q1="http://www.example.org/HEADER">
+<import namespace="http://www.example.org/HEADER"></import>
+<element name="ZMM_EPS_DETAILS_LIST_req">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="I_EKORG" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_FRDAT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_TODAT" type="string" maxOccurs="1" minOccurs="0"/>
+						<element name="I_TRAID" type="string" maxOccurs="1" minOccurs="0"/>					
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<element name="ZMM_EPS_DETAILS_LIST_rsp">
+	<complexType>
+		<sequence>
+			<element ref="Q1:HEADER"></element>
+			<element maxOccurs="1" minOccurs="0" name="DATA">
+				<complexType>
+					<sequence>
+						<element name="ET_DETAILS_LIST" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="LIFNR" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="NAME1" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="LFDAT" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="NAME2" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="TRAID" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="FLAG" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="ZCODE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+						<element name="E_RETURN" maxOccurs="unbounded" minOccurs="0">
+							<complexType>
+								<sequence>
+									<element name="MSGTYPE" type="string" maxOccurs="1" minOccurs="0"/>
+									<element name="MESSAGE" type="string" maxOccurs="1" minOccurs="0"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+</schema>
